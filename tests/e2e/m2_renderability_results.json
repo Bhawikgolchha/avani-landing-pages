@@ -1,0 +1,1682 @@
+{
+  "viewports": {
+    "Ultra-Narrow Mobile": {
+      "windowWidth": 320,
+      "windowHeight": 568,
+      "errors": [],
+      "loads": [
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 81.69999998807907
+        },
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 81.69999998807907
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 85.30000001192093
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 86.19999998807907
+        },
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 99.19999998807907
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 99.19999998807907
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 99.19999998807907
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 114.60000002384186
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 114.60000002384186
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 262,
+            "height": 147.375,
+            "clientWidth": 260,
+            "clientHeight": 145,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.793103448275862,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 260,
+            "height": 145.375,
+            "aspectRatio": 1.7884780739466897,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    },
+    "Mobile": {
+      "windowWidth": 375,
+      "windowHeight": 667,
+      "errors": [],
+      "loads": [
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 109.59999996423721
+        },
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 109.89999997615814
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 127.59999996423721
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 137.19999998807907
+        },
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 138.5
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 138.5
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 138.5
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 147.89999997615814
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 155.79999995231628
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 317,
+            "height": 178.3125,
+            "clientWidth": 315,
+            "clientHeight": 176,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7897727272727273,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 315,
+            "height": 176.3125,
+            "aspectRatio": 1.7866004962779156,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    },
+    "Landscape Mobile": {
+      "windowWidth": 667,
+      "windowHeight": 375,
+      "errors": [],
+      "loads": [
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 152.39999997615814
+        },
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 152.39999997615814
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 152.39999997615814
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 152.39999997615814
+        },
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 152.39999997615814
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 152.5
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 152.5
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 152.5
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 152.5999999642372
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 609,
+            "height": 342.5625,
+            "clientWidth": 607,
+            "clientHeight": 341,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.780058651026393,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 607,
+            "height": 340.5625,
+            "aspectRatio": 1.7823453844742154,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    },
+    "Tablet": {
+      "windowWidth": 768,
+      "windowHeight": 1024,
+      "errors": [],
+      "loads": [
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 91.10000002384186
+        },
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 91.10000002384186
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 96.30000001192093
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 99.80000001192093
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 99.80000001192093
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 99.80000001192093
+        },
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 99.80000001192093
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 125.20000004768372
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 125.70000004768372
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 710,
+            "height": 399.375,
+            "clientWidth": 708,
+            "clientHeight": 397,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.783375314861461,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 708,
+            "height": 397.375,
+            "aspectRatio": 1.7816923560868199,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    },
+    "Desktop": {
+      "windowWidth": 1440,
+      "windowHeight": 900,
+      "errors": [],
+      "loads": [
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 83.70000004768372
+        },
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 83.80000001192093
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 93.80000001192093
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 100.40000003576279
+        },
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 103.30000001192093
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 105
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 105.90000003576279
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 117.80000001192093
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 117.90000003576279
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 1382,
+            "height": 777.375,
+            "clientWidth": 1380,
+            "clientHeight": 775,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7806451612903227,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 1380,
+            "height": 775.375,
+            "aspectRatio": 1.7797839754957279,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    },
+    "Ultra-Wide Desktop": {
+      "windowWidth": 2560,
+      "windowHeight": 1440,
+      "errors": [],
+      "loads": [
+        {
+          "id": "img-hero_nature",
+          "src": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "timestamp": 67.10000002384186
+        },
+        {
+          "id": "img-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 67.10000002384186
+        },
+        {
+          "id": "raw-logo",
+          "src": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "timestamp": 67.10000002384186
+        },
+        {
+          "id": "img-event_dps",
+          "src": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "timestamp": 67.20000004768372
+        },
+        {
+          "id": "img-hero_ecotech",
+          "src": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "timestamp": 67.20000004768372
+        },
+        {
+          "id": "img-event_invictus",
+          "src": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "timestamp": 67.20000004768372
+        },
+        {
+          "id": "img-event_orphanage",
+          "src": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "timestamp": 67.20000004768372
+        },
+        {
+          "id": "img-event_waste",
+          "src": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "timestamp": 67.20000004768372
+        },
+        {
+          "id": "img-climate_tips",
+          "src": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "timestamp": 67.20000004768372
+        }
+      ],
+      "images": {
+        "logo": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 855,
+          "naturalRatio": 1.1976608187134503,
+          "currentSrc": "http://127.0.0.1:8791/assets/branding/logo.jpg",
+          "container": {
+            "width": 160,
+            "height": 160,
+            "clientWidth": 158,
+            "clientHeight": 158,
+            "aspectRatio": 1,
+            "contentAspectRatio": 1,
+            "cssAspectRatio": "1 / 1"
+          },
+          "imageRendered": {
+            "width": 158,
+            "height": 158,
+            "aspectRatio": 1,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_nature": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_nature_canopy.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "hero_ecotech": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/hero_ecotech_globe.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_dps": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_dps_drive.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_invictus": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_invictus_denim.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_orphanage": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_orphanage_aarogi.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "event_waste": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/event_waste_workshop.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        },
+        "climate_tips": {
+          "exists": true,
+          "complete": true,
+          "naturalWidth": 1376,
+          "naturalHeight": 768,
+          "naturalRatio": 1.7916666666666667,
+          "currentSrc": "http://127.0.0.1:8791/assets/images/climate_tips_infographic.webp",
+          "container": {
+            "width": 2502,
+            "height": 1407.375,
+            "clientWidth": 2500,
+            "clientHeight": 1405,
+            "aspectRatio": 1.7777777777777777,
+            "contentAspectRatio": 1.7793594306049823,
+            "cssAspectRatio": "16 / 9"
+          },
+          "imageRendered": {
+            "width": 2500,
+            "height": 1405.375,
+            "aspectRatio": 1.7788846393311393,
+            "objectFit": "cover",
+            "topDelta": 1,
+            "leftDelta": 1
+          },
+          "isRendered": true,
+          "fillsContainer": true
+        }
+      }
+    }
+  },
+  "assetsEvaluation": {
+    "logo": {
+      "path": "branding/logo.jpg",
+      "sizeBytes": 60207,
+      "sizeKb": "58.80",
+      "type": "image/jpeg"
+    },
+    "hero_nature": {
+      "path": "images/hero_nature_canopy.webp",
+      "sizeBytes": 302064,
+      "sizeKb": "294.98",
+      "type": "image/webp"
+    },
+    "hero_ecotech": {
+      "path": "images/hero_ecotech_globe.webp",
+      "sizeBytes": 182350,
+      "sizeKb": "178.08",
+      "type": "image/webp"
+    },
+    "event_dps": {
+      "path": "images/event_dps_drive.webp",
+      "sizeBytes": 291458,
+      "sizeKb": "284.63",
+      "type": "image/webp"
+    },
+    "event_invictus": {
+      "path": "images/event_invictus_denim.webp",
+      "sizeBytes": 272842,
+      "sizeKb": "266.45",
+      "type": "image/webp"
+    },
+    "event_orphanage": {
+      "path": "images/event_orphanage_aarogi.webp",
+      "sizeBytes": 236606,
+      "sizeKb": "231.06",
+      "type": "image/webp"
+    },
+    "event_waste": {
+      "path": "images/event_waste_workshop.webp",
+      "sizeBytes": 295504,
+      "sizeKb": "288.58",
+      "type": "image/webp"
+    },
+    "climate_tips": {
+      "path": "images/climate_tips_infographic.webp",
+      "sizeBytes": 136590,
+      "sizeKb": "133.39",
+      "type": "image/webp"
+    }
+  },
+  "payloadSummary": {
+    "totalBytes": 1777621,
+    "totalMb": "1.695",
+    "thresholdMb": 5,
+    "withinBudget": true
+  },
+  "verdict": "APPROVE",
+  "errors": []
+}

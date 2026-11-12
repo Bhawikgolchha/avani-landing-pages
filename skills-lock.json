@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "skills": {
+    "gsap-core": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-core/SKILL.md",
+      "computedHash": "dfc8ba849fa8b81c8cc60964ee2a5fa8db4b2a2611801cf549a5b267b8284fa5"
+    },
+    "gsap-plugins": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-plugins/SKILL.md",
+      "computedHash": "328b52a98e9704c0349ba2cee23a6a92376c06b6b1fd3e60e5c20395b55e25e8"
+    },
+    "gsap-scrolltrigger": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-scrolltrigger/SKILL.md",
+      "computedHash": "c29c5a0fb1506a7f577fe68282eafc6df14b8d2b8ecd24f1f05836f5a0957b67"
+    }
+  }
+}

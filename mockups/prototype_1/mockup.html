@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avani — Bangalore's Youth Climate Collective</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {},
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            headline: ["Plus Jakarta Sans", "sans-serif"],
+            display: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+            label: ["Inter", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-[#F9FAF7] text-neutral-800 font-body selection:bg-emerald-200 selection:text-emerald-900 antialiased min-h-screen flex flex-col">
+<!-- ==================== 1. TOP NAVBAR (Shared Component Mapping) ==================== -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 lg:px-12 py-4 w-full bg-white/80 backdrop-blur-md border-b border-neutral-200/60 shadow-sm transition-all duration-200">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2.5 group" href="#">
+<span class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 group-hover:bg-emerald-200 transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</span>
+<div class="flex flex-col">
+<span class="font-display text-2xl font-bold tracking-tight text-neutral-900 leading-none">Avani</span>
+<span class="text-[10px] font-label font-medium text-emerald-800 tracking-wider uppercase mt-0.5">Youth for a Greener India</span>
+</div>
+</a>
+</div>
+<!-- Web Navigation Cluster -->
+<nav class="hidden lg:flex items-center gap-7">
+<a class="font-label text-sm font-semibold text-emerald-700 hover:text-emerald-900 transition-colors" href="#objectives">Objectives</a>
+<a class="font-label text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors" href="#teams">Teams</a>
+<a class="font-label text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors" href="#events">Events</a>
+<a class="font-label text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors" href="#checklist">Action Hub</a>
+<a class="font-label text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors" href="#publications">Publications</a>
+<a class="font-label text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors" href="#apply">Apply</a>
+</nav>
+<!-- Trailing Action & Social Icons -->
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex items-center gap-1.5 border-r border-neutral-200 pr-3 mr-1">
+<a class="p-2 text-neutral-500 hover:text-emerald-700 hover:bg-neutral-100 rounded-full transition-colors" href="https://www.instagram.com/avani_yocc" rel="noopener noreferrer" target="_blank" title="Instagram @avani_yocc">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</a>
+<a class="p-2 text-neutral-500 hover:text-emerald-700 hover:bg-neutral-100 rounded-full transition-colors" href="https://www.linkedin.com/company/avaniyocc/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</a>
+<a class="p-2 text-neutral-500 hover:text-emerald-700 hover:bg-neutral-100 rounded-full transition-colors" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank" title="Substack">
+<span class="material-symbols-outlined text-[20px]">article</span>
+</a>
+</div>
+<a class="font-label text-sm font-semibold bg-[#163515] text-white hover:bg-[#1f4a1e] active:scale-95 px-5 py-2.5 rounded-full transition-all duration-150 shadow-sm flex items-center gap-1.5" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>Join Cohort 2026</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</header>
+<main class="flex-grow">
+<!-- ==================== 2. HERO SECTION ==================== -->
+<section class="relative pt-12 pb-20 px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
+<!-- Glow Gradients -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-emerald-100/60 via-[#D0E8C5]/40 to-amber-100/30 blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Text -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D0E8C5] text-[#163515] border border-emerald-300/40 text-xs font-semibold tracking-wide shadow-sm">
+<span class="text-sm">🌱</span>
+<span>Bangalore’s Premier Youth Climate Collective</span>
+</div>
+<h1 class="font-headline font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[#163515] tracking-tight leading-[1.12]">
+            Small Actions of Many Add Up to <span class="bg-gradient-to-r from-emerald-800 to-emerald-600 bg-clip-text text-transparent">Change the World</span>
+</h1>
+<p class="font-body text-neutral-600 text-lg sm:text-xl leading-relaxed max-w-2xl">
+            Avani is Bangalore’s youth-led climate collective uniting students across campuses to advocate for environmental restoration, pollution reduction, and conscious living.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-7 py-3.5 rounded-full bg-[#163515] text-white font-label font-semibold text-base shadow-md hover:shadow-lg hover:bg-[#1d441c] active:scale-95 transition-all flex items-center gap-2" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>Apply to Join Avani</span>
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</a>
+<a class="px-7 py-3.5 rounded-full bg-white text-[#163515] border border-neutral-300 font-label font-medium text-base shadow-sm hover:bg-neutral-50 active:scale-95 transition-all flex items-center gap-2" href="#events">
+<span>Explore Our Impact</span>
+<span class="material-symbols-outlined text-lg text-neutral-500">south</span>
+</a>
+</div>
+<!-- Micro-Trust / Highlight Tags -->
+<div class="pt-4 flex flex-wrap items-center gap-3 text-xs text-neutral-600">
+<span class="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full shadow-sm border border-neutral-200/80">
+<span class="material-symbols-outlined text-amber-500 text-base">verified</span> 100% Student-Driven
+            </span>
+<span class="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full border border-neutral-200/80">
+<span class="material-symbols-outlined text-emerald-600 text-base">domain</span> Bengaluru Inter-College Network
+            </span>
+<span class="flex items-center gap-1 bg-white px-3 py-1.5 rounded-full border border-neutral-200/80">
+<span class="material-symbols-outlined text-emerald-600 text-base">volunteer_activism</span> Ground-Level Action
+            </span>
+</div>
+</div>
+<!-- Hero Visual Bento / Composition -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-white p-3 rounded-3xl shadow-xl border border-neutral-200/80">
+<div class="relative w-full h-[380px] sm:h-[420px] rounded-2xl overflow-hidden bg-neutral-100">
+<img class="w-full h-full object-cover" data-alt="Vibrant group of young South Asian college students engaging in environmental climate action in an urban Bangalore green park. The daylight is soft, golden and clean. They wear comfortable earthy attire while holding reusable upcycled canvas bags and saplings in eco-friendly pots. Rich natural lush canopy of rain trees in the background with a modern warm minimalist environmental photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kuRhsFah44oM1cJqnaK1ZV7lZPJNLx0x70hHaXGjOmqjojexf-1ekD6oUdUtKMDnVSUP_GKPyKjHFJA5TAmKjbVJGX15_c0cx8u4Ct08U_ED5imBgxOdrfF0Bw_VuCi9iTG49m1FlTyvOyER1aIavVrUgZ05N9KI8Mbdx3rD2CY8-heNknux0mtQ3xAWSod5ZxESX6K5_daYKWTD6JcS1TMcf4FO75Mq6O19ezwb1jzFezdZBdtqyQCRiWLyZ1Yg0hb5wWVGTGI0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent to-transparent"></div>
+<!-- Floating Pill in Image -->
+<div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-white/40 shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs">
+                      BLR
+                    </span>
+<div>
+<p class="text-xs font-semibold text-neutral-900">Cubbon &amp; Lalbagh Stewardship</p>
+<p class="text-[11px] text-neutral-500">Youth mobilization across 12 institutions</p>
+</div>
+</div>
+<span class="text-xs font-bold text-emerald-800 bg-[#D0E8C5] px-2.5 py-1 rounded-full">Active</span>
+</div>
+</div>
+</div>
+<!-- Floating Metric Card 1 -->
+<div class="absolute -top-5 -left-5 bg-white p-3.5 rounded-2xl shadow-lg border border-neutral-200/90 flex items-center gap-3 animate-pulse duration-1000">
+<div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+<div>
+<p class="text-xl font-bold font-headline text-neutral-900 leading-none">500+</p>
+<p class="text-xs text-neutral-500 font-medium">Active Students</p>
+</div>
+</div>
+<!-- Floating Metric Card 2 -->
+<div class="absolute -bottom-6 -right-4 bg-white p-3.5 rounded-2xl shadow-lg border border-neutral-200/90 flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">recycling</span>
+</div>
+<div>
+<p class="text-xl font-bold font-headline text-neutral-900 leading-none">1,000+ kg</p>
+<p class="text-xs text-neutral-500 font-medium">Waste Diverted</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 3. MISSION & 5 CORE OBJECTIVES ==================== -->
+<section class="py-20 px-6 lg:px-12 bg-white border-y border-neutral-200/60" id="objectives">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D0E8C5] text-[#163515] text-xs font-semibold uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-sm">spa</span>
+<span>Strategic Framework</span>
+</div>
+<h2 class="font-headline font-bold text-3xl sm:text-4xl text-[#163515] tracking-tight">
+            Our Pillars of Impact
+          </h2>
+<p class="mt-3 text-neutral-600 text-base sm:text-lg">
+            Five core mandates designed to dismantle ecological apathy and spark grassroots responsibility among India's rising generation.
+          </p>
+</div>
+<!-- 5-Card Layout (3 top, 2 centered bottom) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Objective 1 -->
+<div class="p-8 rounded-2xl bg-[#F9FAF7] border border-neutral-200/80 hover:border-emerald-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">campaign</span>
+</div>
+<span class="text-xs font-bold text-amber-600 tracking-wider uppercase">Pillar 01</span>
+<h3 class="font-headline font-bold text-xl text-[#163515] mt-1 mb-3">Advocate for Urgent Climate Action</h3>
+<p class="text-neutral-600 text-sm leading-relaxed">
+                Driving youth representation in policy dialogues, educational summits, and municipal city planning sessions across Karnataka.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-neutral-200/70 flex items-center justify-between text-xs font-medium text-emerald-800">
+<span>Campus Dialogues</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Objective 2 -->
+<div class="p-8 rounded-2xl bg-[#F9FAF7] border border-neutral-200/80 hover:border-emerald-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#D0E8C5] text-[#163515] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">park</span>
+</div>
+<span class="text-xs font-bold text-amber-600 tracking-wider uppercase">Pillar 02</span>
+<h3 class="font-headline font-bold text-xl text-[#163515] mt-1 mb-3">Restoration of Natural Resources</h3>
+<p class="text-neutral-600 text-sm leading-relaxed">
+                Revitalizing Bangalore’s historical lakes, afforesting degraded urban corridors, and protecting local native flora and biodiversity.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-neutral-200/70 flex items-center justify-between text-xs font-medium text-emerald-800">
+<span>Ecosystem Rebirth</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Objective 3 -->
+<div class="p-8 rounded-2xl bg-[#F9FAF7] border border-neutral-200/80 hover:border-emerald-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">air</span>
+</div>
+<span class="text-xs font-bold text-amber-600 tracking-wider uppercase">Pillar 03</span>
+<h3 class="font-headline font-bold text-xl text-[#163515] mt-1 mb-3">Relentless Voice Against Pollution</h3>
+<p class="text-neutral-600 text-sm leading-relaxed">
+                Combating air quality degradation, untreated effluent disposal into water bodies, and microplastic contamination with fearless reporting.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-neutral-200/70 flex items-center justify-between text-xs font-medium text-emerald-800">
+<span>Air &amp; Water Audits</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Objective 4 -->
+<div class="p-8 rounded-2xl bg-[#F9FAF7] border border-neutral-200/80 hover:border-emerald-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between group lg:col-span-1 lg:col-start-1">
+<div>
+<div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">autorenew</span>
+</div>
+<span class="text-xs font-bold text-amber-600 tracking-wider uppercase">Pillar 04</span>
+<h3 class="font-headline font-bold text-xl text-[#163515] mt-1 mb-3">Zero-Waste &amp; Recycling Systems</h3>
+<p class="text-neutral-600 text-sm leading-relaxed">
+                Implementing decentralised wet-waste composting, upcycled clothing drives, and end-to-end dry segregation models in student hostels.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-neutral-200/70 flex items-center justify-between text-xs font-medium text-emerald-800">
+<span>Circular Action</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Objective 5 -->
+<div class="p-8 rounded-2xl bg-[#F9FAF7] border border-neutral-200/80 hover:border-emerald-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between group lg:col-span-2">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#C7E9C0] text-[#163515] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<span class="text-xs font-bold text-amber-600 tracking-wider uppercase">Pillar 05</span>
+<h3 class="font-headline font-bold text-xl text-[#163515] mt-1 mb-3">Promoting Sustainable Brands &amp; Activism</h3>
+<p class="text-neutral-600 text-sm leading-relaxed max-w-xl">
+                Amplifying transparent ethical businesses, green student entrepreneurs, and grassroots activist collectives across digital channels to mainstream conscious consumerism.
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-neutral-200/70 flex items-center justify-between text-xs font-medium text-emerald-800">
+<span>Digital Amplification &amp; Eco-Marketplace Endorsements</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 4. THE 5 AVANI STUDENT TEAMS ==================== -->
+<section class="py-20 px-6 lg:px-12 max-w-7xl mx-auto" id="teams">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D0E8C5] text-[#163515] text-xs font-semibold uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>Student Leadership Structure</span>
+</div>
+<h2 class="font-headline font-bold text-3xl sm:text-4xl text-[#163515] tracking-tight">
+            The 5 Avani Student Teams
+          </h2>
+<p class="text-neutral-600 mt-2 text-base max-w-xl">
+            Avani is 100% powered by college students collaborating across multidisciplinary units. Select a team to explore key responsibilities.
+          </p>
+</div>
+<div class="mt-4 md:mt-0">
+<a class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-800 hover:text-emerald-950" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>View Open Cohort Positions</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Tab Buttons -->
+<div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scroll mb-8">
+<button class="team-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all whitespace-nowrap bg-[#163515] text-white shadow-sm" id="tab-research" onclick="switchTeam('research')">
+          Research &amp; Writing
+        </button>
+<button class="team-tab-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200" id="tab-design" onclick="switchTeam('design')">
+          Design &amp; Visuals
+        </button>
+<button class="team-tab-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200" id="tab-hr" onclick="switchTeam('hr')">
+          HR &amp; Communications
+        </button>
+<button class="team-tab-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200" id="tab-social" onclick="switchTeam('social')">
+          Social Media
+        </button>
+<button class="team-tab-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200" id="tab-events" onclick="switchTeam('events')">
+          Event Planning
+        </button>
+</div>
+<!-- Tab Content Panels -->
+<div class="bg-white rounded-3xl border border-neutral-200/80 p-8 lg:p-12 shadow-sm min-h-[380px] relative transition-all">
+<!-- 1. Research & Writing -->
+<div class="team-content-panel grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="content-research">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-semibold">Editorial &amp; Investigation</span>
+<h3 class="font-headline font-bold text-2xl sm:text-3xl text-[#163515]">Research &amp; Writing Team</h3>
+<p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+              The intellectual backbone of Avani. This team conducts investigative analyses on urban Bengaluru hydrology, biodiversity indexes, and national environmental bills. They synthesize complex scientific climate reports into accessible, punchy Substack essays and policy briefs.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-3">
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Core Skills</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Policy Analysis, Substack Longforms, Fact-checking</p>
+</div>
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Key Highlight</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">18 Published climate deep-dives with 12k+ reads</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-[#F9FAF7] p-6 rounded-2xl border border-neutral-200/70 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</span>
+<div>
+<p class="text-sm font-bold text-neutral-900">Current Cohort Project</p>
+<p class="text-xs text-neutral-500">Bangalore Lake Encroachment Audit</p>
+</div>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed italic mb-4">
+              "We translate dense academic climate jargon into actionable campus manifestos that spark student agitation."
+            </p>
+<a class="text-xs font-semibold text-emerald-800 hover:text-emerald-950 flex items-center gap-1" href="#publications">
+              Browse Team Substack Publications <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 2. Design -->
+<div class="team-content-panel hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="content-design">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-semibold">Visual Identity &amp; Creative</span>
+<h3 class="font-headline font-bold text-2xl sm:text-3xl text-[#163515]">Design &amp; Visuals Team</h3>
+<p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+              Crafting high-impact graphics, campaign visual systems, print zines, and activist merchandise. The design squad ensures that eco-advocacy looks modern, compelling, and distinctly energetic rather than clinical or depressing.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-3">
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Core Skills</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Figma, Typography, Infographics, Print Art</p>
+</div>
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Key Highlight</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Designed 120+ campaign banners and festival stalls</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-[#F9FAF7] p-6 rounded-2xl border border-neutral-200/70 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</span>
+<div>
+<p class="text-sm font-bold text-neutral-900">Current Cohort Project</p>
+<p class="text-xs text-neutral-500">2026 Climate Zine: 'Urban Sprouts'</p>
+</div>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed italic mb-4">
+              "We make environmental consciousness aesthetically irresistible for Bangalore's youth."
+            </p>
+<span class="text-xs font-semibold text-emerald-800 flex items-center gap-1">
+              Figma &amp; Creative Suite Workflow
+            </span>
+</div>
+</div>
+<!-- 3. HR & Communications -->
+<div class="team-content-panel hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="content-hr">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-semibold">Culture &amp; Network</span>
+<h3 class="font-headline font-bold text-2xl sm:text-3xl text-[#163515]">HR &amp; Communications Team</h3>
+<p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+              The heartbeat of member experience. They direct cohort recruitment, onboarding cycles, inter-team synergy, and external institutional partnerships with schools and universities throughout Bengaluru.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-3">
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Core Skills</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Talent Scouting, Interviewing, Inter-Campus PR</p>
+</div>
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Key Highlight</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Recruited 500+ active student leaders across 14 campuses</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-[#F9FAF7] p-6 rounded-2xl border border-neutral-200/70 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+<div>
+<p class="text-sm font-bold text-neutral-900">Current Cohort Project</p>
+<p class="text-xs text-neutral-500">Cohort 2026 Interview Matrix</p>
+</div>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed italic mb-4">
+              "Ensuring every volunteer finds their psychological safety and meaningful leadership mandate."
+            </p>
+<a class="text-xs font-semibold text-emerald-800 hover:text-emerald-950 flex items-center gap-1" href="#apply">
+              Apply to join this team <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 4. Social Media -->
+<div class="team-content-panel hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="content-social">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-semibold">Digital Activism</span>
+<h3 class="font-headline font-bold text-2xl sm:text-3xl text-[#163515]">Social Media Team</h3>
+<p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+              Amplifying eco-awareness across Instagram, LinkedIn, and YouTube Shorts. From viral street interviews on single-use plastics to spotlights on local sustainable enterprises, this squad drives digital engagement.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-3">
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Core Skills</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Short-form Video, Social Strategy, Community Moderation</p>
+</div>
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Key Highlight</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">150,000+ monthly impressions on Instagram (@avani_yocc)</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-[#F9FAF7] p-6 rounded-2xl border border-neutral-200/70 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</span>
+<div>
+<p class="text-sm font-bold text-neutral-900">Current Campaign</p>
+<p class="text-xs text-neutral-500">#BangaloreRefills &amp; Zero-Waste College Life</p>
+</div>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed italic mb-4">
+              "We transform passive doom-scrolling into dynamic climate agency with real-world ripple effects."
+            </p>
+<a class="text-xs font-semibold text-emerald-800 hover:text-emerald-950 flex items-center gap-1" href="https://www.instagram.com/avani_yocc" rel="noopener noreferrer" target="_blank">
+              Visit Instagram Channel <span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- 5. Event Planning -->
+<div class="team-content-panel hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="content-events">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-semibold">On-Ground Logistics</span>
+<h3 class="font-headline font-bold text-2xl sm:text-3xl text-[#163515]">Event Planning Team</h3>
+<p class="text-neutral-600 leading-relaxed text-sm sm:text-base">
+              The boots-on-the-ground operational powerhouse. They coordinate venue permissions, donation logistics, upcycling booths at college fests, lake clean-ups, and hands-on zero-waste community workshops.
+            </p>
+<div class="grid grid-cols-2 gap-4 pt-3">
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Core Skills</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Crowd Logistics, Vendor Sourcing, Field Safety</p>
+</div>
+<div class="p-3.5 bg-[#F9FAF7] rounded-xl border border-neutral-100">
+<p class="text-xs text-neutral-500 font-medium">Key Highlight</p>
+<p class="font-semibold text-neutral-900 text-sm mt-0.5">Executed 8 flagship on-ground community drives</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-[#F9FAF7] p-6 rounded-2xl border border-neutral-200/70 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</span>
+<div>
+<p class="text-sm font-bold text-neutral-900">Upcoming Activation</p>
+<p class="text-xs text-neutral-500">Monsoon Sapling &amp; Seed Bomb Drive 2026</p>
+</div>
+</div>
+<p class="text-xs text-neutral-600 leading-relaxed italic mb-4">
+              "From securing municipal permissions to handing out cloth bags, we make real things happen in physical space."
+            </p>
+<a class="text-xs font-semibold text-emerald-800 hover:text-emerald-950 flex items-center gap-1" href="#events">
+              Explore past events <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 5. REALIZED EVENTS SHOWCASE ==================== -->
+<section class="py-20 px-6 lg:px-12 bg-white border-y border-neutral-200/60" id="events">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D0E8C5] text-[#163515] text-xs font-semibold uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+<span>Proven Track Record</span>
+</div>
+<h2 class="font-headline font-bold text-3xl sm:text-4xl text-[#163515] tracking-tight">
+              Realized Events &amp; Field Drives
+            </h2>
+<p class="text-neutral-600 mt-2 text-base max-w-xl">
+              Tangible community mobilization across Bangalore schools, colleges, and grassroots social organizations.
+            </p>
+</div>
+</div>
+<!-- 4-Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: DPS Donation Drive -->
+<div class="bg-[#F9FAF7] rounded-2xl border border-neutral-200/80 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-200 group">
+<div class="h-44 overflow-hidden relative bg-neutral-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Young Indian high school and college students organizing neatly folded clothing and school supplies in cardboard boxes inside a bright school auditorium. Soft morning sunlight illuminates their collaborative teamwork. Realistic documentary style photography celebrating youth service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDieZzMBnZS7MB2zat4FipSceLFG_JTya9baDpzNE9CqjmyXozZrRsuxXreA9H_ZPQRKZ0RikICm1ymVjaoNOf4Z_CfyUIjwqg_d_GswPjx4PXP6Zqw0TNOxvfbGXgQ5bBKzJKkxgGXnMjVGYgUIt-s8JU8yKRP3PH3gk7YpCr-U0TR9Ig3r1Se8IwpsK2yFc1MvwnsXMwcff2hfyCq3fArhHvC0jd08xzlqx3nj4IITFNXXX9dsuAvJEsQqp3hveiAxYVaeMePXa8K"/>
+<span class="absolute top-3 left-3 bg-[#163515] text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm">
+                Campus Drive
+              </span>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold text-neutral-400">Delhi Public School, Bangalore</span>
+<h3 class="font-headline font-bold text-lg text-[#163515] mt-1 mb-2">DPS Donation Drive</h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                  Mobilized campus faculty, parents, and student bodies to gather and redistribute essential daily necessities, warm clothing, and stationery.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-200 flex items-center justify-between text-xs">
+<span class="font-bold text-amber-600">380+ kgs Donated</span>
+<span class="text-neutral-500">Oct 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Invictus Denim Stall -->
+<div class="bg-[#F9FAF7] rounded-2xl border border-neutral-200/80 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-200 group">
+<div class="h-44 overflow-hidden relative bg-neutral-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A trendy vibrant university eco-fair stall displaying creative upcycled denim tote bags, pouches, and patchwork jackets. Creative Indian students showcasing sustainable upcycling craftsmanship in a sunlit college courtyard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxe0JXM9q-hg93vXEjdhsw-Cg_FDFyx9VE_pIf0KkD89XMBcosGFFc8j2HCVi-IpHhNvYHlCR-giIlmHJ3hHFcBwa93ECvw5L8K5xKdYXRfx7e1prKrTDYw05hfIMosRRWXFMdjKJw5iXlAg_lFb8SpdndB4oUKM_WRSIN61FDxT5_Q0bbPkX4_nLEkzVkp6qZw1GYk95u0LTM2h2-K8r_b9t5mCWr_Pi9lBSYhvPP5-PHyIgtcRy2PNy_1-i2114fdn5qW_2qgsah"/>
+<span class="absolute top-3 left-3 bg-amber-500 text-neutral-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                Circular Fashion
+              </span>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold text-neutral-400">Invictus Youth Fest</span>
+<h3 class="font-headline font-bold text-lg text-[#163515] mt-1 mb-2">Invictus Denim Stall</h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                  Upcycled denim showcase demonstrating student micro-entrepreneurship and circular textile economy by repurposing discarded jeans into modern tote bags.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-200 flex items-center justify-between text-xs">
+<span class="font-bold text-emerald-800">120+ Garments Repurposed</span>
+<span class="text-neutral-500">Nov 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Orphanage Donation Drive (with Aarogi) -->
+<div class="bg-[#F9FAF7] rounded-2xl border border-neutral-200/80 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-200 group">
+<div class="h-44 overflow-hidden relative bg-neutral-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Youth volunteers sitting in a circle with happy children in a warm community shelter in Bangalore. They are coloring together with non-toxic art supplies and sharing books under soft warm interior lighting. Heartwarming community interaction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Q4wtJpTFtzHg1C0srjV7FdKnb_C2vJATZWaPWqGEkY07dfADADZjS0peIujSNZVLewmuf2CQhyo1Y6HXa68djznxp99KUMaM-vtZCa08s7E8C0KhaT7kVcU9u4fFC2RWwQaLiflkrjCNdXcCQDHDd11F00VfYQgn3aDRO_kYJOgmZN0osZw4Wole7rrvhxsLPjj9LsfUE9kP_k_Ysyzhdo4DIj5GRKp3z9uKwmNKBLgHz0Ru3iiJ-rKGPlhyKhvZRH9Nje4Jpj-q"/>
+<span class="absolute top-3 left-3 bg-[#D0E8C5] text-[#163515] text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">
+                Community Partner
+              </span>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold text-neutral-400">In Partnership with Aarogi</span>
+<h3 class="font-headline font-bold text-lg text-[#163515] mt-1 mb-2">Orphanage Donation Drive</h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                  Grassroots humanitarian partnership delivering educational kits, hygienic commodities, and heartfelt creative storytelling workshops to underprivileged children.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-200 flex items-center justify-between text-xs">
+<span class="font-bold text-amber-600">85 Children Supported</span>
+<span class="text-neutral-500">Dec 2025</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Beyond the Waste Workshop -->
+<div class="bg-[#F9FAF7] rounded-2xl border border-neutral-200/80 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-200 group">
+<div class="h-44 overflow-hidden relative bg-neutral-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up of hands crafting indoor planters and functional desk organizers from discarded glass jars and coconut coir. High key clean aesthetic with eco-friendly natural materials on a wooden studio workshop table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxhNPZN8dtE7UbAMnwOBfWeAJJBhKQ1be3LAXS2rUTJUY6WKPyC-UvaQqdPRQwSAWUX3yA3gygZjerG9u4dYm7C39HYwY--o9Sohpe5wCVOcoalmEvLl_-tJsIonxcPsL5mCex3MdAYACFCZzVBLPleADwP3QUvtVvsm0SNZK7ypT_bwck9wde1b-YWXWG8CHNxSqqDlP8YCdrLlMDTi25G_5hI9xk_FmUp8rv6GpsLZ9KEaWrjX1nH2YuDUJNINY3Oaxa3z7YmwiM"/>
+<span class="absolute top-3 left-3 bg-emerald-800 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm">
+                Hands-on Workshop
+              </span>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="text-xs font-semibold text-neutral-400">Experiential Skill Lab</span>
+<h3 class="font-headline font-bold text-lg text-[#163515] mt-1 mb-2">Beyond the Waste Workshop</h3>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                  Hands-on upcycling workshop turning everyday discarded packaging, plastic caps, and cardboard into functional botanical planters and art pieces.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-neutral-200 flex items-center justify-between text-xs">
+<span class="font-bold text-emerald-800">210 Participants</span>
+<span class="text-neutral-500">Jan 2026</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 6. INTERACTIVE '11 WAYS TO HELP THE CLIMATE' CHECKLIST ==================== -->
+<section class="py-20 px-6 lg:px-12 max-w-7xl mx-auto" id="checklist">
+<div class="bg-gradient-to-br from-[#163515] to-[#1e4a1c] text-white rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+<!-- Botanical Background Accent Deco -->
+<div class="absolute right-0 top-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl mb-10">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D0E8C5] text-[#163515] text-xs font-semibold uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-sm">checklist</span>
+<span>Gamified Action Hub</span>
+</div>
+<h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            11 Ways to Help the Climate Today
+          </h2>
+<p class="text-emerald-100/90 mt-2 text-sm sm:text-base leading-relaxed">
+            Check off daily sustainable habits you practice. Watch your Eco Score level up in real time!
+          </p>
+<!-- Interactive Scorecard Tracker -->
+<div class="mt-6 p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+<div>
+<span class="text-xs text-emerald-200 uppercase font-semibold tracking-wider">Your Eco Status</span>
+<div class="text-lg font-bold font-headline text-white mt-0.5" id="eco-status-title">
+                  Rising Seedling 🌱
+                </div>
+</div>
+<div class="text-right">
+<span class="text-2xl font-extrabold font-headline text-amber-300" id="progress-fraction">0/11</span>
+<span class="text-xs text-emerald-200 ml-1">Completed</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-black/30 rounded-full h-3 overflow-hidden p-0.5">
+<div class="bg-gradient-to-r from-amber-400 to-[#D0E8C5] h-full rounded-full transition-all duration-300 w-0" id="progress-bar-fill"></div>
+</div>
+</div>
+</div>
+<!-- 11 Items Checklist Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-2" id="climate-checklist-container">
+<!-- Item 1 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              1. Switch off lights, fans, and electronics when leaving a room.
+            </span>
+</label>
+<!-- Item 2 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              2. Unplug idle chargers and electronics to stop phantom load.
+            </span>
+</label>
+<!-- Item 3 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              3. Turn off tap while brushing teeth or shaving.
+            </span>
+</label>
+<!-- Item 4 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              4. Carry reusable water bottle, cloth bag, and food container.
+            </span>
+</label>
+<!-- Item 5 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              5. Compost vegetable peels and kitchen scraps into plant manure.
+            </span>
+</label>
+<!-- Item 6 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              6. Plan meals and utilize leftovers to eliminate food waste.
+            </span>
+</label>
+<!-- Item 7 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              7. Repair, reuse, or donate clothing and domestic appliances.
+            </span>
+</label>
+<!-- Item 8 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              8. Run washing machine or dishwasher on full loads only.
+            </span>
+</label>
+<!-- Item 9 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              9. Decline single-use plastics, extra cutlery, and unnecessary receipts.
+            </span>
+</label>
+<!-- Item 10 -->
+<label class="checklist-item flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              10. Repurpose glass jars and tins for household kitchen storage.
+            </span>
+</label>
+<!-- Item 11 -->
+<label class="checklist-item md:col-span-2 flex items-start gap-3.5 p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer transition-colors select-none">
+<input class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-400 w-4 h-4 bg-white/20 border-white/30 cursor-pointer" onchange="updateEcoScore()" type="checkbox"/>
+<span class="text-xs sm:text-sm font-medium text-emerald-50 leading-snug">
+              11. Print double-sided and prioritize digital-first study notes and receipts.
+            </span>
+</label>
+</div>
+</div>
+</section>
+<!-- ==================== 7. PUBLICATIONS & SUBSTACK ARTICLES ==================== -->
+<section class="py-20 px-6 lg:px-12 bg-white border-y border-neutral-200/60" id="publications">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D0E8C5] text-[#163515] text-xs font-semibold uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-sm">menu_book</span>
+<span>Student Journal</span>
+</div>
+<h2 class="font-headline font-bold text-3xl sm:text-4xl text-[#163515] tracking-tight">
+              Publications &amp; Substack Notes
+            </h2>
+<p class="text-neutral-600 mt-2 text-base max-w-xl">
+              Original environmental journalism, policy investigations, and grassroots student viewpoints published by the Avani Research team.
+            </p>
+</div>
+<div class="mt-4 md:mt-0">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/15 text-amber-900 hover:bg-amber-500/25 text-sm font-semibold transition-colors" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank">
+<span>Subscribe on Substack</span>
+<span class="material-symbols-outlined text-base">mark_email_read</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article Note 1 -->
+<article class="p-7 rounded-2xl bg-[#F9FAF7] border border-neutral-200/90 flex flex-col justify-between hover:border-emerald-300 hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between text-xs text-neutral-400 mb-4">
+<span class="font-semibold text-emerald-800 bg-[#D0E8C5]/70 px-2.5 py-0.5 rounded-full">Clean Tech</span>
+<span>4 min read</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-[#163515] group-hover:text-emerald-700 transition-colors leading-snug mb-3">
+<a href="https://substack.com/@avaniyocc/note/p-216575497?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+                  Youth Perspectives on India's Renewable Horizon
+                </a>
+</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                An analysis of Karnataka's solar energy push and how university students can spearhead rooftop solar transitions on campus estates.
+              </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-950 pt-4 border-t border-neutral-200/70" href="https://substack.com/@avaniyocc/note/p-216575497?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<span>Read Full Note</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+<!-- Article Note 2 -->
+<article class="p-7 rounded-2xl bg-[#F9FAF7] border border-neutral-200/90 flex flex-col justify-between hover:border-emerald-300 hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between text-xs text-neutral-400 mb-4">
+<span class="font-semibold text-emerald-800 bg-[#D0E8C5]/70 px-2.5 py-0.5 rounded-full">Urban Ecology</span>
+<span>6 min read</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-[#163515] group-hover:text-emerald-700 transition-colors leading-snug mb-3">
+<a href="https://substack.com/@avaniyocc/note/p-223896247?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+                  Bangalore's Lakes: Restoring Urban Lifelines
+                </a>
+</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                Investigating stormwater drains, Bellandur lake rejuvenation status, and citizen community water monitoring setups across Bangalore.
+              </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-950 pt-4 border-t border-neutral-200/70" href="https://substack.com/@avaniyocc/note/p-223896247?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<span>Read Full Note</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+<!-- Article Note 3 -->
+<article class="p-7 rounded-2xl bg-[#F9FAF7] border border-neutral-200/90 flex flex-col justify-between hover:border-emerald-300 hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between text-xs text-neutral-400 mb-4">
+<span class="font-semibold text-emerald-800 bg-[#D0E8C5]/70 px-2.5 py-0.5 rounded-full">Lifestyle</span>
+<span>5 min read</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-[#163515] group-hover:text-emerald-700 transition-colors leading-snug mb-3">
+<a href="https://substack.com/@avaniyocc/note/p-217629092?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+                  Circular Economy in Everyday College Life
+                </a>
+</h3>
+<p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                Practical zero-waste strategies for dorm living, hostel canteens, student stationery swaps, and budget-friendly conscious dining.
+              </p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-950 pt-4 border-t border-neutral-200/70" href="https://substack.com/@avaniyocc/note/p-217629092?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<span>Read Full Note</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+</div>
+</div>
+</section>
+<!-- ==================== 8. RECRUITMENT & APPLICATION SECTION ==================== -->
+<section class="py-20 px-6 lg:px-12 max-w-7xl mx-auto" id="apply">
+<div class="bg-[#F9FAF7] border border-neutral-200 rounded-3xl p-8 lg:p-14 shadow-sm relative overflow-hidden">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="px-3.5 py-1.5 bg-[#D0E8C5] text-[#163515] rounded-full text-xs font-bold uppercase tracking-wider">Cohort 2026 Admissions</span>
+<h2 class="font-headline font-extrabold text-3xl sm:text-4xl text-[#163515] mt-3 tracking-tight">
+            How to Apply for Avani Cohort 2026
+          </h2>
+<p class="text-neutral-600 mt-3 text-sm sm:text-base">
+            We are looking for passionate, driven college students in Bangalore ready to transform climatic grief into organized community action.
+          </p>
+</div>
+<!-- 5-Step Numbered Roadmap -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-white p-5 rounded-2xl border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<span class="w-8 h-8 rounded-full bg-[#163515] text-white flex items-center justify-center font-bold text-sm mb-3">1</span>
+<h4 class="font-headline font-bold text-sm text-neutral-900 mb-1.5">Fill Out Form</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                Provide academic background, college ID, and preferred team choices with precision.
+              </p>
+</div>
+<span class="text-[11px] font-semibold text-emerald-700 mt-4">Step 01</span>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-5 rounded-2xl border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<span class="w-8 h-8 rounded-full bg-[#163515] text-white flex items-center justify-center font-bold text-sm mb-3">2</span>
+<h4 class="font-headline font-bold text-sm text-neutral-900 mb-1.5">File Format</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                Submit files using standard naming convention: <code class="bg-neutral-100 text-neutral-800 px-1 py-0.5 rounded font-mono text-[10px]">NAME_AVANI_SUBMISSION</code>.
+              </p>
+</div>
+<span class="text-[11px] font-semibold text-emerald-700 mt-4">Step 02</span>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-5 rounded-2xl border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<span class="w-8 h-8 rounded-full bg-[#163515] text-white flex items-center justify-center font-bold text-sm mb-3">3</span>
+<h4 class="font-headline font-bold text-sm text-neutral-900 mb-1.5">Shortlist Round</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                Shortlisted applicants attend a 15-minute informal virtual interview with team leads.
+              </p>
+</div>
+<span class="text-[11px] font-semibold text-emerald-700 mt-4">Step 03</span>
+</div>
+<!-- Step 4 -->
+<div class="bg-white p-5 rounded-2xl border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<span class="w-8 h-8 rounded-full bg-[#163515] text-white flex items-center justify-center font-bold text-sm mb-3">4</span>
+<h4 class="font-headline font-bold text-sm text-neutral-900 mb-1.5">Placement</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                Core Team assigns role matching your skills across Research, Design, PR, Social, or Events.
+              </p>
+</div>
+<span class="text-[11px] font-semibold text-emerald-700 mt-4">Step 04</span>
+</div>
+<!-- Step 5 -->
+<div class="bg-white p-5 rounded-2xl border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<span class="w-8 h-8 rounded-full bg-amber-500 text-neutral-900 flex items-center justify-center font-bold text-sm mb-3">5</span>
+<h4 class="font-headline font-bold text-sm text-neutral-900 mb-1.5">Action Leadership</h4>
+<p class="text-xs text-neutral-600 leading-relaxed">
+                Voluntary, unpaid student-led climate action empowering you with real leadership skills.
+              </p>
+</div>
+<span class="text-[11px] font-semibold text-amber-700 mt-4">Step 05</span>
+</div>
+</div>
+<!-- Big CTA Application Card -->
+<div class="mt-12 text-center pt-8 border-t border-neutral-200 flex flex-col items-center">
+<a class="px-8 py-4 rounded-full bg-[#163515] text-white hover:bg-[#1f4a1e] active:scale-95 text-base font-headline font-bold shadow-lg hover:shadow-xl transition-all duration-150 inline-flex items-center gap-3" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>Complete Application Form</span>
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+<p class="text-xs text-neutral-500 mt-3">Applications reviewed on a rolling basis. Free to join for all college students.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- ==================== 9. FOOTER (Shared Component Mapping) ==================== -->
+<footer class="w-full py-16 px-6 lg:px-12 mt-auto bg-neutral-900 text-neutral-300 border-t border-neutral-800">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+<!-- Brand Col -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-emerald-900/60 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">eco</span>
+</span>
+<span class="font-display text-2xl font-bold tracking-tight text-white">Avani</span>
+</div>
+<p class="font-body text-sm leading-relaxed text-neutral-400 max-w-sm">
+          Bangalore's youth-led climate collective uniting students across campuses to advocate for environmental restoration, pollution reduction, and conscious living.
+        </p>
+<div class="pt-2 text-xs text-neutral-400 space-y-1.5">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">mail</span>
+<a class="hover:text-emerald-400 transition-colors" href="mailto:avaniyocc@gmail.com">avaniyocc@gmail.com</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">call</span>
+<a class="hover:text-emerald-400 transition-colors" href="tel:+918050931769">+91 8050931769</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-base">location_on</span>
+<span>Bangalore, Karnataka, India</span>
+</p>
+</div>
+</div>
+<!-- Quick Links 1 -->
+<div>
+<h4 class="font-headline font-semibold text-white text-sm mb-4">Collective</h4>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="#objectives">About Us</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="#objectives">Objectives</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="#teams">Student Teams</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="#events">Past Impact</a></li>
+</ul>
+</div>
+<!-- Quick Links 2 -->
+<div>
+<h4 class="font-headline font-semibold text-white text-sm mb-4">Resources</h4>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="#checklist">Action Checklist</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank">Substack</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">Cohort 2026 Application</a></li>
+<li><a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="mailto:avaniyocc@gmail.com">Contact &amp; Inquiries</a></li>
+</ul>
+</div>
+<!-- Social & Connect -->
+<div>
+<h4 class="font-headline font-semibold text-white text-sm mb-4">Connect</h4>
+<div class="flex flex-col gap-2.5 text-sm">
+<a class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center gap-2" href="https://www.instagram.com/avani_yocc" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">photo_camera</span>
+<span>Instagram (@avani_yocc)</span>
+</a>
+<a class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center gap-2" href="https://www.linkedin.com/company/avaniyocc/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">groups</span>
+<span>LinkedIn</span>
+</a>
+<a class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center gap-2" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">article</span>
+<span>Substack</span>
+</a>
+<a class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-base">policy</span>
+<span>Privacy Policy</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Copyright Sub-bar -->
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+<p>© 2026 Avani Climate Collective. Rooted in Bangalore, acting for Earth.</p>
+<div class="flex items-center gap-4">
+<span>Avani Youth Organization for Climate Change</span>
+</div>
+</div>
+</footer>
+<!-- ==================== MICRO-INTERACTION SCRIPT ==================== -->
+<script>
+    // 1. Team Tab Switcher Logic
+    const teamTabs = ['research', 'design', 'hr', 'social', 'events'];
+    function switchTeam(teamId) {
+      teamTabs.forEach(id => {
+        const btn = document.getElementById('tab-' + id);
+        const panel = document.getElementById('content-' + id);
+        if (id === teamId) {
+          btn.className = "team-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all whitespace-nowrap bg-[#163515] text-white shadow-sm";
+          panel.classList.remove('hidden');
+          panel.classList.add('grid');
+        } else {
+          btn.className = "team-tab-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all whitespace-nowrap bg-white text-neutral-600 hover:text-neutral-900 border border-neutral-200";
+          panel.classList.add('hidden');
+          panel.classList.remove('grid');
+        }
+      });
+    }
+
+    // 2. Interactive Gamified 11-Action Checklist
+    function updateEcoScore() {
+      const container = document.getElementById('climate-checklist-container');
+      const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          checkedCount++;
+          cb.closest('.checklist-item').classList.add('bg-white/20');
+        } else {
+          cb.closest('.checklist-item').classList.remove('bg-white/20');
+        }
+      });
+
+      const total = checkboxes.length;
+      const percentage = (checkedCount / total) * 100;
+
+      // Update fraction
+      document.getElementById('progress-fraction').textContent = `${checkedCount}/${total}`;
+
+      // Update progress bar
+      document.getElementById('progress-bar-fill').style.width = `${percentage}%`;
+
+      // Update Title & Badge
+      const statusTitle = document.getElementById('eco-status-title');
+      if (checkedCount === 0) {
+        statusTitle.textContent = "Rising Seedling 🌱";
+      } else if (checkedCount <= 3) {
+        statusTitle.textContent = "Eco Explorer 🌿";
+      } else if (checkedCount <= 7) {
+        statusTitle.textContent = "Climate Champion 🌳";
+      } else if (checkedCount <= 10) {
+        statusTitle.textContent = "Guardian of Avani 🌎";
+      } else {
+        statusTitle.textContent = "Zero-Waste Legend 🏆✨";
+      }
+    }
+  </script>
+</body></html>

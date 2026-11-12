@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AVANI // Bangalore Youth Climate Action</title>
+<!-- Google Fonts: Source Serif 4, Space Grotesk, Inter, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#4be277",
+            "on-error-container": "#ffdad6",
+            "outline-variant": "#3d4a3d",
+            "surface-container-low": "#121e13",
+            "on-secondary-fixed": "#2b1700",
+            "on-primary": "#003915",
+            "background": "#0a160b",
+            "secondary-container": "#cb8011",
+            "primary-fixed-dim": "#4ae176",
+            "surface-variant": "#2b382b",
+            "outline": "#869585",
+            "surface-bright": "#303c2f",
+            "on-tertiary-fixed-variant": "#005227",
+            "on-secondary-container": "#3f2300",
+            "on-primary-fixed": "#002109",
+            "inverse-primary": "#006e2f",
+            "primary-container": "#22c55e",
+            "on-surface": "#d8e7d4",
+            "surface-dim": "#0a160b",
+            "on-secondary-fixed-variant": "#673d00",
+            "surface-container": "#162217",
+            "surface-container-lowest": "#061107",
+            "on-tertiary-fixed": "#00210c",
+            "on-tertiary": "#003919",
+            "tertiary-fixed-dim": "#4de082",
+            "surface-container-high": "#212d21",
+            "tertiary": "#4de182",
+            "tertiary-container": "#26c46a",
+            "on-tertiary-container": "#004a22",
+            "on-surface-variant": "#bccbb9",
+            "on-error": "#690005",
+            "on-primary-fixed-variant": "#005321",
+            "on-background": "#d8e7d4",
+            "secondary-fixed-dim": "#ffb867",
+            "secondary": "#ffb867",
+            "on-primary-container": "#004b1e",
+            "surface-container-highest": "#2b382b",
+            "on-secondary": "#482900",
+            "inverse-surface": "#d8e7d4",
+            "inverse-on-surface": "#273427",
+            "secondary-fixed": "#ffddbb",
+            "tertiary-fixed": "#6dfe9c",
+            "primary-fixed": "#6bff8f",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "surface-tint": "#4ae176",
+            "surface": "#0a160b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.75rem",
+            "margin": "3rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.5rem",
+            "margin-sm": "1.25rem"
+          },
+          "fontFamily": {
+            "telemetry-sm": ["JetBrains Mono"],
+            "display-mobile": ["\"Source Serif 4\""],
+            "headline-lg-mobile": ["\"Source Serif 4\""],
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "label-md": ["Space Grotesk"],
+            "headline-lg": ["\"Source Serif 4\""],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Space Grotesk"],
+            "telemetry-lg": ["JetBrains Mono"],
+            "display": ["\"Source Serif 4\""],
+            "headline-md": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "telemetry-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "telemetry-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Contour & HUD background patterns */
+    .topographic-lines {
+      background-image: radial-gradient(circle at 50% 15%, rgba(34, 197, 94, 0.08) 0%, transparent 60%),
+                        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
+    }
+    .frosted-glass {
+      background: rgba(15, 36, 16, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(243, 244, 246, 0.08);
+    }
+    .frosted-glass-active {
+      background: rgba(19, 46, 22, 0.75);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(34, 197, 94, 0.28);
+      box-shadow: 0 0 32px rgba(34, 197, 94, 0.09);
+    }
+    .radar-sweep {
+      animation: sweep 8s linear infinite;
+    }
+    @keyframes sweep {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen topographic-lines relative">
+<!-- Section 1: Editorial Masthead / Header -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 docked full-width top-0 sticky z-50 shadow-sm">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-3 max-w-7xl mx-auto">
+<!-- Brand & Status Pill -->
+<div class="flex items-center gap-4">
+<a class="text-headline-sm font-headline-sm tracking-tight text-on-surface dark:text-on-surface font-bold flex items-center gap-2 hover:text-primary transition-colors" href="#">
+<span>AVANI // BANGALORE</span>
+</a>
+<div class="hidden sm:inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-low border border-primary/20 text-telemetry-sm font-telemetry-sm text-primary">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>● VOLUNTEER COHORT OPEN</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-7">
+<a class="text-on-surface-variant hover:text-primary font-medium text-label-md font-label-md transition-colors duration-200" href="#directives">Directives</a>
+<a class="text-on-surface-variant hover:text-primary font-medium text-label-md font-label-md transition-colors duration-200" href="#divisions">Divisions</a>
+<a class="text-on-surface-variant hover:text-primary font-medium text-label-md font-label-md transition-colors duration-200" href="#field-ops">Field Ops</a>
+<a class="text-on-surface-variant hover:text-primary font-medium text-label-md font-label-md transition-colors duration-200" href="#codex">Codex</a>
+<a class="text-on-surface-variant hover:text-primary font-medium text-label-md font-label-md transition-colors duration-200" href="#dispatches">Dispatches</a>
+</nav>
+<!-- Network Actions & Cohort Button -->
+<div class="flex items-center gap-3">
+<!-- External Substack & Socials -->
+<div class="hidden md:flex items-center gap-2 border-r border-outline-variant/40 pr-3">
+<a class="p-1.5 text-on-surface-variant hover:text-primary transition-colors duration-200" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank" title="Substack">
+<span class="material-symbols-outlined text-[18px]">rss_feed</span>
+</a>
+<a class="p-1.5 text-on-surface-variant hover:text-primary transition-colors duration-200" href="https://www.linkedin.com/company/avaniyocc/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="p-1.5 text-on-surface-variant hover:text-primary transition-colors duration-200" href="https://instagram.com/avani_yocc" rel="noopener noreferrer" target="_blank" title="Instagram">
+<span class="material-symbols-outlined text-[18px]">nature_people</span>
+</a>
+</div>
+<a class="px-4 py-2 bg-primary-container text-on-primary font-label-md text-label-md font-bold rounded hover:bg-primary transition-all duration-200 shadow-sm active:scale-95 flex items-center gap-1.5" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>Apply for Cohort 04</span>
+<span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- Section 2: Cinematic Hero Section -->
+<section class="relative pt-16 pb-20 md:pt-28 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+<!-- Glow ambient backdrops -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 right-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Text Dossier Column -->
+<div class="lg:col-span-8 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-secondary-fixed">
+<span class="material-symbols-outlined text-sm text-secondary">explore</span>
+<span>SYSTEM STATION // 12.9716° N, 77.5946° E</span>
+</div>
+<h1 class="text-display-mobile md:text-display font-display text-on-surface tracking-tight leading-tight">
+            Mobilizing a Generation to Restore the Earth.
+          </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Bangalore's pioneering youth collective tackling climate crisis, resource degradation, and waste through investigative research, direct action, and sustainable cultural shifts.
+          </p>
+<!-- Interactive Action Buttons -->
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="px-6 py-3.5 bg-primary-container text-on-primary font-label-md text-label-md font-bold rounded hover:bg-primary transition-all duration-200 shadow-md shadow-primary/20 flex items-center gap-2" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>COMMENCE APPLICATION PROTOCOL</span>
+<span class="material-symbols-outlined text-base">east</span>
+</a>
+<a class="px-6 py-3.5 border border-outline-variant hover:border-primary text-on-surface font-label-md text-label-md rounded transition-all duration-200 bg-surface-container/50 backdrop-blur-sm flex items-center gap-2" href="#directives">
+<span>EXPLORE DIRECTIVES</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</a>
+</div>
+</div>
+<!-- Telemetry HUD & Interactive Radar Card -->
+<div class="lg:col-span-4">
+<div class="frosted-glass-active p-6 rounded-lg relative overflow-hidden">
+<!-- Top HUD Bar -->
+<div class="flex justify-between items-center border-b border-outline-variant/40 pb-3 mb-5">
+<span class="text-telemetry-sm font-telemetry-sm text-primary tracking-widest flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-ping"></span>
+                ACTIVE RADAR [CANOPY]
+              </span>
+<span class="text-telemetry-sm font-telemetry-sm text-on-surface-variant">SYS_OK: 99.8%</span>
+</div>
+<!-- Radar Graphic Representation -->
+<div class="relative w-full aspect-square max-w-[280px] mx-auto flex items-center justify-center my-4">
+<!-- Radar Circles -->
+<div class="absolute inset-0 rounded-full border border-primary/20"></div>
+<div class="absolute inset-8 rounded-full border border-primary/15"></div>
+<div class="absolute inset-16 rounded-full border border-primary/10"></div>
+<div class="absolute inset-24 rounded-full border border-primary/10"></div>
+<!-- Crosshairs -->
+<div class="absolute inset-x-0 top-1/2 h-px bg-primary/20"></div>
+<div class="absolute inset-y-0 left-1/2 w-px bg-primary/20"></div>
+<!-- Rotating sweep line -->
+<div class="absolute inset-0 radar-sweep pointer-events-none">
+<div class="w-1/2 h-1/2 origin-bottom-right bg-gradient-to-br from-primary/30 to-transparent"></div>
+</div>
+<!-- Simulated Ping Points -->
+<div class="absolute top-1/3 left-1/4 w-2 h-2 rounded-full bg-primary shadow-sm shadow-primary animate-pulse" title="DPS Drive Site"></div>
+<div class="absolute bottom-1/3 right-1/4 w-2 h-2 rounded-full bg-secondary shadow-sm shadow-secondary animate-pulse" title="Invictus Station"></div>
+<div class="absolute top-1/2 right-1/3 w-2.5 h-2.5 rounded-full bg-tertiary" title="Field Hub HQ"></div>
+<div class="z-10 text-center bg-surface/90 px-3 py-1.5 rounded border border-outline-variant/60">
+<div class="text-telemetry-sm font-telemetry-sm text-on-surface">COORDINATES</div>
+<div class="text-telemetry-sm font-telemetry-sm text-primary">12.9716° N / 77.5946° E</div>
+</div>
+</div>
+<!-- Real-time HUD summary -->
+<div class="mt-4 pt-3 border-t border-outline-variant/40 grid grid-cols-2 gap-3 text-telemetry-sm font-telemetry-sm">
+<div>
+<span class="text-on-surface-variant block">SURFACE AIR INDEX</span>
+<span class="text-primary font-bold">AQI 68 // MODERATE</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">CANOPY BIOMASS</span>
+<span class="text-secondary font-bold">+14.2% RESTORED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Ticker / Telemetry Ribbon -->
+<div class="mt-16 border-y border-outline-variant/30 py-5 bg-surface-container-lowest/40 backdrop-blur-md">
+<div class="flex flex-wrap items-center justify-between gap-6 text-telemetry-lg font-telemetry-lg text-on-surface">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-primary font-bold">4</span>
+<span class="text-on-surface-variant">Major Community Drives</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/40 hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-secondary font-bold">5</span>
+<span class="text-on-surface-variant">Specialized Divisions</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/40 hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-tertiary font-bold">11</span>
+<span class="text-on-surface-variant">Everyday Climate Protocols</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/40 hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-primary font-bold">100%</span>
+<span class="text-on-surface-variant">Student-Driven Resistance</span>
+</div>
+</div>
+</div>
+<!-- Scroll Prompt -->
+<div class="text-center mt-10">
+<a class="inline-flex items-center gap-2 text-telemetry-sm font-telemetry-sm tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#directives">
+<span>SCROLL TO WITNESS THE RESTORATION JOURNEY ↓</span>
+</a>
+</div>
+</section>
+<!-- Section 3: The Five Core Directives -->
+<section class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20" id="directives">
+<div class="mb-14">
+<div class="inline-block px-3 py-1 bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-primary mb-3">
+          STRATEGIC MANDATE // 2025–2026
+        </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+          The Five Core Directives
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
+          An unyielding structural framework guiding Bangalore's climate restoration doctrine.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Directive 01 -->
+<div class="frosted-glass p-8 rounded-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-headline-md font-headline-md text-primary font-bold font-telemetry-lg">01</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">campaign</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">CLIMATE ADVOCACY</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Policy awareness campaigns, student demonstrations, and climate action advocacy to influence systemic environmental governance and civic legislation.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary">
+<span>PRIORITY // ALPHA</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Directive 02 -->
+<div class="frosted-glass p-8 rounded-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-headline-md font-headline-md text-primary font-bold font-telemetry-lg">02</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">water_drop</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">RESOURCE RESTORATION</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Active rejuvenation of Bangalore's local water bodies, urban flora, and natural green covers through rewilding initiatives and soil de-calcification.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary">
+<span>PRIORITY // HYDRAULIC</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Directive 03 -->
+<div class="frosted-glass p-8 rounded-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-headline-md font-headline-md text-secondary font-bold font-telemetry-lg">03</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-secondary transition-colors">air</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">POLLUTION REDUCTION</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Zero-tolerance accountability across air, soil, plastic, and water pollution with real-time field audits, investigative disclosures, and remediation.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-secondary">
+<span>PRIORITY // SENSOR-NET</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Directive 04 -->
+<div class="frosted-glass p-8 rounded-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-headline-md font-headline-md text-primary font-bold font-telemetry-lg">04</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">recycling</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">CIRCULAR WASTE SYSTEMS</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Eliminating single-use items across institutions and implementing effective waste management through campus-wide closed-loop material cycles.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary">
+<span>PRIORITY // CLOSED_LOOP</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+<!-- Directive 05 (Spans 2 columns on lg) -->
+<div class="frosted-glass p-8 rounded-lg hover:border-primary/40 transition-all duration-300 group flex flex-col justify-between lg:col-span-2">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-headline-md font-headline-md text-tertiary font-bold font-telemetry-lg">05</span>
+<span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-tertiary transition-colors">podium</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">MOVEMENT PUBLICITY</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed max-w-2xl">
+              Amplifying ethical, sustainable Indian brands and eco-activist movements across social platforms to cultivate regional climate consciousness, elevate grassroots heroes, and mobilize thousands of high school and university students.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-tertiary">
+<span>PRIORITY // COGNITIVE MOBILIZATION</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Operational Divisions (The 5 Student Teams) -->
+<section class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20 bg-surface-container-lowest/30" id="divisions">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<div class="inline-block px-3 py-1 bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-secondary mb-3">
+            INTERNAL PROTOCOL // ROSTER
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+            Operational Divisions
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-lg mt-2">
+            The specialized student command teams executing ground research, media architecture, and grassroots deployment.
+          </p>
+</div>
+<div class="text-telemetry-sm font-telemetry-sm text-on-surface-variant">
+          TOTAL RECRUITS ACTIVE: 140+ STUDENTS
+        </div>
+</div>
+<div class="space-y-4">
+<!-- Division 01 -->
+<div class="frosted-glass p-6 md:p-8 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high/60 transition-all duration-200 border-l-4 border-l-primary">
+<div class="md:w-1/4">
+<span class="text-telemetry-sm font-telemetry-sm text-primary block">[01] RESEARCH &amp; WRITING</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-1">Investigative Bureau</h4>
+</div>
+<div class="md:w-1/2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Deep investigations on climate reality, environmental essays, Karnataka ecological policy briefings, and whitepapers on urban aquifer depletion.
+            </p>
+</div>
+<div class="md:w-1/4 flex md:justify-end items-center gap-3">
+<span class="px-2.5 py-1 bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface-variant rounded">6 Reports Issued</span>
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+</div>
+<!-- Division 02 -->
+<div class="frosted-glass p-6 md:p-8 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high/60 transition-all duration-200 border-l-4 border-l-secondary">
+<div class="md:w-1/4">
+<span class="text-telemetry-sm font-telemetry-sm text-secondary block">[02] DESIGN</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-1">Visual Defense Studio</h4>
+</div>
+<div class="md:w-1/2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Crafting the visual language of climate defense, campaign infographics, field cartography, identity tokens, and exhibition brand aesthetics.
+            </p>
+</div>
+<div class="md:w-1/4 flex md:justify-end items-center gap-3">
+<span class="px-2.5 py-1 bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface-variant rounded">Full Visual Identity</span>
+<span class="material-symbols-outlined text-secondary">palette</span>
+</div>
+</div>
+<!-- Division 03 -->
+<div class="frosted-glass p-6 md:p-8 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high/60 transition-all duration-200 border-l-4 border-l-primary">
+<div class="md:w-1/4">
+<span class="text-telemetry-sm font-telemetry-sm text-primary block">[03] HR &amp; COMMUNICATIONS</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-1">Alliance Directorate</h4>
+</div>
+<div class="md:w-1/2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Talent onboarding, campus chapter outreach, cross-university alignment across Bangalore, and strategic institutional partnerships.
+            </p>
+</div>
+<div class="md:w-1/4 flex md:justify-end items-center gap-3">
+<span class="px-2.5 py-1 bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface-variant rounded">12 Campuses Linked</span>
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+</div>
+<!-- Division 04 -->
+<div class="frosted-glass p-6 md:p-8 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high/60 transition-all duration-200 border-l-4 border-l-tertiary">
+<div class="md:w-1/4">
+<span class="text-telemetry-sm font-telemetry-sm text-tertiary block">[04] SOCIAL MEDIA</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-1">Digital Broadcast</h4>
+</div>
+<div class="md:w-1/2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Digital broadcasting, awareness reels, student spotlights, and youth mobilization campaigns on Instagram (@avani_yocc) and Substack dispatches.
+            </p>
+</div>
+<div class="md:w-1/4 flex md:justify-end items-center gap-3">
+<span class="px-2.5 py-1 bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface-variant rounded">35k Monthly Reach</span>
+<span class="material-symbols-outlined text-tertiary">cell_tower</span>
+</div>
+</div>
+<!-- Division 05 -->
+<div class="frosted-glass p-6 md:p-8 rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high/60 transition-all duration-200 border-l-4 border-l-secondary-container">
+<div class="md:w-1/4">
+<span class="text-telemetry-sm font-telemetry-sm text-secondary-container block">[05] EVENT PLANNING</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-1">Tactical Field Ops</h4>
+</div>
+<div class="md:w-1/2">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              On-ground operations coordinating donation drives, sustainable pop-up upcycling stalls, practical workshops, and site cleanups.
+            </p>
+</div>
+<div class="md:w-1/4 flex md:justify-end items-center gap-3">
+<span class="px-2.5 py-1 bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface-variant rounded">4 Major Operations</span>
+<span class="material-symbols-outlined text-secondary-container">construction</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Field Operations & Impact Archive (The 4 Realized Events) -->
+<section class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20" id="field-ops">
+<div class="mb-14">
+<div class="inline-block px-3 py-1 bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-primary mb-3">
+          TACTICAL DOSSIER // DEPLOYED CAMPAIGNS
+        </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+          Field Operations &amp; Impact Archive
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
+          Verified historical outcomes executed across Bangalore municipal and institutional grounds.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Archive 01: DPS Donation Drive -->
+<div class="frosted-glass rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col">
+<div class="h-64 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A candid documentary shot of young Indian students in Bangalore sorting stacks of warm clothes, school bags, and donated supplies into recycled cardboard boxes. The setting is a sunlit school courtyard surrounded by lush tropical palms and brick colonnades. Dramatic cinematic morning shadows fall across the scene with soft emerald and earth tones, evoking community solidarity and proactive environmental stewardship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNyF5mWpgBFRj2zDu_SGy2w7CDMuv8CaQJcGCI3rMVblrFQEoTKU2aNcJ6M4SwKZBtXOYmjo-ac_uM3wlolL6FRcEIe29hqYyBeqUt2Nxa8pZvjPrdZAYOI_ENTUa6bvFwAwKXLI8p-VnvFljcpy2fkpv4IsvrCTsjSkrRDjn_Du1r0wOZHeOIKc_stcoSJu0ZouR2ZChTAHLRsZbZhKWZX8SOFUfBdfIoqgfgEEk99RAxVfdDQ04B7GJcEkYYSC0vJDysu8PQa8gO"/>
+<div class="absolute top-4 left-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 border border-primary/40 text-telemetry-sm font-telemetry-sm text-primary font-bold">
+                ARCHIVE 01 // CIVIC
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 text-telemetry-sm font-telemetry-sm text-on-surface">
+                12.9812° N, 77.6200° E
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-telemetry-sm font-telemetry-sm text-secondary mb-1">FIELD ENGAGEMENT // DPS BANGALORE</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">DPS DONATION DRIVE</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Community resource redistribution uniting students and faculty to support individuals in need with clean clothing, hygiene staples, and books—diverting wearable textiles from local landfills.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary">
+<span>IMPACT: 450+ KG CLOTHING REDISTRIBUTED</span>
+<span class="text-on-surface-variant">Q1 COMPLETED</span>
+</div>
+</div>
+</div>
+<!-- Archive 02: Invictus Denim Stall -->
+<div class="frosted-glass rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col">
+<div class="h-64 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up editorial photograph of an artisanal upcycling stall displaying repurposed denim tote bags, hand-stitched patch jackets, and recycled denim book covers. The scene is illuminated by soft diffused studio daylight, highlighting the intricate texture of worn indigo denim and green plant accents. High-end eco-activist aesthetic with Bangalore urban youth browsing the stall in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAviEBxNcYNUdij0ceEQF_CKGUarNpJJAYegy19Aj8CJ6ZlScjjiaG-4TpK_BsEStm6aaWbPM9aOaBHMkI2SH3p9I7p5YcZUPTKicrEQYfl33H6xpAntTubI1dTdfm2wLIEi5GlPqJ1CzS9l9I8sz8Y-4hnJXDof94bjzSPnwZohI3OcHWqHM_NwwmHGbl4JswCvc2YFwC2OrJakpI3dTWMdjNHTDs0Cr772Oi_MiBq40xz7tzvACqpujr6hO8ZXt1NxNDKkiYB0jZ0"/>
+<div class="absolute top-4 left-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 border border-secondary/40 text-telemetry-sm font-telemetry-sm text-secondary font-bold">
+                ARCHIVE 02 // CIRCULAR
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 text-telemetry-sm font-telemetry-sm text-on-surface">
+                INVICTUS FEST // CAMPUS
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-telemetry-sm font-telemetry-sm text-secondary mb-1">UPCYCLING ACTIVATION // INVICTUS</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">INVICTUS DENIM STALL</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Campus upcycling initiative pioneering circular denim fashion and conscious consumerism, repurposing abandoned denim apparel into tailored utility totes and practical student accessories.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-secondary">
+<span>IMPACT: 180+ DENIM UNITS UPCYCLED</span>
+<span class="text-on-surface-variant">Q2 COMPLETED</span>
+</div>
+</div>
+</div>
+<!-- Archive 03: Orphanage Partnership -->
+<div class="frosted-glass rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col">
+<div class="h-64 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="An intimate photojournalism style scene showing student mentors holding an interactive botanical workshop for smiling children at a community shelter in Bangalore. Potted saplings, recycled paper sketchbooks, and natural clay sit on wooden tables under warm natural sunlight. Earthy tones with deep verdant greens and warm terra cotta textures create a heartfelt, uplifting mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtBIIULqT09jDShTaXb2ldHY3pUhh_TLf2x7KZdFvHl4Wj1lHvUFJoI77RIl9BjdnrbbsDmpC3Iey2kssWpwKf_gmMvWAZyYYtdP846NtPHmkHnHkpaL0qyAI5AsK_JJ75tU5QABQ7H1M_ZDRqSlz4X93fpNOsnTZOPi3xniR0Ru8ZLHMEhF6ckfmumepwO34OiCwyb0YjaryPnzoCESVy5KiHS571-R6zm5u5qWU0yF33Nxoaq-beZHIPi_S2NV87-aLYn_aTHWU"/>
+<div class="absolute top-4 left-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 border border-primary/40 text-telemetry-sm font-telemetry-sm text-primary font-bold">
+                ARCHIVE 03 // GRASSROOTS
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 text-telemetry-sm font-telemetry-sm text-on-surface">
+                COGNITIVE RELIEF AID
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-telemetry-sm font-telemetry-sm text-primary mb-1">ALLIANCE // AAROGI NETWORK</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">ORPHANAGE PARTNERSHIP (WITH AAROGI)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Grassroots aid and essential distribution spreading joy through empathy and teamwork, delivering educational ecological kits and establishing micro urban garden beds with resident youth.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary">
+<span>IMPACT: 85+ CHILDREN DIRECTLY SUPPORTED</span>
+<span class="text-on-surface-variant">Q3 COMPLETED</span>
+</div>
+</div>
+</div>
+<!-- Archive 04: Beyond The Waste Workshop -->
+<div class="frosted-glass rounded-lg overflow-hidden border border-outline-variant/30 flex flex-col">
+<div class="h-64 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="High angle shot of an intense hands-on design workshop table covered in reclaimed glass bottles, bamboo cuts, dried palm fronds, and non-toxic paint. Student hands collaborate carefully to assemble modern eco-friendly indoor decor. Moody atmospheric studio lighting with deep forest green hues and neon lime highlights reflecting off glass surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Fc6RVhiJEql5dZpdIxGnIKl9e53YqztYKE-lYjCQXtVuSoQIINXv7wunHyVUbD9uXs39tqciEcyiLLZpNua-dxVdhqn6RMtl2o6YErADNAZWPMhEXnt_uTlpIE-ujpUNEYDJVGqjfhFRdFvQS22Fam8Iz2yc16c3HNFOoNY71OL--URMaCcp6wMl9c4Ge94B-sUKQyR-5WyCc7AaeOMV7k4JeMiMFJb5YsS1OdFUCGll5N2dO6kfQlxUXdRJXh6bVC3E4KC2Na8x"/>
+<div class="absolute top-4 left-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 border border-tertiary/40 text-telemetry-sm font-telemetry-sm text-tertiary font-bold">
+                ARCHIVE 04 // PEDAGOGY
+              </span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="px-2.5 py-1 rounded-sm bg-surface/90 text-telemetry-sm font-telemetry-sm text-on-surface">
+                EXPERIMENTATION LAB
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-telemetry-sm font-telemetry-sm text-tertiary mb-1">TECHNICAL LABORATORY</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">BEYOND THE WASTE WORKSHOP</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Hands-on upcycling masterclass transforming urban discard into functional art and recycled creations, teaching 120+ participants regenerative home maintenance and waste auditing.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-tertiary">
+<span>IMPACT: 120+ STUDENTS TRAINED</span>
+<span class="text-on-surface-variant">Q4 COMPLETED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: The Climate Action Codex (11 Practical Protocols) -->
+<section class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20" id="codex">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<div class="inline-block px-3 py-1 bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-primary mb-3">
+            LIFESTYLE CODEX // DAILY DISCIPLINE
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+            The Climate Action Codex
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-lg mt-2">
+            Eleven non-negotiable operational protocols organized across Energy, Water, Waste, and Consumption vectors.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container text-telemetry-sm font-telemetry-sm text-primary">ENERGY</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-telemetry-sm font-telemetry-sm text-secondary">WATER</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-telemetry-sm font-telemetry-sm text-tertiary">WASTE</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-telemetry-sm font-telemetry-sm text-on-surface">CONSUMPTION</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 01 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-primary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-primary font-bold">PROTOCOL 01</span>
+<span class="text-on-surface-variant">VECTOR // ENERGY</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Power Conservation</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Switch off lights, fans, and electronics when leaving a room. Never let unoccupied spaces drain campus energy grids.
+          </p>
+</div>
+<!-- 02 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-primary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-primary font-bold">PROTOCOL 02</span>
+<span class="text-on-surface-variant">VECTOR // ENERGY</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Vampire Power Cutoff</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Unplug idle chargers, adapters, and appliances when not in active use to eradicate passive electrical hemorrhage.
+          </p>
+</div>
+<!-- 03 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-secondary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-secondary font-bold">PROTOCOL 03</span>
+<span class="text-on-surface-variant">VECTOR // WATER</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Water Valve Discipline</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Turn off the tap completely while brushing teeth or shaving. Protect Bangalore's strained groundwater reserves.
+          </p>
+</div>
+<!-- 04 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-tertiary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-tertiary font-bold">PROTOCOL 04</span>
+<span class="text-on-surface-variant">VECTOR // WASTE</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Reusable Vessel Mandate</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Carry a personal reusable steel bottle, cloth tote bag, and meal container everywhere instead of disposable single-use items.
+          </p>
+</div>
+<!-- 05 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-tertiary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-tertiary font-bold">PROTOCOL 05</span>
+<span class="text-on-surface-variant">VECTOR // WASTE</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Organic Bio-Composting</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Compost vegetable peels, tea leaves, and organic food scraps in aerated home or hostel bins rather than sending them to landfills.
+          </p>
+</div>
+<!-- 06 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-on-surface">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-primary font-bold">PROTOCOL 06</span>
+<span class="text-on-surface-variant">VECTOR // CONSUMPTION</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Zero Food Waste</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Plan daily meals, order strictly what you will consume, and utilize clean leftovers to systematically eliminate food waste.
+          </p>
+</div>
+<!-- 07 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-on-surface">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-primary font-bold">PROTOCOL 07</span>
+<span class="text-on-surface-variant">VECTOR // CONSUMPTION</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Circular Item Renewal</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Repair damaged textiles, reuse containers, or donate usable surplus to peer collectives instead of purchasing brand-new goods.
+          </p>
+</div>
+<!-- 08 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-secondary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-secondary font-bold">PROTOCOL 08</span>
+<span class="text-on-surface-variant">VECTOR // WATER &amp; ENERGY</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Appliance Batch Cycles</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Run washing machines and dishwashers exclusively on full loads to maximize electrical and hydraulic efficiency.
+          </p>
+</div>
+<!-- 09 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-tertiary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-tertiary font-bold">PROTOCOL 09</span>
+<span class="text-on-surface-variant">VECTOR // WASTE</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Packaging Refusal</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Decline extra commercial packaging, single-use plastic cutlery, unnecessary printed receipts, and promotional marketing collateral.
+          </p>
+</div>
+<!-- 10 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-tertiary">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-tertiary font-bold">PROTOCOL 10</span>
+<span class="text-on-surface-variant">VECTOR // WASTE</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Upcycled Glass Storage</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Clean and repurpose glass condiment jars and sturdy containers for pantry food storage, pen holders, and desktop terrariums.
+          </p>
+</div>
+<!-- 11 -->
+<div class="frosted-glass p-6 rounded-lg border-t-2 border-t-primary md:col-span-2 lg:col-span-2">
+<div class="flex items-center justify-between mb-3 text-telemetry-sm font-telemetry-sm">
+<span class="text-primary font-bold">PROTOCOL 11</span>
+<span class="text-on-surface-variant">VECTOR // RESOURCE CONSERVATION</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Dual-Sided Digital Transition</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Print strictly double-sided when academic submissions mandate physical copies, and embrace a 100% digital-first notes policy across university classrooms.
+          </p>
+</div>
+</div>
+</section>
+<!-- Section 7: Dispatches from Substack -->
+<section class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20 bg-surface-container-lowest/20" id="dispatches">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+<div>
+<div class="inline-block px-3 py-1 bg-surface-container border border-outline-variant text-telemetry-sm font-telemetry-sm text-primary mb-3">
+            SUBSTACK ARCHIVES // INTELLIGENCE
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">
+            Dispatches from Substack
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-lg mt-2">
+            Regular investigative essays, student field diaries, and Bangalore climate briefings published to our global readership.
+          </p>
+</div>
+<a class="text-primary hover:text-primary-fixed-dim text-label-md font-label-md flex items-center gap-1.5 transition-colors" href="https://open.substack.com/pub/avaniyocc?r=5wu68m&amp;utm_medium=ios" rel="noopener noreferrer" target="_blank">
+<span>READ ENTIRE ARCHIVE</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Field Dispatch 1 -->
+<a class="frosted-glass p-7 rounded-lg group hover:border-primary/50 transition-all duration-300 flex flex-col justify-between" href="https://substack.com/@avaniyocc/note/p-216575497?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<div>
+<div class="flex items-center justify-between text-telemetry-sm font-telemetry-sm text-primary mb-4">
+<span>FIELD DISPATCH // 01</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors mb-3">
+              Ground Reality: The Drying Lakes of Bellandur &amp; Varthur
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              An investigative field report examining real-time biological oxygen demand, toxic foam recurrence, and local restoration challenges facing citizen brigades.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-on-surface-variant">
+<span>AVANI EDITORIAL TEAM</span>
+<span>4 MIN READ</span>
+</div>
+</a>
+<!-- Field Dispatch 2 -->
+<a class="frosted-glass p-7 rounded-lg group hover:border-primary/50 transition-all duration-300 flex flex-col justify-between" href="https://substack.com/@avaniyocc/note/p-223896247?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<div>
+<div class="flex items-center justify-between text-telemetry-sm font-telemetry-sm text-secondary mb-4">
+<span>FIELD DISPATCH // 02</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-3">
+              The Post-Plastic University: Blueprint for Zero Disposables
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              How student collectives across Karnataka can legally audit collegiate cafeterias and establish closed-loop dishwashing programs.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-on-surface-variant">
+<span>CIRCULARITY DIV</span>
+<span>6 MIN READ</span>
+</div>
+</a>
+<!-- Field Dispatch 3 -->
+<a class="frosted-glass p-7 rounded-lg group hover:border-primary/50 transition-all duration-300 flex flex-col justify-between" href="https://substack.com/@avaniyocc/note/p-217629092?r=5wrcnw" rel="noopener noreferrer" target="_blank">
+<div>
+<div class="flex items-center justify-between text-telemetry-sm font-telemetry-sm text-tertiary mb-4">
+<span>FIELD DISPATCH // 03</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-tertiary transition-colors mb-3">
+              Subversive Fashion: Deconstructing Denim’s 8,000-Liter Water Cost
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Insights from our Invictus upcycling stall: calculating true cotton footprints and building durable alternatives from campus textile discard.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-telemetry-sm font-telemetry-sm text-on-surface-variant">
+<span>RESEARCH BRIGADE</span>
+<span>5 MIN READ</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Section 8: Joining the Ranks (Application Protocol) -->
+<section class="py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-outline-variant/20 relative" id="join">
+<div class="frosted-glass-active p-8 md:p-14 rounded-xl relative overflow-hidden">
+<!-- Ambient background illumination -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl mb-12">
+<div class="inline-block px-3 py-1 bg-surface-container border border-primary/40 text-telemetry-sm font-telemetry-sm text-primary mb-3">
+            ADMISSION CYCLE // COHORT 04
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-display text-on-surface">
+            Joining the Ranks: The Selection Protocol
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-3">
+            Avani recruits students of fierce discipline, ethical clarity, and uncompromising determination. Here is our rigorous 5-stage recruitment funnel:
+          </p>
+</div>
+<!-- 5-stage selection process dossier -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative mb-12">
+<!-- Step 1 -->
+<div class="p-5 rounded bg-surface-container/60 border border-outline-variant/40">
+<span class="text-telemetry-sm font-telemetry-sm text-primary block mb-2">STAGE 01</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Form Submission</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Digital intent application outlining skills, motivation, and prior climate work.</p>
+</div>
+<!-- Step 2 -->
+<div class="p-5 rounded bg-surface-container/60 border border-outline-variant/40">
+<span class="text-telemetry-sm font-telemetry-sm text-primary block mb-2">STAGE 02</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Document Upload</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Portfolio / work sample upload under canonical format: <code class="text-xs text-primary bg-surface px-1 py-0.5 rounded">NAME_AVANI_SUBMISSION</code>.</p>
+</div>
+<!-- Step 3 -->
+<div class="p-5 rounded bg-surface-container/60 border border-outline-variant/40">
+<span class="text-telemetry-sm font-telemetry-sm text-secondary block mb-2">STAGE 03</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Interview Round</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Structured 25-minute conversational dialogue with student division leads.</p>
+</div>
+<!-- Step 4 -->
+<div class="p-5 rounded bg-surface-container/60 border border-outline-variant/40">
+<span class="text-telemetry-sm font-telemetry-sm text-tertiary block mb-2">STAGE 04</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Core Placement</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Direct operational assignment to 1 of 5 student teams based on competence.</p>
+</div>
+<!-- Step 5 -->
+<div class="p-5 rounded bg-surface-container/60 border border-primary/40 bg-surface-container-high/40">
+<span class="text-telemetry-sm font-telemetry-sm text-primary font-bold block mb-2">STAGE 05</span>
+<h4 class="text-label-md font-label-md text-primary mb-2">Climate Leadership</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Voluntary leadership authorization and active deployment in city drives.</p>
+</div>
+</div>
+<!-- Primary CTA Trigger -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-6 border-t border-outline-variant/40">
+<div>
+<div class="text-telemetry-sm font-telemetry-sm text-primary mb-1">DEADLINE STATUS: ROLLING EVALUATIONS ACTIVE</div>
+<div class="text-body-md font-body-md text-on-surface-variant">All Bengaluru university and pre-university students are eligible to apply.</div>
+</div>
+<a class="px-8 py-4 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-bold rounded shadow-lg shadow-primary/20 transition-all duration-200 text-center flex items-center justify-center gap-2" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>COMMENCE APPLICATION PROTOCOL</span>
+<span class="material-symbols-outlined text-base">assignment</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Section 9: Institutional Colophon (Footer) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 full-width bottom">
+<div class="w-full px-6 md:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+<!-- Brand & Mission Statement -->
+<div class="max-w-md space-y-4">
+<span class="text-headline-sm font-headline-sm text-on-surface dark:text-on-surface font-semibold block">
+          AVANI // BANGALORE
+        </span>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          Youth Organization for Climate Change. Operating at the frontier of urban ecological defense, lake revival, and student civil empowerment.
+        </p>
+<div class="text-telemetry-sm font-telemetry-sm text-outline">
+          HEADQUARTERS // Bangalore, Karnataka, India (12.9716° N, 77.5946° E)
+        </div>
+</div>
+<!-- Contact Dossier -->
+<div class="space-y-3">
+<span class="text-label-md font-label-md text-on-surface font-bold tracking-wider block">CONTACT STATION</span>
+<div class="text-body-sm font-body-sm space-y-1.5">
+<div>
+<span class="text-on-surface-variant">Inquiries:</span>
+<a class="text-primary hover:underline ml-1" href="mailto:avaniyocc@gmail.com">avaniyocc@gmail.com</a>
+</div>
+<div>
+<span class="text-on-surface-variant">Hotline:</span>
+<a class="text-on-surface ml-1" href="tel:+918050931769">+91 8050931769</a>
+</div>
+<div>
+<span class="text-on-surface-variant">Hours:</span>
+<span class="text-on-surface ml-1">08:00 – 20:00 IST</span>
+</div>
+</div>
+</div>
+<!-- Network Transmission Links -->
+<div class="space-y-3">
+<span class="text-label-md font-label-md text-on-surface font-bold tracking-wider block">NETWORK FREQUENCIES</span>
+<ul class="text-body-sm font-body-sm space-y-2">
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="https://open.substack.com/pub/avaniyocc" rel="noopener noreferrer" target="_blank">
+<span>Substack Dispatches</span>
+<span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="https://www.linkedin.com/company/avaniyocc/" rel="noopener noreferrer" target="_blank">
+<span>LinkedIn Dossier</span>
+<span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="https://instagram.com/avani_yocc" rel="noopener noreferrer" target="_blank">
+<span>Instagram (@avani_yocc)</span>
+<span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</li>
+<li>
+<a class="text-primary hover:underline flex items-center gap-1.5" href="https://docs.google.com/forms/d/e/1FAIpQLSd_7uxm79Ci-gyoTaE80A_NKt2KMZ1ueS48v6hMgKBVrmZzQA/viewform?usp=dialog" rel="noopener noreferrer" target="_blank">
+<span>Candidate Portal</span>
+<span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Copyright & Legal Strip -->
+<div class="border-t border-outline-variant/10 px-6 md:px-12 py-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-telemetry-sm font-telemetry-sm text-on-surface-variant">
+<div>
+        © 2026 Avani Youth Organization for Climate Change. All rights reserved.
+      </div>
+<div class="text-outline">
+        CANOPY TELEMETRY STATION // RESISTANCE CODEX VER 4.2
+      </div>
+</div>
+</footer>
+</body></html>

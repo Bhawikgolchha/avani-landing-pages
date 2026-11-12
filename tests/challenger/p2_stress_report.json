@@ -1,0 +1,101 @@
+{
+  "viewports": [
+    {
+      "viewport": "iPhone SE (Narrow Mobile)",
+      "width": 375,
+      "height": 667,
+      "docScrollWidth": 375,
+      "docClientWidth": 375,
+      "bodyScrollWidth": 375,
+      "bodyClientWidth": 375,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    },
+    {
+      "viewport": "iPhone 13/14 (Standard Mobile)",
+      "width": 390,
+      "height": 844,
+      "docScrollWidth": 390,
+      "docClientWidth": 390,
+      "bodyScrollWidth": 390,
+      "bodyClientWidth": 390,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    },
+    {
+      "viewport": "iPhone 14/15 Pro Max (Large Mobile)",
+      "width": 430,
+      "height": 932,
+      "docScrollWidth": 430,
+      "docClientWidth": 430,
+      "bodyScrollWidth": 430,
+      "bodyClientWidth": 430,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    },
+    {
+      "viewport": "iPad Portrait (Tablet)",
+      "width": 768,
+      "height": 1024,
+      "docScrollWidth": 768,
+      "docClientWidth": 768,
+      "bodyScrollWidth": 768,
+      "bodyClientWidth": 768,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    },
+    {
+      "viewport": "iPad Landscape / Laptop",
+      "width": 1024,
+      "height": 768,
+      "docScrollWidth": 1024,
+      "docClientWidth": 1024,
+      "bodyScrollWidth": 1024,
+      "bodyClientWidth": 1024,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    },
+    {
+      "viewport": "MacBook Pro / Desktop",
+      "width": 1440,
+      "height": 900,
+      "docScrollWidth": 1440,
+      "docClientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "bodyClientWidth": 1440,
+      "overflowCount": 0,
+      "overflowSamples": [],
+      "pass": true
+    }
+  ],
+  "overflowBugs": [],
+  "interactiveTabsStatus": {
+    "sectionExists": false,
+    "tabButtonsCount": 0,
+    "pass": false
+  },
+  "climateTipsFilterStatus": {
+    "sectionExists": true,
+    "tipsCount": 11,
+    "filterButtonsCount": 0,
+    "interactiveFilteringWorks": false,
+    "pass": false
+  },
+  "terminalInputStatus": {
+    "applySectionExists": false,
+    "terminalTextExists": false,
+    "googleFormLinkCount": 4,
+    "pass": false
+  },
+  "externalLinksStatus": {
+    "totalExternalLinks": 12,
+    "missingRequiredUrls": [],
+    "pass": true
+  },
+  "verdict": "REQUEST_CHANGES"
+}

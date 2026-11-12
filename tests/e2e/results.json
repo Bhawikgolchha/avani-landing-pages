@@ -1,0 +1,2556 @@
+{
+  "timestamp": "2026-11-12T15:32:35.819Z",
+  "command": "/Users/bhavikgolchha07/.hermes/node/bin/node /Users/bhavikgolchha07/teamwork_projects/avani_landing_pages/tests/e2e/runner.js",
+  "config": {
+    "tier": "all",
+    "feature": null,
+    "verbose": false,
+    "bail": false,
+    "totalFilesScanned": 24
+  },
+  "summary": {
+    "total": 237,
+    "passed": 237,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 1743,
+    "passRate": 100,
+    "status": "PASSED",
+    "exitCode": 0
+  },
+  "breakdownByTier": {
+    "1": {
+      "name": "Tier 1: Feature Coverage (F1-F16)",
+      "total": 101,
+      "passed": 101,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 1652
+    },
+    "2": {
+      "name": "Tier 2: Boundary & Corner Cases",
+      "total": 103,
+      "passed": 103,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 69
+    },
+    "3": {
+      "name": "Tier 3: Cross-Feature Interactions",
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 2
+    },
+    "4": {
+      "name": "Tier 4: Real-World Scenarios",
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 1
+    }
+  },
+  "breakdownByFeature": {
+    "F1": {
+      "name": "Stitch MCP P1 Mockup",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F2": {
+      "name": "Stitch MCP P2 Mockup",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F3": {
+      "name": "Stitch Mockup Local Export",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F4": {
+      "name": "Google Flow Media Generation",
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F5": {
+      "name": "Brand Logo Integration",
+      "total": 16,
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F6": {
+      "name": "Next.js 14 Scaffolding",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F7": {
+      "name": "Shared Brand Content Module",
+      "total": 21,
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F8": {
+      "name": "Universal Navbar & Footer",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F9": {
+      "name": "Comparison Hub (/hub)",
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F10": {
+      "name": "Prototype 1 3D Canvas",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F11": {
+      "name": "Prototype 1 Scroll Overlay",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F12": {
+      "name": "Prototype 2 3D Canvas",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F13": {
+      "name": "Prototype 2 Scroll Overlay",
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F14": {
+      "name": "Content & Link Verification",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F15": {
+      "name": "Automated Build & Lint Gate",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F16": {
+      "name": "Browser Visual Inspection",
+      "total": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "General": {
+      "name": "General / Cross-Cutting Scenarios",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "F17": {
+      "name": "Editorial Replica (/)",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "failures": [],
+  "tests": [
+    {
+      "title": "F1.1: prototype_1 directory and mockup.html exist with substantial content",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.1: prototype_1 directory and mockup.html exist with substantial content",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F1.2: prototype_1 mockup.png exists with high-resolution visual screenshot",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.2: prototype_1 mockup.png exists with high-resolution visual screenshot",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F1.3: metadata.json exists and adheres to Stitch screen schema",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.3: metadata.json exists and adheres to Stitch screen schema",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F1.4: mockup.html reflects Living Canopy / Canva Idea 5 design concepts",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.4: mockup.html reflects Living Canopy / Canva Idea 5 design concepts",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F1.5: metadata.json theme explicitly cites Canva Mood Board Idea 5",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.5: metadata.json theme explicitly cites Canva Mood Board Idea 5",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F1.6: mockup.html contains interactive navigation or scroll structure",
+      "fullTitle": "F1: Stitch MCP P1 Mockup > F1.6: mockup.html contains interactive navigation or scroll structure",
+      "file": "tests/e2e/tier1-features/t1_f01_stitch_p1.test.js",
+      "tier": 1,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F2.1: prototype_2 directory and mockup.html exist with substantial content",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.1: prototype_2 directory and mockup.html exist with substantial content",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F2.2: prototype_2 mockup.png exists with high-resolution visual screenshot",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.2: prototype_2 mockup.png exists with high-resolution visual screenshot",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F2.3: metadata.json exists and adheres to Stitch screen schema",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.3: metadata.json exists and adheres to Stitch screen schema",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F2.4: mockup.html reflects Modern Eco-Tech Biosphere / Alternative direction",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.4: mockup.html reflects Modern Eco-Tech Biosphere / Alternative direction",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F2.5: metadata.json theme explicitly cites Modern Eco-Tech / Biosphere direction",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.5: metadata.json theme explicitly cites Modern Eco-Tech / Biosphere direction",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F2.6: mockup.html includes high-tech editorial styling or dark theme cues",
+      "fullTitle": "F2: Stitch MCP P2 Mockup > F2.6: mockup.html includes high-tech editorial styling or dark theme cues",
+      "file": "tests/e2e/tier1-features/t1_f02_stitch_p2.test.js",
+      "tier": 1,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F3.1: Both mockup HTML files start with valid HTML5 doctype declaration",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.1: Both mockup HTML files start with valid HTML5 doctype declaration",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F3.2: Both mockup HTML files contain standard HTML5 skeleton tags",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.2: Both mockup HTML files contain standard HTML5 skeleton tags",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F3.3: Both mockup PNG files have authentic PNG magic byte headers",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.3: Both mockup PNG files have authentic PNG magic byte headers",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F3.4: Exported metadata JSON files contain positive integer desktop dimensions",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.4: Exported metadata JSON files contain positive integer desktop dimensions",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F3.5: Both mockup HTML files declare responsive viewport meta tag",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.5: Both mockup HTML files declare responsive viewport meta tag",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F3.6: Both mockups reference external typography fonts and Tailwind CSS",
+      "fullTitle": "F3: Stitch Mockup Local Export > F3.6: Both mockups reference external typography fonts and Tailwind CSS",
+      "file": "tests/e2e/tier1-features/t1_f03_mockup_export.test.js",
+      "tier": 1,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F4.1: Hero background visuals for both prototypes exist and exceed size threshold",
+      "fullTitle": "F4: Google Flow Media Generation > F4.1: Hero background visuals for both prototypes exist and exceed size threshold",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F4.2: All 4 flagship event visual assets are present in public/assets/images/",
+      "fullTitle": "F4: Google Flow Media Generation > F4.2: All 4 flagship event visual assets are present in public/assets/images/",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F4.3: Climate tips infographic visual asset exists",
+      "fullTitle": "F4: Google Flow Media Generation > F4.3: Climate tips infographic visual asset exists",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F4.4: Generated WebP images conform to RIFF/WEBP container format specifications",
+      "fullTitle": "F4: Google Flow Media Generation > F4.4: Generated WebP images conform to RIFF/WEBP container format specifications",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F4.5: Media assets inventory matches contract in PROJECT.md § Asset Contracts",
+      "fullTitle": "F4: Google Flow Media Generation > F4.5: Media assets inventory matches contract in PROJECT.md § Asset Contracts",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F4.6: Media files are stored in public web directory accessible via HTTP route",
+      "fullTitle": "F4: Google Flow Media Generation > F4.6: Media files are stored in public web directory accessible via HTTP route",
+      "file": "tests/e2e/tier1-features/t1_f04_google_flow_media.test.js",
+      "tier": 1,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.1: Avani brand logo exists in public/assets/branding/ and is non-empty",
+      "fullTitle": "F5: Brand Logo Integration > F5.1: Avani brand logo exists in public/assets/branding/ and is non-empty",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.2: Logo file has authentic JPEG SOI (Start Of Image) magic bytes",
+      "fullTitle": "F5: Brand Logo Integration > F5.2: Logo file has authentic JPEG SOI (Start Of Image) magic bytes",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.3: Navbar component integrates and displays the Avani logo image",
+      "fullTitle": "F5: Brand Logo Integration > F5.3: Navbar component integrates and displays the Avani logo image",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.4: Footer component integrates and displays the Avani logo image",
+      "fullTitle": "F5: Brand Logo Integration > F5.4: Footer component integrates and displays the Avani logo image",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.5: Avani signature forest green (#163515) meets WCAG AA contrast against white",
+      "fullTitle": "F5: Brand Logo Integration > F5.5: Avani signature forest green (#163515) meets WCAG AA contrast against white",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F5.6: Avani signature forest green (#163515) meets WCAG AA contrast against tea-green (#DCE7D4)",
+      "fullTitle": "F5: Brand Logo Integration > F5.6: Avani signature forest green (#163515) meets WCAG AA contrast against tea-green (#DCE7D4)",
+      "file": "tests/e2e/tier1-features/t1_f05_brand_logo.test.js",
+      "tier": 1,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.1: package.json declares Next.js 14 and React 18 dependencies",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.1: package.json declares Next.js 14 and React 18 dependencies",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.2: package.json includes 3D, WebGL, and animation libraries",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.2: package.json includes 3D, WebGL, and animation libraries",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.3: tsconfig.json configures TypeScript compiler and @/* path alias",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.3: tsconfig.json configures TypeScript compiler and @/* path alias",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.4: tailwind.config.ts configures content paths for src directory",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.4: tailwind.config.ts configures content paths for src directory",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.5: Next.js App Router core files exist (layout.tsx & globals.css)",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.5: Next.js App Router core files exist (layout.tsx & globals.css)",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F6.6: next.config.mjs exists and configures Next.js runtime settings",
+      "fullTitle": "F6: Next.js 14 Scaffolding > F6.6: next.config.mjs exists and configures Next.js runtime settings",
+      "file": "tests/e2e/tier1-features/t1_f06_scaffolding.test.js",
+      "tier": 1,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F7.1: src/lib/avaniContent.ts exists and exports expected inventory counts",
+      "fullTitle": "F7: Shared Brand Content Module > F7.1: src/lib/avaniContent.ts exists and exports expected inventory counts",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 19,
+      "error": null
+    },
+    {
+      "title": "F7.2: 5 Core Objectives interface and verbatim copy compliance",
+      "fullTitle": "F7: Shared Brand Content Module > F7.2: 5 Core Objectives interface and verbatim copy compliance",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F7.3: 5 Specialized Teams interface compliance",
+      "fullTitle": "F7: Shared Brand Content Module > F7.3: 5 Specialized Teams interface compliance",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F7.4: 4 Flagship Events interface and asset path compliance",
+      "fullTitle": "F7: Shared Brand Content Module > F7.4: 4 Flagship Events interface and asset path compliance",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F7.5: 11 Climate Tips categories and sequencing compliance",
+      "fullTitle": "F7: Shared Brand Content Module > F7.5: 11 Climate Tips categories and sequencing compliance",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F7.6: Organization Overview and 7 external contact channels compliance",
+      "fullTitle": "F7: Shared Brand Content Module > F7.6: Organization Overview and 7 external contact channels compliance",
+      "file": "tests/e2e/tier1-features/t1_f07_content_module.test.js",
+      "tier": 1,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.1: Navbar.tsx exists and exports Navbar component",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.1: Navbar.tsx exists and exports Navbar component",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.2: Navbar contains prototype switcher routing to all 3 paths (/, /prototype-1, /prototype-2)",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.2: Navbar contains prototype switcher routing to all 3 paths (/, /prototype-1, /prototype-2)",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.3: Navbar integrates Google Form application link and CTA button",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.3: Navbar integrates Google Form application link and CTA button",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.4: Navbar supports responsive mobile navigation drawer and toggle button",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.4: Navbar supports responsive mobile navigation drawer and toggle button",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.5: Footer.tsx exists and exports Footer component",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.5: Footer.tsx exists and exports Footer component",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F8.6: Footer includes official contact channels (Email, Phone, LinkedIn, Substack, Instagram)",
+      "fullTitle": "F8: Universal Navbar & Footer > F8.6: Footer includes official contact channels (Email, Phone, LinkedIn, Substack, Instagram)",
+      "file": "tests/e2e/tier1-features/t1_f08_navbar_footer.test.js",
+      "tier": 1,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.1: src/app/hub/page.tsx exists and exports ShowcaseHubPage as default client component",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.1: src/app/hub/page.tsx exists and exports ShowcaseHubPage as default client component",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.2: Hub includes direct navigation links to both /prototype-1 and /prototype-2",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.2: Hub includes direct navigation links to both /prototype-1 and /prototype-2",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.3: Hub renders side-by-side cards for Living Canopy and Eco-Tech Biosphere",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.3: Hub renders side-by-side cards for Living Canopy and Eco-Tech Biosphere",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.4: Hub contains feature comparison matrix table or structured design dimensions",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.4: Hub contains feature comparison matrix table or structured design dimensions",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.5: Hub integrates Avani organizational content (Objectives, Teams, Events, Climate Tips)",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.5: Hub integrates Avani organizational content (Objectives, Teams, Events, Climate Tips)",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F9.6: Hub includes prominent application CTA button for student recruitment",
+      "fullTitle": "F9: Comparison Hub (/hub) > F9.6: Hub includes prominent application CTA button for student recruitment",
+      "file": "tests/e2e/tier1-features/t1_f09_comparison_hub.test.js",
+      "tier": 1,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.1: src/app/prototype-1/page.tsx exists and is a client component",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.1: src/app/prototype-1/page.tsx exists and is a client component",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.2: 3D Canvas component is dynamically loaded with SSR disabled ({ ssr: false })",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.2: 3D Canvas component is dynamically loaded with SSR disabled ({ ssr: false })",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.3: Canvas is styled as a fixed background layer with pointer-events-none",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.3: Canvas is styled as a fixed background layer with pointer-events-none",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.4: P1 canvas references Living Canopy / Tree of Life procedural concepts",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.4: P1 canvas references Living Canopy / Tree of Life procedural concepts",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.5: P1 page integrates useLenis smooth scroll hook",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.5: P1 page integrates useLenis smooth scroll hook",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F10.6: P1 page contains scroll prompt indicator for canopy navigation",
+      "fullTitle": "F10: Prototype 1 3D Canvas > F10.6: P1 page contains scroll prompt indicator for canopy navigation",
+      "file": "tests/e2e/tier1-features/t1_f10_p1_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.1: P1 overlay contains 5 structured scroll sections",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.1: P1 overlay contains 5 structured scroll sections",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.2: P1 overlay adopts tactile botanical aesthetic and color palette",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.2: P1 overlay adopts tactile botanical aesthetic and color palette",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.3: P1 maps over the 5 Core Environmental Objectives",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.3: P1 maps over the 5 Core Environmental Objectives",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.4: P1 maps over the 5 Specialized Student Teams",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.4: P1 maps over the 5 Specialized Student Teams",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.5: P1 maps over the 4 Flagship Events and 11 Climate Tips",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.5: P1 maps over the 4 Flagship Events and 11 Climate Tips",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F11.6: P1 CTA links to Google Form with safe external anchor attributes",
+      "fullTitle": "F11: Prototype 1 Scroll Overlay > F11.6: P1 CTA links to Google Form with safe external anchor attributes",
+      "file": "tests/e2e/tier1-features/t1_f11_p1_overlay.test.js",
+      "tier": 1,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.1: src/app/prototype-2/page.tsx exists and is a client component",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.1: src/app/prototype-2/page.tsx exists and is a client component",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.2: P2 3D Canvas is dynamically loaded with SSR disabled ({ ssr: false })",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.2: P2 3D Canvas is dynamically loaded with SSR disabled ({ ssr: false })",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.3: P2 canvas container is styled as a fixed background layer with pointer-events-none",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.3: P2 canvas container is styled as a fixed background layer with pointer-events-none",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.4: P2 canvas references 10,000-particle Earth globe and telemetry concepts",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.4: P2 canvas references 10,000-particle Earth globe and telemetry concepts",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.5: P2 page references Bangalore telemetry beacon coordinates",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.5: P2 page references Bangalore telemetry beacon coordinates",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F12.6: P2 page integrates useLenis smooth scroll hook",
+      "fullTitle": "F12: Prototype 2 3D Canvas > F12.6: P2 page integrates useLenis smooth scroll hook",
+      "file": "tests/e2e/tier1-features/t1_f12_p2_3d_canvas.test.js",
+      "tier": 1,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.1: P2 overlay adopts dark cyber-environmental aesthetic (#080C0E & cyan)",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.1: P2 overlay adopts dark cyber-environmental aesthetic (#080C0E & cyan)",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.2: P2 overlay contains 5 structured telemetry chapters",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.2: P2 overlay contains 5 structured telemetry chapters",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.3: P2 maps over the 5 Core Objectives with tactical directive codes (DIR_01..DIR_05)",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.3: P2 maps over the 5 Core Objectives with tactical directive codes (DIR_01..DIR_05)",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.4: P2 maps over the 5 Specialized Student Taskforces",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.4: P2 maps over the 5 Specialized Student Taskforces",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.5: P2 includes interactive protocol items with test IDs or data attributes",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.5: P2 includes interactive protocol items with test IDs or data attributes",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F13.6: P2 CTA button links to recruitment form with cyber styling",
+      "fullTitle": "F13: Prototype 2 Scroll Overlay > F13.6: P2 CTA button links to recruitment form with cyber styling",
+      "file": "tests/e2e/tier1-features/t1_f13_p2_overlay.test.js",
+      "tier": 1,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F14.1: Application Form URL is valid and matches official Google Form link",
+      "fullTitle": "F14: Content & Link Verification > F14.1: Application Form URL is valid and matches official Google Form link",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F14.2: LinkedIn URL is valid and matches official Avani company profile",
+      "fullTitle": "F14: Content & Link Verification > F14.2: LinkedIn URL is valid and matches official Avani company profile",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F14.3: Substack publication and Instagram profile URLs are valid and match specification",
+      "fullTitle": "F14: Content & Link Verification > F14.3: Substack publication and Instagram profile URLs are valid and match specification",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F14.4: All 3 Substack research note articles are valid and match exact URLs",
+      "fullTitle": "F14: Content & Link Verification > F14.4: All 3 Substack research note articles are valid and match exact URLs",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F14.5: Contact email address is formatted with mailto: protocol and matches specification",
+      "fullTitle": "F14: Content & Link Verification > F14.5: Contact email address is formatted with mailto: protocol and matches specification",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F14.6: Contact phone number is formatted with tel: protocol and matches specification",
+      "fullTitle": "F14: Content & Link Verification > F14.6: Contact phone number is formatted with tel: protocol and matches specification",
+      "file": "tests/e2e/tier1-features/t1_f14_links_verification.test.js",
+      "tier": 1,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F15.1: package.json specifies build and lint scripts",
+      "fullTitle": "F15: Automated Build & Lint Gate > F15.1: package.json specifies build and lint scripts",
+      "file": "tests/e2e/tier1-features/t1_f15_build_lint.test.js",
+      "tier": 1,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F15.2: ESLint configuration file (.eslintrc.json) exists and extends Next.js core configs",
+      "fullTitle": "F15: Automated Build & Lint Gate > F15.2: ESLint configuration file (.eslintrc.json) exists and extends Next.js core configs",
+      "file": "tests/e2e/tier1-features/t1_f15_build_lint.test.js",
+      "tier": 1,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F15.3: TypeScript compiler check (tsc --noEmit) passes with exit code 0",
+      "fullTitle": "F15: Automated Build & Lint Gate > F15.3: TypeScript compiler check (tsc --noEmit) passes with exit code 0",
+      "file": "tests/e2e/tier1-features/t1_f15_build_lint.test.js",
+      "tier": 1,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 713,
+      "error": null
+    },
+    {
+      "title": "F15.4: ESLint execution (npm run lint) passes with exit code 0 and no errors",
+      "fullTitle": "F15: Automated Build & Lint Gate > F15.4: ESLint execution (npm run lint) passes with exit code 0 and no errors",
+      "file": "tests/e2e/tier1-features/t1_f15_build_lint.test.js",
+      "tier": 1,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 910,
+      "error": null
+    },
+    {
+      "title": "F15.5: Next.js configuration and environment definitions exist",
+      "fullTitle": "F15: Automated Build & Lint Gate > F15.5: Next.js configuration and environment definitions exist",
+      "file": "tests/e2e/tier1-features/t1_f15_build_lint.test.js",
+      "tier": 1,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F16.1: Root layout configures HTML lang, antialiased body, and Google Web Fonts",
+      "fullTitle": "F16: Browser Visual Inspection > F16.1: Root layout configures HTML lang, antialiased body, and Google Web Fonts",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F16.2: Prototype 1 botanical theme satisfies WCAG 2.1 AA color contrast (>= 4.5:1)",
+      "fullTitle": "F16: Browser Visual Inspection > F16.2: Prototype 1 botanical theme satisfies WCAG 2.1 AA color contrast (>= 4.5:1)",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F16.3: Prototype 2 dark cyber theme satisfies WCAG 2.1 AA color contrast (>= 4.5:1)",
+      "fullTitle": "F16: Browser Visual Inspection > F16.3: Prototype 2 dark cyber theme satisfies WCAG 2.1 AA color contrast (>= 4.5:1)",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F16.4: Responsive layout classes are applied across all page routes",
+      "fullTitle": "F16: Browser Visual Inspection > F16.4: Responsive layout classes are applied across all page routes",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F16.5: globals.css configures Tailwind directives and clean base layout rules",
+      "fullTitle": "F16: Browser Visual Inspection > F16.5: globals.css configures Tailwind directives and clean base layout rules",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F16.6: Meta title and branding metadata are defined in root layout",
+      "fullTitle": "F16: Browser Visual Inspection > F16.6: Meta title and branding metadata are defined in root layout",
+      "file": "tests/e2e/tier1-features/t1_f16_visual_inspection.test.js",
+      "tier": 1,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F17.1: Root page.tsx mounts AvaniThemeProvider and all 4 bleibtgleich editorial sections",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.1: Root page.tsx mounts AvaniThemeProvider and all 4 bleibtgleich editorial sections",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F17.2: ThemeTransitionOverlay implements GSAP .theme-change-overlay daylight/night contrast compliance",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.2: ThemeTransitionOverlay implements GSAP .theme-change-overlay daylight/night contrast compliance",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F17.3: EditorialHeroSpine includes 37% architectural spine, SplitText, Canva links, video loop, and official logo",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.3: EditorialHeroSpine includes 37% architectural spine, SplitText, Canva links, video loop, and official logo",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "F17.4: OrbitalWorkRing renders Three.js 3D orbital cards with raycasting and click-to-open drawer",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.4: OrbitalWorkRing renders Three.js 3D orbital cards with raycasting and click-to-open drawer",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F17.5: SwissIndexTable unifies Objectives, Teams, 11 Climate Tips, Infographic, and Interactive Quiz",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.5: SwissIndexTable unifies Objectives, Teams, 11 Climate Tips, Infographic, and Interactive Quiz",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "F17.6: ManifestoFooter renders 6 application steps, NAME_AVANI_SUBMISSION, contacts, and oversized AVANI mark",
+      "fullTitle": "F17: Swiss Botanical Editorial Replica (/) > F17.6: ManifestoFooter renders 6 application steps, NAME_AVANI_SUBMISSION, contacts, and oversized AVANI mark",
+      "file": "tests/e2e/tier1-features/t1_f17_bleibtgleich_replica.test.js",
+      "tier": 1,
+      "feature": "F17",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 HTML file minimum size boundary (must exceed 500 bytes)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 HTML file minimum size boundary (must exceed 500 bytes)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 HTML document syntax boundaries (doctype and matching root tags)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 HTML document syntax boundaries (doctype and matching root tags)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 HTML template boundaries (zero unrendered template variables or null leaks)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 HTML template boundaries (zero unrendered template variables or null leaks)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 HTML character set and viewport boundaries",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 HTML character set and viewport boundaries",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 metadata schema boundaries (screenId, projectId, and deviceType format)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 metadata schema boundaries (screenId, projectId, and deviceType format)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F1] P1 metadata dimensions boundary (positive width and height >= 1000px)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F1] P1 metadata dimensions boundary (positive width and height >= 1000px)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 HTML file minimum size boundary (must exceed 500 bytes)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 HTML file minimum size boundary (must exceed 500 bytes)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 HTML document syntax boundaries (doctype and matching root tags)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 HTML document syntax boundaries (doctype and matching root tags)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 HTML template boundaries (zero unrendered template variables or null leaks)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 HTML template boundaries (zero unrendered template variables or null leaks)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 HTML character set and viewport boundaries",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 HTML character set and viewport boundaries",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 metadata schema boundaries (screenId, projectId, and deviceType format)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 metadata schema boundaries (screenId, projectId, and deviceType format)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F2] P2 metadata dimensions boundary (positive width and height >= 1000px)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F2] P2 metadata dimensions boundary (positive width and height >= 1000px)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F3] P1 PNG screenshot magic byte boundary verification",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] P1 PNG screenshot magic byte boundary verification",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F3] P1 PNG IHDR chunk presence and dimension lower bounds (>= 100x100)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] P1 PNG IHDR chunk presence and dimension lower bounds (>= 100x100)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F3] P2 PNG screenshot magic byte boundary verification",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] P2 PNG screenshot magic byte boundary verification",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F3] P2 PNG IHDR chunk presence and dimension lower bounds (>= 100x100)",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] P2 PNG IHDR chunk presence and dimension lower bounds (>= 100x100)",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F3] Corruption detection boundary: truncated header and bad magic byte rejection",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] Corruption detection boundary: truncated header and bad magic byte rejection",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F3] Local export file path boundary: metadata paths match existing on-disk files",
+      "fullTitle": "Tier 2: Mockup & Local Export Boundaries (F1, F2, F3) > [F3] Local export file path boundary: metadata paths match existing on-disk files",
+      "file": "tests/e2e/tier2-boundaries/t2_f01_f03_mockup_bounds.test.js",
+      "tier": 2,
+      "feature": "F3",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] Zero-byte asset detection: all required images exceed 50KB lower bound",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Zero-byte asset detection: all required images exceed 50KB lower bound",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] WebP format container boundaries: RIFF and WEBP magic bytes present",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] WebP format container boundaries: RIFF and WEBP magic bytes present",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 2,
+      "error": null
+    },
+    {
+      "title": "[F4] Hero banner dimension boundaries: minimum 600px width and 300px height",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Hero banner dimension boundaries: minimum 600px width and 300px height",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] Flagship event card dimension boundaries: minimum 400px width and 200px height",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Flagship event card dimension boundaries: minimum 400px width and 200px height",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] Media aspect ratio boundary: hero images maintain landscape ratio (>= 1.5:1)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Media aspect ratio boundary: hero images maintain landscape ratio (>= 1.5:1)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] File extension boundary: images directory contains only standard web formats",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] File extension boundary: images directory contains only standard web formats",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] Missing asset detection boundary: non-existent file query throws assertion error",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Missing asset detection boundary: non-existent file query throws assertion error",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F4] Corrupted WebP detection boundary: truncated header buffer is identified and rejected",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F4] Corrupted WebP detection boundary: truncated header buffer is identified and rejected",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] Brand logo zero-byte and minimum file size boundary (>= 20KB)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] Brand logo zero-byte and minimum file size boundary (>= 20KB)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] Brand logo JPEG magic byte boundary (FF D8 FF)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] Brand logo JPEG magic byte boundary (FF D8 FF)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 2,
+      "error": null
+    },
+    {
+      "title": "[F5] Brand logo dimension boundaries: minimum 200x200 resolution",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] Brand logo dimension boundaries: minimum 200x200 resolution",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] WCAG contrast boundary: brand primary #163515 on pure white #FFFFFF exceeds 10:1 (AAA)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] WCAG contrast boundary: brand primary #163515 on pure white #FFFFFF exceeds 10:1 (AAA)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] WCAG contrast boundary: sage text #DCE7D4 on brand forest #163515 exceeds 7:1 (AAA)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] WCAG contrast boundary: sage text #DCE7D4 on brand forest #163515 exceeds 7:1 (AAA)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] WCAG contrast boundary: cyan accent #22D3EE on dark background #080C0E exceeds 9:1 (AAA)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] WCAG contrast boundary: cyan accent #22D3EE on dark background #080C0E exceeds 9:1 (AAA)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] WCAG contrast boundary: negative test rejects low contrast pairs below 4.5:1",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] WCAG contrast boundary: negative test rejects low contrast pairs below 4.5:1",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F5] Logo aspect ratio boundary: near-square emblem ratio (between 0.8:1 and 1.3:1)",
+      "fullTitle": "Tier 2: Media Generation & Logo Contrast Boundaries (F4, F5) > [F5] Logo aspect ratio boundary: near-square emblem ratio (between 0.8:1 and 1.3:1)",
+      "file": "tests/e2e/tier2-boundaries/t2_f04_f05_media_bounds.test.js",
+      "tier": 2,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] Next.js version boundary: package.json specifies Next.js >= 14.0.0",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] Next.js version boundary: package.json specifies Next.js >= 14.0.0",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] React version boundary: package.json specifies React >= 18.0.0",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] React version boundary: package.json specifies React >= 18.0.0",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] Three.js version boundary: package.json specifies Three.js >= 0.160.0",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] Three.js version boundary: package.json specifies Three.js >= 0.160.0",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] TypeScript version boundary: package.json specifies TypeScript >= 5.0.0",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] TypeScript version boundary: package.json specifies TypeScript >= 5.0.0",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] GSAP animation dependency boundary: gsap >= 3.12.0 present",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] GSAP animation dependency boundary: gsap >= 3.12.0 present",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F6] Essential Next.js App Router configuration files boundary",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F6] Essential Next.js App Router configuration files boundary",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Content array exact boundary: exactly 5 objectives (rejects < 5 or > 5)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Content array exact boundary: exactly 5 objectives (rejects < 5 or > 5)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Content array exact boundary: exactly 5 specialized teams (rejects < 5 or > 5)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Content array exact boundary: exactly 5 specialized teams (rejects < 5 or > 5)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Content array exact boundary: exactly 4 flagship events (rejects < 4 or > 4)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Content array exact boundary: exactly 4 flagship events (rejects < 4 or > 4)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Content array exact boundary: exactly 11 climate tips (rejects < 11 or > 11)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Content array exact boundary: exactly 11 climate tips (rejects < 11 or > 11)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Objective ID boundary: sequential IDs from 1 to 5 with zero duplicates",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Objective ID boundary: sequential IDs from 1 to 5 with zero duplicates",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F7] Team ID boundary: all 5 team slugs are unique, lowercase kebab-case strings",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Team ID boundary: all 5 team slugs are unique, lowercase kebab-case strings",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Climate tip ID boundary: sequential IDs from 1 to 11 with zero gaps",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Climate tip ID boundary: sequential IDs from 1 to 11 with zero gaps",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Climate tip category enum boundary: every tip is one of energy/water/waste/consumption",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Climate tip category enum boundary: every tip is one of energy/water/waste/consumption",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Array boundary validation oracle: rejects arrays that deviate from exact counts",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Array boundary validation oracle: rejects arrays that deviate from exact counts",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F7] Objective textual completeness boundary: non-empty verbatim copy on every objective",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F7] Objective textual completeness boundary: non-empty verbatim copy on every objective",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F8] Mobile breakpoint boundary (< 768px): hamburger toggle exists with md:hidden / lg:hidden",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F8] Mobile breakpoint boundary (< 768px): hamburger toggle exists with md:hidden / lg:hidden",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F8] Tablet/Desktop prototype switcher boundary (>= 768px): hidden md:flex styling",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F8] Tablet/Desktop prototype switcher boundary (>= 768px): hidden md:flex styling",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F8] Desktop full navigation bar boundary (>= 1024px): hidden lg:flex styling",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F8] Desktop full navigation bar boundary (>= 1024px): hidden lg:flex styling",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F8] Navbar prototype switcher links boundary: covers all 3 destinations (/, /prototype-1, /prototype-2)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F8] Navbar prototype switcher links boundary: covers all 3 destinations (/, /prototype-1, /prototype-2)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F8] Footer external social links boundary: contains application, linkedin, substack, instagram",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F8] Footer external social links boundary: contains application, linkedin, substack, instagram",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F9] Hub page route file existence and non-empty boundary (src/app/page.tsx)",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F9] Hub page route file existence and non-empty boundary (src/app/page.tsx)",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F9] Route path resolution boundary: exact matching for /, /prototype-1, /prototype-2",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F9] Route path resolution boundary: exact matching for /, /prototype-1, /prototype-2",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F9] Route 404 boundary: invalid routes (/prototype-3, /unknown) detected as unmatched",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F9] Route 404 boundary: invalid routes (/prototype-3, /unknown) detected as unmatched",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F9] Hub page dual prototype CTA links boundary: embeds links to both prototypes",
+      "fullTitle": "Tier 2: Route, Scaffolding & Content Array Boundaries (F6, F7, F8, F9) > [F9] Hub page dual prototype CTA links boundary: embeds links to both prototypes",
+      "file": "tests/e2e/tier2-boundaries/t2_f06_f09_route_bounds.test.js",
+      "tier": 2,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] SSR canvas isolation boundary: dynamic import specifies ssr: false in P1",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] SSR canvas isolation boundary: dynamic import specifies ssr: false in P1",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] Background canvas container boundary: fixed inset-0 z-0 pointer-events-none styling",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] Background canvas container boundary: fixed inset-0 z-0 pointer-events-none styling",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] Smooth scroll integration boundary: useLenis hook invocation in Prototype 1",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] Smooth scroll integration boundary: useLenis hook invocation in Prototype 1",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] Canvas container layout bounds: full-screen dimensions styling (w-full h-full)",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] Canvas container layout bounds: full-screen dimensions styling (w-full h-full)",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] Foliage & canopy theme styling boundary: emerald / tea-green palette tokens",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] Foliage & canopy theme styling boundary: emerald / tea-green palette tokens",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F10] WebGL canvas context resilience: placeholder component renders fallback without error",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F10] WebGL canvas context resilience: placeholder component renders fallback without error",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F11] 5-stage scroll journey boundary: exactly 5 distinct chapters/sections in P1",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] 5-stage scroll journey boundary: exactly 5 distinct chapters/sections in P1",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F11] Scroll trigger anchor boundaries: all section IDs (#objectives, #teams, #events, #climate-tips) present",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] Scroll trigger anchor boundaries: all section IDs (#objectives, #teams, #events, #climate-tips) present",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F11] Scroll progress normalization boundary: clamps values strictly between 0.0 and 1.0",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] Scroll progress normalization boundary: clamps values strictly between 0.0 and 1.0",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F11] Scroll trigger threshold boundaries: stage boundaries are monotonically increasing",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] Scroll trigger threshold boundaries: stage boundaries are monotonically increasing",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F11] Overlay z-index boundary: foreground content uses relative z-10 above canvas z-0",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] Overlay z-index boundary: foreground content uses relative z-10 above canvas z-0",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F11] Lenis smooth scroll ticker configuration boundary: duration and orientation bounds",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F11] Lenis smooth scroll ticker configuration boundary: duration and orientation bounds",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] Holographic Earth particle count lower bound: configured >= 10,000 particles",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] Holographic Earth particle count lower bound: configured >= 10,000 particles",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] Particle count allocation oracle: validates particle allocation is bounded between 10,000 and 100,000",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] Particle count allocation oracle: validates particle allocation is bounded between 10,000 and 100,000",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] SSR canvas isolation boundary: dynamic import specifies ssr: false for P2",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] SSR canvas isolation boundary: dynamic import specifies ssr: false for P2",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] Background canvas container boundary: fixed inset-0 z-0 pointer-events-none styling in P2",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] Background canvas container boundary: fixed inset-0 z-0 pointer-events-none styling in P2",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] Telemetry beacon coordinates boundary: Bangalore latitude/longitude boundaries (12.9716° N, 77.5946° E)",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] Telemetry beacon coordinates boundary: Bangalore latitude/longitude boundaries (12.9716° N, 77.5946° E)",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F12] Cyber-environmental theme styling boundary: dark glassmorphic palette tokens (#080C0E, cyan-400)",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F12] Cyber-environmental theme styling boundary: dark glassmorphic palette tokens (#080C0E, cyan-400)",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] 5-stage scroll journey boundary: exactly 5 distinct chapters/sections in P2",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] 5-stage scroll journey boundary: exactly 5 distinct chapters/sections in P2",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] Scroll trigger anchor boundaries: all section IDs (#objectives, #teams, #events, #climate-tips) present in P2",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] Scroll trigger anchor boundaries: all section IDs (#objectives, #teams, #events, #climate-tips) present in P2",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] Interactive HUD tab state boundary: active tab index clamped between 0 and total tabs - 1",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] Interactive HUD tab state boundary: active tab index clamped between 0 and total tabs - 1",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] Glassmorphic card styling boundary: backdrop-blur and border-cyan tokens in P2",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] Glassmorphic card styling boundary: backdrop-blur and border-cyan tokens in P2",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] Scroll trigger overscroll and reverse scroll resilience: clamps extreme wheel deltas",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] Scroll trigger overscroll and reverse scroll resilience: clamps extreme wheel deltas",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F13] P2 application form CTA link boundary: links to verified Google Form",
+      "fullTitle": "Tier 2: 3D Canvas, Particles & Scroll Overlay Boundaries (F10, F11, F12, F13) > [F13] P2 application form CTA link boundary: links to verified Google Form",
+      "file": "tests/e2e/tier2-boundaries/t2_f10_f13_canvas_bounds.test.js",
+      "tier": 2,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F14] Protocol boundary: all external links strictly use https:, mailto:, or tel:",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Protocol boundary: all external links strictly use https:, mailto:, or tel:",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Security boundary: reject dangerous javascript: URL schemes",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Security boundary: reject dangerous javascript: URL schemes",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Security boundary: reject inline data: URL schemes",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Security boundary: reject inline data: URL schemes",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Security boundary: reject file:, blob:, and malformed protocol schemes",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Security boundary: reject file:, blob:, and malformed protocol schemes",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F14] Substack article URL regex boundary: valid note post ID format",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Substack article URL regex boundary: valid note post ID format",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Substack article metadata boundary: non-empty title, subtitle, publishedDate, coverImageUrl",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Substack article metadata boundary: non-empty title, subtitle, publishedDate, coverImageUrl",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Contact phone number E.164 boundary: matches Indian format (+91 8050931769)",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Contact phone number E.164 boundary: matches Indian format (+91 8050931769)",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Phone validation boundary: rejects invalid numbers (short, bad country code, letters)",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Phone validation boundary: rejects invalid numbers (short, bad country code, letters)",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F14] Contact email address boundary: valid RFC 5322 standard format (avaniyocc@gmail.com)",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F14] Contact email address boundary: valid RFC 5322 standard format (avaniyocc@gmail.com)",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F15] Build script configuration boundary: package.json scripts contain build and lint",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] Build script configuration boundary: package.json scripts contain build and lint",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F15] TypeScript configuration boundary: tsconfig.json strict mode enabled",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] TypeScript configuration boundary: tsconfig.json strict mode enabled",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F15] Next.js lint configuration boundary: .eslintrc.json extends next/core-web-vitals",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] Next.js lint configuration boundary: .eslintrc.json extends next/core-web-vitals",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F15] Build exit code expectation boundary: successful command returns exit code 0",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] Build exit code expectation boundary: successful command returns exit code 0",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 28,
+      "error": null
+    },
+    {
+      "title": "[F15] Build timeout boundary: timeout threshold is bounded between 10s and 300s",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] Build timeout boundary: timeout threshold is bounded between 10s and 300s",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F15] Failure cascade boundary: non-zero exit code throws AssertionError",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F15] Failure cascade boundary: non-zero exit code throws AssertionError",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 26,
+      "error": null
+    },
+    {
+      "title": "[F16] Narrow mobile viewport boundary (320px width): layout prevents min-width overflow",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F16] Narrow mobile viewport boundary (320px width): layout prevents min-width overflow",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "[F16] Ultra-wide 4K viewport boundary (3840px width): content max-width containers applied",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F16] Ultra-wide 4K viewport boundary (3840px width): content max-width containers applied",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F16] Tailwind responsive breakpoint configuration boundaries (sm, md, lg, xl, 2xl)",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F16] Tailwind responsive breakpoint configuration boundaries (sm, md, lg, xl, 2xl)",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F16] Ultra-tall viewport boundary: hero section enforces minimum viewport height (min-h-[70vh])",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F16] Ultra-tall viewport boundary: hero section enforces minimum viewport height (min-h-[70vh])",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "[F16] Mobile touch target size boundary: interactive buttons meet minimum 36px/44px height",
+      "fullTitle": "Tier 2: Content Links, Build Gate & Viewport Boundaries (F14, F15, F16) > [F16] Mobile touch target size boundary: interactive buttons meet minimum 36px/44px height",
+      "file": "tests/e2e/tier2-boundaries/t2_f14_f16_content_bounds.test.js",
+      "tier": 2,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 1 (F1 x F3): P1 Stitch Mockup generation x Local HTML/PNG export integrity",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 1 (F1 x F3): P1 Stitch Mockup generation x Local HTML/PNG export integrity",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F1",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 2 (F2 x F3): P2 Stitch Mockup generation x Local HTML/PNG export integrity",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 2 (F2 x F3): P2 Stitch Mockup generation x Local HTML/PNG export integrity",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F2",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 3 (F4 x F11): Google Flow generated media x P1 scroll overlay card rendering",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 3 (F4 x F11): Google Flow generated media x P1 scroll overlay card rendering",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "Pair 4 (F4 x F13): Google Flow media x P2 dark glassmorphic HUD tabs rendering",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 4 (F4 x F13): Google Flow media x P2 dark glassmorphic HUD tabs rendering",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 5 (F5 x F8): Brand logo asset x Universal Navbar rendering and brand link",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 5 (F5 x F8): Brand logo asset x Universal Navbar rendering and brand link",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 6 (F5 x F9): Brand logo asset x Central Comparison Hub (/hub) header rendering",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 6 (F5 x F9): Brand logo asset x Central Comparison Hub (/hub) header rendering",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F5",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 7 (F6 x F10): Next.js App Router layout x P1 3D Canvas SSR isolation",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 7 (F6 x F10): Next.js App Router layout x P1 3D Canvas SSR isolation",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 8 (F6 x F12): Next.js App Router layout x P2 3D Canvas particle system initialization",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 8 (F6 x F12): Next.js App Router layout x P2 3D Canvas particle system initialization",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F6",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 9 (F7 x F11): Shared avaniContent.ts module x P1 5-stage scroll journey cards",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 9 (F7 x F11): Shared avaniContent.ts module x P1 5-stage scroll journey cards",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 10 (F7 x F13): Shared avaniContent.ts module x P2 HUD interactive sections",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 10 (F7 x F13): Shared avaniContent.ts module x P2 HUD interactive sections",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 11 (F7 x F14): Shared avaniContent.ts link data x Contact & Link verification across all social channels",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 11 (F7 x F14): Shared avaniContent.ts link data x Contact & Link verification across all social channels",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 12 (F8 x F9): Universal Navbar prototype switcher x Navigation routes (/, /prototype-1, /prototype-2)",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 12 (F8 x F9): Universal Navbar prototype switcher x Navigation routes (/, /prototype-1, /prototype-2)",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 13 (F10 x F11): P1 3D scene canvas fixed positioning x GSAP ScrollTrigger overlay scrub coordination",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 13 (F10 x F11): P1 3D scene canvas fixed positioning x GSAP ScrollTrigger overlay scrub coordination",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F10",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 14 (F12 x F13): P2 3D particle globe canvas x HUD telemetry cards synchronized scroll rotation",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 14 (F12 x F13): P2 3D particle globe canvas x HUD telemetry cards synchronized scroll rotation",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 15 (F14 x F8): Universal Footer social links x Verified Avani external URLs",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 15 (F14 x F8): Universal Footer social links x Verified Avani external URLs",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pair 16 (F15 x F16): Next.js build compilation gate x Browser visual styling and contrast assertions",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pair 16 (F15 x F16): Next.js build compilation gate x Browser visual styling and contrast assertions",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F15",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Pairwise Adversarial 1: Invalid external URL protocol injection is rejected",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pairwise Adversarial 1: Invalid external URL protocol injection is rejected",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "Pairwise Adversarial 2: Sub-threshold color contrast combinations are detected and rejected",
+      "fullTitle": "Tier 3: Pairwise Subsystem Interactions (F1-F16 Combinations) > Pairwise Adversarial 2: Sub-threshold color contrast combinations are detected and rejected",
+      "file": "tests/e2e/tier3-combinations/t3_pairwise_interactions.test.js",
+      "tier": 3,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 1.1: User lands on Comparison Hub (/hub) and evaluates both prototype directions",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 1: Prospective Student Explorer Journey > Scenario 1.1: User lands on Comparison Hub (/hub) and evaluates both prototype directions",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F9",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 1.2: User transitions to /prototype-1 and traverses all 5 scroll chapters",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 1: Prospective Student Explorer Journey > Scenario 1.2: User transitions to /prototype-1 and traverses all 5 scroll chapters",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 1.3: User reviews recruitment application form and 6 applicant instructions",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 1: Prospective Student Explorer Journey > Scenario 1.3: User reviews recruitment application form and 6 applicant instructions",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 2.1: User navigates directly to /prototype-2 and inspects Bangalore telemetry beacon",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 2: Climate Action Advocate Journey > Scenario 2.1: User navigates directly to /prototype-2 and inspects Bangalore telemetry beacon",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F12",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 2.2: User inspects the 11 Climate Tips categorized across 4 environmental pillars",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 2: Climate Action Advocate Journey > Scenario 2.2: User inspects the 11 Climate Tips categorized across 4 environmental pillars",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F13",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 2.3: User accesses Substack publication link and validates 3 investigative articles",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 2: Climate Action Advocate Journey > Scenario 2.3: User accesses Substack publication link and validates 3 investigative articles",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 1,
+      "error": null
+    },
+    {
+      "title": "Scenario 3.1: User explores all 4 community events and inspects on-ground impact metrics",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 3: Event Attendee & Donor Journey > Scenario 3.1: User explores all 4 community events and inspects on-ground impact metrics",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F11",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 3.2: User verifies event banner imagery exists on disk with valid dimensions",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 3: Event Attendee & Donor Journey > Scenario 3.2: User verifies event banner imagery exists on disk with valid dimensions",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 3.3: User accesses Instagram, LinkedIn, and direct contact channels for donation and volunteering",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 3: Event Attendee & Donor Journey > Scenario 3.3: User accesses Instagram, LinkedIn, and direct contact channels for donation and volunteering",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F14",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 4.1: Mobile viewport (375x667) navigation layout hides desktop switcher and provides mobile drawer",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 4: Mobile Device Responsive Journey > Scenario 4.1: Mobile viewport (375x667) navigation layout hides desktop switcher and provides mobile drawer",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F8",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 4.2: Page containers and grids collapse responsively to prevent horizontal layout blowout",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 4: Mobile Device Responsive Journey > Scenario 4.2: Page containers and grids collapse responsively to prevent horizontal layout blowout",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 4.3: Responsive typography scales appropriately between mobile and desktop",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 4: Mobile Device Responsive Journey > Scenario 4.3: Responsive typography scales appropriately between mobile and desktop",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F16",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 5.1: Stitch MCP mockups, generated media, and live pages share brand green #163515 harmony",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 5: Design & Architecture Consistency Audit > Scenario 5.1: Stitch MCP mockups, generated media, and live pages share brand green #163515 harmony",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 5.2: Complete Google Flow media asset catalog verification",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 5: Design & Architecture Consistency Audit > Scenario 5.2: Complete Google Flow media asset catalog verification",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F4",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    },
+    {
+      "title": "Scenario 5.3: Verbatim copy audit against official PDF briefing",
+      "fullTitle": "Tier 4: Real-World End-to-End User Scenarios > Scenario 5: Design & Architecture Consistency Audit > Scenario 5.3: Verbatim copy audit against official PDF briefing",
+      "file": "tests/e2e/tier4-scenarios/t4_real_world_workloads.test.js",
+      "tier": 4,
+      "feature": "F7",
+      "status": "passed",
+      "durationMs": 0,
+      "error": null
+    }
+  ]
+}
