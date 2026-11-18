@@ -12,9 +12,10 @@ import {
   BookOpen, 
   ChevronUp,
   MapPin,
-  Heart
+  Heart,
+  ExternalLink
 } from 'lucide-react';
-import { EXTERNAL_LINKS, AVANI_ORGANIZATION } from '@/lib/avaniContent';
+import { EXTERNAL_LINKS, AVANI_ORGANIZATION, AVANI_TEAMS, AVANI_OBJECTIVES } from '@/lib/avaniContent';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -36,8 +37,8 @@ export function Footer() {
               <h3 className="text-xl font-bold text-white font-serif">
                 Join the Avani Youth Environmental Movement
               </h3>
-              <p className="text-sm text-stone-300 max-w-xl">
-                Be part of our Research & Writing, Design, HR & Communications, Social Media, or Event Planning teams. Real on-ground impact in Bangalore.
+              <p className="text-sm text-stone-300 max-w-xl mt-1">
+                Be part of our Research & Writing, Design, HR & Communications, Social Media, or Event Planning teams. Real on-ground impact across Bangalore.
               </p>
             </div>
           </div>
@@ -59,13 +60,13 @@ export function Footer() {
           {/* Column 1: Brand & Mission */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-emerald-500/30 bg-[#163515] shrink-0">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/30 bg-[#163515] shrink-0 p-1">
                 <Image
-                  src="/assets/branding/logo.jpg"
+                  src="/assets/branding/avani_logo_transparent.png"
                   alt="Avani Logo"
-                  fill
-                  sizes="44px"
-                  className="object-cover"
+                  width={48}
+                  height={48}
+                  className="object-contain"
                 />
               </div>
               <div>
@@ -96,86 +97,71 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Prototypes & Navigation */}
+          {/* Column 2: Initiatives & Sections */}
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
-              Landing Page Prototypes
+              Our Initiatives
             </h4>
-            <ul className="flex flex-col gap-2.5 text-sm">
+            <ul className="flex flex-col gap-2 text-sm text-stone-300">
               <li>
-                <Link
-                  href="/"
-                  className="text-stone-300 hover:text-white transition-colors flex items-center justify-between group"
-                >
-                  <span>Avani Editorial (Flagship)</span>
-                  <span className="text-xs font-mono text-stone-500 group-hover:text-emerald-400">
-                    /
-                  </span>
-                </Link>
+                <a href="#about" className="hover:text-white transition-colors">
+                  About Our Mission
+                </a>
               </li>
               <li>
-                <Link
-                  href="/hub"
-                  className="text-stone-300 hover:text-white transition-colors flex items-center justify-between group"
-                >
-                  <span>Showcase Hub</span>
-                  <span className="text-xs font-mono text-stone-500 group-hover:text-emerald-400">
-                    /hub
-                  </span>
-                </Link>
+                <a href="#objectives" className="hover:text-white transition-colors">
+                  5 Core Pillars of Impact
+                </a>
               </li>
               <li>
-                <Link
-                  href="/prototype-1"
-                  className="text-stone-300 hover:text-white transition-colors flex items-center justify-between group"
-                >
-                  <span>Prototype 1: Living Canopy</span>
-                  <span className="text-xs font-mono text-stone-500 group-hover:text-emerald-400">
-                    /prototype-1
-                  </span>
-                </Link>
+                <a href="#teams" className="hover:text-white transition-colors">
+                  The 5 Student Teams
+                </a>
               </li>
               <li>
-                <Link
-                  href="/prototype-2"
-                  className="text-stone-300 hover:text-white transition-colors flex items-center justify-between group"
-                >
-                  <span>Prototype 2: Eco-Tech Biosphere</span>
-                  <span className="text-xs font-mono text-stone-500 group-hover:text-emerald-400">
-                    /prototype-2
-                  </span>
-                </Link>
-              </li>
-            </ul>
-
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mt-4 mb-1">
-              Organization Sections
-            </h4>
-            <ul className="flex flex-col gap-2 text-xs text-stone-400">
-              <li>
-                <Link href="/#objectives" className="hover:text-stone-200 transition-colors">
-                  5 Core Objectives
-                </Link>
+                <a href="#events" className="hover:text-white transition-colors">
+                  4 Realized Community Events
+                </a>
               </li>
               <li>
-                <Link href="/#teams" className="hover:text-stone-200 transition-colors">
-                  5 Specialized Student Teams
-                </Link>
+                <a href="#climate-tips" className="hover:text-white transition-colors">
+                  11 Climate Action Tips (Interactive)
+                </a>
               </li>
               <li>
-                <Link href="/#events" className="hover:text-stone-200 transition-colors">
-                  4 Flagship Community Events
-                </Link>
+                <a href="#publications" className="hover:text-white transition-colors">
+                  Substack Thought Leadership
+                </a>
               </li>
               <li>
-                <Link href="/#climate-tips" className="hover:text-stone-200 transition-colors">
-                  11 Actionable Climate Tips
-                </Link>
+                <a href="#apply" className="hover:text-white transition-colors">
+                  Join Our Bangalore Cohort
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Direct Contacts & Articles */}
+          {/* Column 3: The 5 Student Teams */}
+          <div className="flex flex-col gap-3">
+            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
+              Student Leadership Teams
+            </h4>
+            <ul className="flex flex-col gap-2.5 text-xs text-stone-300">
+              {AVANI_TEAMS.map((team) => (
+                <li key={team.id} className="flex flex-col">
+                  <span className="font-semibold text-stone-100">{team.name}</span>
+                  <span className="text-stone-400 text-[11px]">{team.role || team.keyFocus}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="pt-2">
+              <span className="text-[11px] text-emerald-400 font-mono">
+                Task format: NAME_AVANI_SUBMISSION
+              </span>
+            </div>
+          </div>
+
+          {/* Column 4: Contact & Socials */}
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
               Direct Contact
@@ -198,91 +184,67 @@ export function Footer() {
             </div>
 
             <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mt-4 mb-1">
-              Substack Investigations
+              Connect With Us
             </h4>
             <div className="flex flex-col gap-2 text-xs">
-              {EXTERNAL_LINKS.substackArticles.map((art) => (
-                <a
-                  key={art.id}
-                  href={art.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-400 hover:text-emerald-300 flex items-start gap-1.5 transition-colors group"
-                >
-                  <BookOpen className="w-3.5 h-3.5 shrink-0 text-emerald-500 mt-0.5 group-hover:text-emerald-400" />
-                  <span className="line-clamp-1 leading-snug">{art.title}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Column 4: Community & Social Channels */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
-              Social Media Channels
-            </h4>
-            <p className="text-xs text-stone-400">
-              Follow our youth organization, explore climate journalism, and connect with our student leadership.
-            </p>
-
-            <div className="flex items-center gap-3">
               <a
-                href={EXTERNAL_LINKS.linkedIn}
+                href={EXTERNAL_LINKS.instagramClean}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-emerald-950/80 border border-emerald-800/40 text-stone-300 hover:text-emerald-300 hover:border-emerald-500 transition-all"
-                aria-label="Avani LinkedIn"
+                className="text-stone-300 hover:text-emerald-400 transition-colors flex items-center gap-2"
               >
-                <Linkedin className="w-5 h-5" />
+                <Instagram className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Instagram (@avani_yocc)</span>
+                <ExternalLink className="w-3 h-3 text-stone-500" />
               </a>
               <a
                 href={EXTERNAL_LINKS.substack}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-emerald-950/80 border border-emerald-800/40 text-stone-300 hover:text-emerald-300 hover:border-emerald-500 transition-all"
-                aria-label="Avani Substack"
+                className="text-stone-300 hover:text-emerald-400 transition-colors flex items-center gap-2"
               >
-                <BookOpen className="w-5 h-5" />
+                <BookOpen className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Substack (avaniyocc)</span>
+                <ExternalLink className="w-3 h-3 text-stone-500" />
               </a>
               <a
-                href={EXTERNAL_LINKS.instagramClean}
+                href={EXTERNAL_LINKS.linkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-emerald-950/80 border border-emerald-800/40 text-stone-300 hover:text-emerald-300 hover:border-emerald-500 transition-all"
-                aria-label="Avani Instagram"
+                className="text-stone-300 hover:text-emerald-400 transition-colors flex items-center gap-2"
               >
-                <Instagram className="w-5 h-5" />
+                <Linkedin className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>LinkedIn (company/avaniyocc)</span>
+                <ExternalLink className="w-3 h-3 text-stone-500" />
               </a>
-            </div>
-
-            <div className="mt-2 p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-800/20 text-xs text-stone-400 flex flex-col gap-1.5">
-              <span className="font-semibold text-white">Canva Mood Board Inspiration:</span>
-              <span className="text-[11px] leading-relaxed">
-                Prototype 1 derived from Idea 5 (Blume/Glow Garden). Prototype 2 derived from Alternative Direction (Modern Eco-Tech / Interactive Biosphere).
-              </span>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar / Copyright */}
-        <div className="mt-12 pt-8 border-t border-emerald-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© 2025 Avani. Earth In Our Hands. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <span>Bangalore Youth Climate Action · Next.js 14 & Three.js</span>
-            <button
-              type="button"
-              onClick={scrollToTop}
-              className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors p-1"
-              aria-label="Scroll back to top"
-            >
-              <span>Back to Top</span>
-              <ChevronUp className="w-4 h-4" />
-            </button>
+      {/* Bottom Bar: Copyright & Back to Top */}
+      <div className="border-t border-emerald-900/30 bg-[#0A1A0B] py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <span>
+              &copy; {new Date().getFullYear()} Avani Youth Organization for Climate Care. All rights reserved.
+            </span>
+            <span className="hidden sm:inline">&middot;</span>
+            <span className="text-emerald-400">
+              100% Student-Led &middot; Bangalore, India
+            </span>
           </div>
+
+          <button
+            onClick={scrollToTop}
+            className="flex items-center gap-1.5 text-stone-300 hover:text-white transition-colors bg-emerald-950/60 hover:bg-emerald-900/60 px-3 py-1.5 rounded-full border border-emerald-800/40 text-xs"
+            aria-label="Scroll back to top"
+          >
+            <span>Back to top</span>
+            <ChevronUp className="w-3.5 h-3.5" />
+          </button>
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;
