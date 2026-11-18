@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google';
+import { Inter, Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -8,10 +8,17 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-playfair',
+  variable: '--font-fraunces',
+  axes: ['opsz', 'SOFT'],
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jakarta',
 });
 
 const jetbrains = JetBrains_Mono({
@@ -35,7 +42,7 @@ export const metadata: Metadata = {
     'Avani YOCC',
   ],
   icons: {
-    icon: '/assets/branding/avani_logo_transparent.png',
+    icon: '/assets/branding/avani_logo_circle.png',
     apple: '/assets/branding/avani_logo_square.png',
   },
   openGraph: {
@@ -49,7 +56,7 @@ export const metadata: Metadata = {
         url: '/assets/branding/avani_logo_square.png',
         width: 1024,
         height: 1024,
-        alt: 'Avani Official Emblem',
+        alt: 'Avani Official Olive Green Emblem',
       },
     ],
     locale: 'en_IN',
@@ -65,9 +72,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} ${jetbrains.variable} scroll-smooth`}
+      className={`${inter.variable} ${fraunces.variable} ${plusJakarta.variable} ${jetbrains.variable} scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#F9FAF7] text-[#163515] antialiased selection:bg-emerald-200 selection:text-emerald-950 font-sans">
+      <body className="min-h-screen bg-[#F9FAF7] text-[#163515] antialiased selection:bg-[#54683C] selection:text-white font-sans">
         {children}
       </body>
     </html>

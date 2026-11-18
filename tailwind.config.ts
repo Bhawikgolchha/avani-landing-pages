@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         avani: {
           forest: "#163515",
+          olive: "#54683C",
+          oliveLight: "#708953",
+          oliveDark: "#3E4E2A",
           tea: "#DCE7D4",
           sand: "#F4EFEA",
           emerald: "#0D200C",
@@ -23,8 +26,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        serif: ["var(--font-playfair)", "Georgia", "serif"],
+        sans: ["var(--font-jakarta)", "var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-fraunces)", "Georgia", "serif"],
+        display: ["var(--font-jakarta)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },
     },

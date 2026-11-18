@@ -479,7 +479,7 @@ export function OrbitalWorkRing() {
               &apos;24—&apos;26
             </span>
             <span className={`mt-2 block font-mono text-xs uppercase tracking-widest ${mutedText}`}>
-              Events · Press · Canva
+              Events &middot; Substack &middot; Action
             </span>
           </div>
         </div>
