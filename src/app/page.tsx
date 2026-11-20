@@ -97,8 +97,8 @@ function AvaniPageShell() {
             <div className="relative inline-flex items-center justify-center group">
               <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-full p-2.5 transition-all duration-300 group-hover:scale-105 flex items-center justify-center shadow-md ${
                 isNight
-                  ? 'bg-[#54683C] border-2 border-[#6EE7B7]/40 ring-4 ring-[#6EE7B7]/10 shadow-[0_0_30px_rgba(110,231,183,0.3)]'
-                  : 'bg-[#54683C] border-2 border-[#6E874E] ring-4 ring-[#54683C]/10 shadow-lg shadow-[#54683C]/20'
+                  ? 'bg-[#263419] border-2 border-[#6EE7B7]/40 ring-4 ring-[#6EE7B7]/10 shadow-[0_0_30px_rgba(110,231,183,0.3)]'
+                  : 'bg-[#364724] border-2 border-[#4E6334] ring-4 ring-[#364724]/15 shadow-lg shadow-[#364724]/25'
               }`}>
                 <Image
                   src="/assets/branding/avani_logo_transparent.png"

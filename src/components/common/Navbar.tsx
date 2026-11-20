@@ -64,7 +64,11 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo & Brand Identity with Olive Green Background */}
           <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-            <div className="relative w-11 h-11 rounded-full overflow-hidden border border-[#6E874E] bg-[#54683C] shadow-sm transition-transform duration-200 group-hover:scale-105 shrink-0 flex items-center justify-center p-1">
+            <div className={`relative w-11 h-11 rounded-full overflow-hidden shadow-sm transition-transform duration-200 group-hover:scale-105 shrink-0 flex items-center justify-center p-1 ${
+              isNight
+                ? 'bg-[#263419] border border-[#6EE7B7]/40'
+                : 'bg-[#364724] border border-[#4E6334]'
+            }`}>
               <Image
                 src="/assets/branding/avani_logo_transparent.png"
                 alt="Avani Official Emblem"
