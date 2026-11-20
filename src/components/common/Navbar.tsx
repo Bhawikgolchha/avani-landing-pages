@@ -12,9 +12,12 @@ import {
   Instagram,
   Linkedin,
   BookOpen,
-  Sparkles
+  Sparkles,
+  Sun,
+  Moon
 } from 'lucide-react';
 import { EXTERNAL_LINKS } from '@/lib/avaniContent';
+import { useAvaniTheme } from '@/components/bleibtgleich/ThemeTransitionOverlay';
 
 export interface NavLink {
   label: string;
@@ -26,7 +29,7 @@ const NAV_LINKS: NavLink[] = [
   { label: 'About', href: '/#about' },
   { label: 'Objectives', href: '/#objectives' },
   { label: 'Teams', href: '/#teams' },
-  { label: '3D Events', href: '/#events' },
+  { label: 'Events', href: '/#events' },
   { label: 'Publications', href: '/#publications' },
   { label: 'Climate Quiz', href: '/quiz', highlight: true },
   { label: 'Join Us', href: '/#apply' },
@@ -37,6 +40,7 @@ export const GOOGLE_FORM_URL = EXTERNAL_LINKS.applicationForm;
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { isNight, toggleTheme } = useAvaniTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,14 +50,16 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const bgClasses = isNight
+    ? scrolled
+      ? 'bg-[#08140B]/95 backdrop-blur-md border-b border-[#6EE7B7]/20 shadow-sm py-3 text-[#DCE7D4]'
+      : 'bg-[#08140B]/80 backdrop-blur-sm border-b border-transparent py-4 text-[#DCE7D4]'
+    : scrolled
+      ? 'bg-white/95 backdrop-blur-md border-b border-[#54683C]/15 shadow-sm py-3 text-[#163515]'
+      : 'bg-[#F9FAF7]/85 backdrop-blur-sm border-b border-transparent py-4 text-[#163515]';
+
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-[#54683C]/15 shadow-sm py-3'
-          : 'bg-[#F9FAF7]/85 backdrop-blur-sm border-b border-transparent py-4'
-      }`}
-    >
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${bgClasses}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo & Brand Identity with Olive Green Background */}
@@ -69,10 +75,10 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif font-bold text-2xl tracking-tight text-[#163515] leading-none">
+              <span className="font-serif font-bold text-2xl tracking-tight leading-none">
                 Avani
               </span>
-              <span className="text-[10px] font-semibold text-[#54683C] tracking-wider uppercase mt-1">
+              <span className={`text-[10px] font-semibold tracking-wider uppercase mt-1 ${isNight ? 'text-[#A7F3D0]' : 'text-[#54683C]'}`}>
                 Bangalore Youth Climate Collective
               </span>
             </div>
@@ -86,26 +92,30 @@ export function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors relative py-1 flex items-center gap-1.5 ${
                   link.highlight
-                    ? 'text-[#54683C] hover:text-[#163515] font-semibold bg-[#DCE7D4]/60 px-3 py-1 rounded-full border border-[#54683C]/20'
-                    : 'text-stone-700 hover:text-[#163515] hover:font-semibold'
+                    ? isNight
+                      ? 'text-[#6EE7B7] hover:text-white font-semibold bg-[#163515] px-3.5 py-1 rounded-full border border-[#6EE7B7]/40 shadow-sm'
+                      : 'text-[#54683C] hover:text-[#163515] font-semibold bg-[#DCE7D4]/60 px-3.5 py-1 rounded-full border border-[#54683C]/20'
+                    : isNight
+                      ? 'text-stone-300 hover:text-white hover:font-semibold'
+                      : 'text-stone-700 hover:text-[#163515] hover:font-semibold'
                 }`}
               >
-                {link.highlight && <Sparkles className="w-3.5 h-3.5 text-[#54683C]" />}
+                {link.highlight && <Sparkles className="w-3.5 h-3.5" />}
                 <span>{link.label}</span>
               </Link>
             ))}
           </nav>
 
           {/* Desktop Right Action Area */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden sm:flex items-center gap-3">
             {/* Social Shortcuts */}
-            <div className="hidden xl:flex items-center gap-2 border-r border-stone-200 pr-3">
+            <div className={`hidden xl:flex items-center gap-1.5 border-r pr-3 ${isNight ? 'border-white/10' : 'border-stone-200'}`}>
               <a
                 href={EXTERNAL_LINKS.instagramClean}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Avani on Instagram"
-                className="p-2 text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50 rounded-full transition-colors"
+                className={`p-2 rounded-full transition-colors ${isNight ? 'text-stone-400 hover:text-[#6EE7B7] hover:bg-white/5' : 'text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50'}`}
               >
                 <Instagram className="w-4 h-4" />
               </a>
@@ -114,7 +124,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Avani Substack"
-                className="p-2 text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50 rounded-full transition-colors"
+                className={`p-2 rounded-full transition-colors ${isNight ? 'text-stone-400 hover:text-[#6EE7B7] hover:bg-white/5' : 'text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50'}`}
               >
                 <BookOpen className="w-4 h-4" />
               </a>
@@ -123,33 +133,55 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Avani LinkedIn"
-                className="p-2 text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50 rounded-full transition-colors"
+                className={`p-2 rounded-full transition-colors ${isNight ? 'text-stone-400 hover:text-[#6EE7B7] hover:bg-white/5' : 'text-stone-500 hover:text-[#54683C] hover:bg-[#DCE7D4]/50'}`}
               >
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
+
+            {/* Dark Mode / Night Fireflies Toggle */}
+            <button
+              type="button"
+              onClick={toggleTheme}
+              title={isNight ? 'Switch to Daylight' : 'Switch to Fireflies Night Mode'}
+              className={`p-2.5 rounded-full transition-all duration-300 flex items-center justify-center ${
+                isNight
+                  ? 'bg-[#163515] text-amber-300 hover:bg-[#1f471e] border border-[#6EE7B7]/30 shadow-[0_0_15px_rgba(110,231,183,0.3)]'
+                  : 'bg-stone-100 text-stone-600 hover:text-[#54683C] hover:bg-[#DCE7D4]/60 border border-stone-200/80'
+              }`}
+              aria-label="Toggle Night Mode"
+            >
+              {isNight ? <Moon className="w-4 h-4 text-amber-300" /> : <Sun className="w-4 h-4" />}
+            </button>
 
             {/* Primary Apply Button */}
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#163515] hover:bg-[#254d24] text-white text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
+              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 ${
+                isNight
+                  ? 'bg-[#6EE7B7] hover:bg-[#5cd4a6] text-[#08140B]'
+                  : 'bg-[#163515] hover:bg-[#254d24] text-white'
+              }`}
             >
               <span>Apply to Join</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-emerald-300" />
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>
 
-          {/* Mobile Hamburger Button */}
+          {/* Mobile Hamburger & Controls */}
           <div className="flex items-center gap-2 lg:hidden">
-            <Link
-              href="/quiz"
-              className="sm:hidden px-3 py-1.5 rounded-full bg-[#DCE7D4] text-[#163515] text-xs font-semibold tracking-wide border border-[#54683C]/30 flex items-center gap-1"
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className={`p-2 rounded-full transition-colors ${
+                isNight ? 'bg-[#163515] text-amber-300' : 'bg-stone-100 text-stone-700'
+              }`}
+              aria-label="Toggle Theme"
             >
-              <Sparkles className="w-3 h-3 text-[#54683C]" />
-              <span>Quiz</span>
-            </Link>
+              {isNight ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+            </button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -164,7 +196,9 @@ export function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white/98 backdrop-blur-xl border-b border-stone-200 px-4 pt-3 pb-6 shadow-xl animate-in slide-in-from-top-4 duration-200">
+        <div className={`lg:hidden border-b px-4 pt-3 pb-6 shadow-xl animate-in slide-in-from-top-4 duration-200 ${
+          isNight ? 'bg-[#08140B]/98 border-[#6EE7B7]/20 text-[#DCE7D4]' : 'bg-white/98 border-stone-200 text-stone-900'
+        }`}>
           <nav className="flex flex-col gap-2">
             {NAV_LINKS.map((link) => (
               <Link
@@ -173,71 +207,46 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`px-3 py-2.5 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${
                   link.highlight
-                    ? 'bg-[#DCE7D4]/70 text-[#163515] font-semibold border border-[#54683C]/20'
-                    : 'text-stone-800 hover:bg-emerald-50 hover:text-[#163515]'
+                    ? isNight ? 'bg-[#163515] text-[#6EE7B7] font-semibold' : 'bg-[#DCE7D4]/70 text-[#163515] font-semibold'
+                    : isNight ? 'text-stone-200 hover:bg-white/5' : 'text-stone-800 hover:bg-emerald-50'
                 }`}
               >
                 <span>{link.label}</span>
                 {link.highlight && (
-                  <span className="text-xs bg-[#54683C] text-white px-2 py-0.5 rounded-full font-sans">
-                    New
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#6EE7B7] text-[#08140B]' : 'bg-[#54683C] text-white'}`}>
+                    Quiz
                   </span>
                 )}
               </Link>
             ))}
           </nav>
 
-          <div className="mt-4 pt-4 border-t border-stone-100 flex flex-col gap-3">
+          <div className="mt-4 pt-4 border-t border-stone-100/20 flex flex-col gap-3">
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#163515] text-white text-sm font-semibold shadow-md active:scale-98 transition-all"
+              className={`w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold shadow-md active:scale-98 transition-all ${
+                isNight ? 'bg-[#6EE7B7] text-[#08140B]' : 'bg-[#163515] text-white'
+              }`}
             >
-              <span>Apply to Join Avani (Google Form)</span>
-              <ArrowUpRight className="w-4 h-4 text-emerald-300" />
+              <span>Apply to Join Avani</span>
+              <ArrowUpRight className="w-4 h-4" />
             </a>
 
-            <div className="flex items-center justify-around pt-2 text-stone-600">
-              <a
-                href={EXTERNAL_LINKS.instagramClean}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-xs hover:text-[#54683C]"
-              >
+            <div className="flex items-center justify-around pt-2 text-stone-400">
+              <a href={EXTERNAL_LINKS.instagramClean} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs hover:text-[#54683C]">
                 <Instagram className="w-4 h-4" />
                 <span>Instagram</span>
               </a>
-              <a
-                href={EXTERNAL_LINKS.substack}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-xs hover:text-[#54683C]"
-              >
+              <a href={EXTERNAL_LINKS.substack} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs hover:text-[#54683C]">
                 <BookOpen className="w-4 h-4" />
                 <span>Substack</span>
               </a>
-              <a
-                href={EXTERNAL_LINKS.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-xs hover:text-[#54683C]"
-              >
+              <a href={EXTERNAL_LINKS.linkedIn} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs hover:text-[#54683C]">
                 <Linkedin className="w-4 h-4" />
                 <span>LinkedIn</span>
-              </a>
-            </div>
-
-            <div className="text-center text-xs text-stone-500 pt-2 flex items-center justify-center gap-3">
-              <a href={EXTERNAL_LINKS.emailMailto} className="flex items-center gap-1 hover:text-[#54683C]">
-                <Mail className="w-3.5 h-3.5 text-[#54683C]" />
-                <span>{EXTERNAL_LINKS.email}</span>
-              </a>
-              <span>·</span>
-              <a href={EXTERNAL_LINKS.phoneTel} className="flex items-center gap-1 hover:text-[#54683C]">
-                <Phone className="w-3.5 h-3.5 text-[#54683C]" />
-                <span>{EXTERNAL_LINKS.phoneFormatted}</span>
               </a>
             </div>
           </div>
