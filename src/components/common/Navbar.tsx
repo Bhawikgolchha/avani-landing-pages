@@ -106,8 +106,8 @@ export function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop Right Action Area */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* Right Action Area */}
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* Social Shortcuts */}
             <div className={`hidden xl:flex items-center gap-1.5 border-r pr-3 ${isNight ? 'border-white/10' : 'border-stone-200'}`}>
               <a
@@ -139,7 +139,7 @@ export function Navbar() {
               </a>
             </div>
 
-            {/* Dark Mode / Night Fireflies Toggle */}
+            {/* SINGLE Sun/Moon Theme Toggle (Exactly one instance across all screen sizes) */}
             <button
               type="button"
               onClick={toggleTheme}
@@ -159,7 +159,7 @@ export function Navbar() {
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 ${
+              className={`hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 ${
                 isNight
                   ? 'bg-[#6EE7B7] hover:bg-[#5cd4a6] text-[#08140B]'
                   : 'bg-[#163515] hover:bg-[#254d24] text-white'
@@ -168,24 +168,14 @@ export function Navbar() {
               <span>Apply to Join</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
-          </div>
 
-          {/* Mobile Hamburger & Controls */}
-          <div className="flex items-center gap-2 lg:hidden">
-            <button
-              type="button"
-              onClick={toggleTheme}
-              className={`p-2 rounded-full transition-colors ${
-                isNight ? 'bg-[#163515] text-amber-300' : 'bg-stone-100 text-stone-700'
-              }`}
-              aria-label="Toggle Theme"
-            >
-              {isNight ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
-            </button>
+            {/* Mobile Hamburger (lg:hidden) */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-stone-700 hover:text-[#163515] hover:bg-stone-100 transition-colors focus:outline-none"
+              className={`p-2 rounded-xl lg:hidden transition-colors focus:outline-none ${
+                isNight ? 'text-stone-300 hover:text-white hover:bg-white/10' : 'text-stone-700 hover:text-[#163515] hover:bg-stone-100'
+              }`}
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

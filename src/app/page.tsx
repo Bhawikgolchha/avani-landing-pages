@@ -21,7 +21,6 @@ import {
   Sparkles
 } from 'lucide-react';
 import { Navbar, GOOGLE_FORM_URL } from '@/components/common/Navbar';
-import { Footer } from '@/components/common/Footer';
 import { FirefliesBackground } from '@/components/common/FirefliesBackground';
 import { useLenis } from '@/hooks/useLenis';
 import { 
@@ -85,43 +84,56 @@ function AvaniPageShell() {
 
       <main className="flex-grow pt-24 relative z-10">
         {/* ========================================================================= */}
-        {/* 1. HERO SECTION (Botanical Floral Brand Emblem — Unnecessary Tags Removed)  */}
+        {/* 1. HERO SECTION (Artisanal Olive Brand Crest & Editorial Typography)        */}
         {/* ========================================================================= */}
-        <section id="about" className="relative pt-6 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden text-center">
+        <section id="about" className="relative pt-12 sm:pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden text-center">
           {/* Subtle Ambient Radial Glow */}
           <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] blur-3xl pointer-events-none -z-10 rounded-full transition-opacity duration-700 ${
             isNight ? 'bg-emerald-950/40 opacity-70' : 'bg-[#DCE7D4]/60 opacity-60'
           }`} />
 
           <div className="max-w-4xl mx-auto flex flex-col items-center space-y-6 sm:space-y-8">
-            {/* Master Botanical Floral Brand Centerpiece ("AVANI" entwined with forest flowers & official logo) */}
-            <div className="relative max-w-2xl sm:max-w-3xl w-full mx-auto transition-transform duration-500 hover:scale-[1.02]">
-              <Image
-                src="/assets/branding/avani_hero_crest_composite.png"
-                alt="Avani Official Botanical Emblem with Wild Forest Flowers and Foliage"
-                width={1200}
-                height={800}
-                priority
-                className={`object-contain w-full h-auto transition-all duration-500 ${
-                  isNight ? 'filter drop-shadow-[0_0_35px_rgba(110,231,183,0.35)]' : 'filter drop-shadow-sm'
-                }`}
-              />
+            {/* Authentic Olive Green Brand Crest (Official Canva Emblem) */}
+            <div className="relative inline-flex items-center justify-center group">
+              <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-full p-2.5 transition-all duration-300 group-hover:scale-105 flex items-center justify-center shadow-md ${
+                isNight
+                  ? 'bg-[#54683C] border-2 border-[#6EE7B7]/40 ring-4 ring-[#6EE7B7]/10 shadow-[0_0_30px_rgba(110,231,183,0.3)]'
+                  : 'bg-[#54683C] border-2 border-[#6E874E] ring-4 ring-[#54683C]/10 shadow-lg shadow-[#54683C]/20'
+              }`}>
+                <Image
+                  src="/assets/branding/avani_logo_transparent.png"
+                  alt="Avani Official Olive Green Crest"
+                  width={96}
+                  height={96}
+                  priority
+                  className="object-contain w-full h-full drop-shadow-sm"
+                />
+              </div>
+            </div>
+
+            {/* Monospaced Editorial Eyebrow */}
+            <div className="flex items-center justify-center gap-2">
+              <span className={`font-mono text-xs uppercase tracking-[0.25em] font-semibold ${
+                isNight ? 'text-[#6EE7B7]' : 'text-[#54683C]'
+              }`}>
+                Bangalore Youth Climate Collective
+              </span>
             </div>
 
             {/* Monumental Headline in Fraunces */}
-            <h1 className="font-serif font-black text-4xl sm:text-6xl lg:text-7xl tracking-[-0.03em] leading-[1.08] max-w-4xl">
+            <h1 className="font-serif font-black text-4xl sm:text-6xl lg:text-7xl tracking-[-0.035em] leading-[1.06] text-balance max-w-4xl mx-auto">
               Small Actions of Many Add Up to{' '}
-              <span className={`italic font-normal transition-colors duration-300 ${accentText}`}>
+              <span className={`italic font-normal transition-colors duration-300 underline decoration-[#54683C]/35 decoration-wavy underline-offset-8 ${accentText}`}>
                 Change the World
               </span>
             </h1>
 
             {/* Editorial Subtext */}
-            <p className={`text-lg sm:text-xl leading-relaxed max-w-2xl font-sans ${textMuted}`}>
+            <p className={`text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto font-sans font-normal ${textMuted}`}>
               Avani unites Bangalore&apos;s students across schools and universities to turn climate anxiety into tangible, on-ground civic restoration, lake revitalization, pollution reduction, and conscious living.
             </p>
 
-            {/* Clean Action Buttons (Unnecessary tags removed) */}
+            {/* Focused Clean Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
               <a
                 href={GOOGLE_FORM_URL}
@@ -134,48 +146,52 @@ function AvaniPageShell() {
                 }`}
               >
                 <span>Apply to Join Avani</span>
-                <CheckCircle2 className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4" />
               </a>
 
-              <Link
-                href="/quiz"
+              <a
+                href="#objectives"
                 className={`px-7 py-4 rounded-full font-semibold text-sm active:scale-95 transition-all flex items-center gap-2 ${
                   isNight
                     ? 'bg-[#163515] text-[#6EE7B7] border border-[#6EE7B7]/40 hover:bg-[#1f471e]'
-                    : 'bg-[#DCE7D4] text-[#163515] border border-[#54683C]/20 hover:bg-[#d0e0c5]'
+                    : 'bg-white text-[#163515] border border-stone-200/90 hover:bg-stone-50 hover:border-stone-300 shadow-sm'
                 }`}
               >
-                <Sparkles className="w-4 h-4 text-[#54683C]" />
-                <span>Take Organization Quiz</span>
-              </Link>
+                <span>Explore Our Initiatives</span>
+                <span className="text-xs opacity-60">↓</span>
+              </a>
             </div>
 
-            {/* Swiss Editorial Counter Strip */}
-            <div className={`w-full mt-12 pt-8 border-t grid grid-cols-2 md:grid-cols-4 gap-6 text-left ${
-              isNight ? 'border-white/10' : 'border-[#54683C]/15'
+            <p className={`text-xs font-mono tracking-wide ${textMuted}`}>
+              Applications open for Bangalore Student Cohort &middot; 100% Volunteer Driven
+            </p>
+
+            {/* Swiss Editorial Metric Ribbon */}
+            <div className={`w-full mt-10 pt-8 border-t grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-left ${
+              isNight ? 'border-white/10' : 'border-[#54683C]/20'
             }`}>
-              <div className={`p-4 rounded-2xl border shadow-sm ${cardBg}`}>
-                <p className="font-serif font-bold text-3xl sm:text-4xl leading-none">04</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider mt-2 ${accentText}`}>Drives Completed</p>
-                <p className={`text-[11px] mt-0.5 ${textMuted}`}>On-ground community impact</p>
+              <div className="space-y-1">
+                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">04</p>
+                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Drives Completed</p>
+                <p className={`text-xs ${textMuted}`}>Lakes, Lalbagh, fashion swaps &amp; eco walks</p>
               </div>
 
-              <div className={`p-4 rounded-2xl border shadow-sm ${cardBg}`}>
-                <p className="font-serif font-bold text-3xl sm:text-4xl leading-none">05</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider mt-2 ${accentText}`}>Student Teams</p>
-                <p className={`text-[11px] mt-0.5 ${textMuted}`}>Multidisciplinary units</p>
+              <div className="space-y-1">
+                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">05</p>
+                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Student Teams</p>
+                <p className={`text-xs ${textMuted}`}>Research, Design, HR, Social Media &amp; Events</p>
               </div>
 
-              <div className={`p-4 rounded-2xl border shadow-sm ${cardBg}`}>
-                <p className="font-serif font-bold text-3xl sm:text-4xl leading-none">11</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider mt-2 ${accentText}`}>Everyday Habits</p>
-                <p className={`text-[11px] mt-0.5 ${textMuted}`}>Actionable climate care points</p>
+              <div className="space-y-1">
+                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">11</p>
+                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Everyday Habits</p>
+                <p className={`text-xs ${textMuted}`}>Bangalore youth sustainable living routines</p>
               </div>
 
-              <div className={`p-4 rounded-2xl border shadow-sm ${cardBg}`}>
-                <p className="font-serif font-bold text-3xl sm:text-4xl leading-none">100%</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider mt-2 ${accentText}`}>Student-Run</p>
-                <p className={`text-[11px] mt-0.5 ${textMuted}`}>Volunteer powered movement</p>
+              <div className="space-y-1">
+                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">100%</p>
+                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Student-Run</p>
+                <p className={`text-xs ${textMuted}`}>Independent volunteer environmental movement</p>
               </div>
             </div>
           </div>
@@ -465,8 +481,6 @@ function AvaniPageShell() {
         {/* ========================================================================= */}
         <ManifestoFooter />
       </main>
-
-      <Footer />
     </div>
   );
 }
