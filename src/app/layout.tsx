@@ -1,30 +1,18 @@
 import type { Metadata } from 'next';
-import { Inter, Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
+import { DM_Sans, Newsreader } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-sans-main',
 });
 
-const fraunces = Fraunces({
+const newsreader = Newsreader({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-fraunces',
-  axes: ['opsz', 'SOFT'],
-});
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-jakarta',
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-jetbrains',
+  variable: '--font-serif-main',
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -72,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} ${plusJakarta.variable} ${jetbrains.variable} scroll-smooth`}
+      className={`${dmSans.variable} ${newsreader.variable} scroll-smooth`}
     >
       <body className="min-h-screen bg-[#F9FAF7] text-[#163515] antialiased selection:bg-[#54683C] selection:text-white font-sans">
         {children}

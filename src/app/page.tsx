@@ -65,15 +65,15 @@ function AvaniPageShell() {
   const activeTeam = AVANI_TEAMS.find((t) => t.id === activeTeamId) || AVANI_TEAMS[0];
   const ActiveTeamIcon = TEAM_ICON_MAP[activeTeam.icon || 'Users'] || Users;
 
-  // Surface classes responding to Daylight vs Fireflies Night Mode
+  // Surface classes responding to Daylight vs Botanical Night Mode
   const pageBg = isNight
-    ? 'bg-[#08140B] text-[#DCE7D4] selection:bg-[#6EE7B7] selection:text-[#08140B]'
+    ? 'bg-[#0E1610] text-[#ECEFE9] selection:bg-[#86B87A] selection:text-[#0E1610]'
     : 'bg-[#F9FAF7] text-[#163515] selection:bg-[#54683C] selection:text-white';
 
-  const sectionWhite = isNight ? 'bg-[#0B1C0F]/80 border-emerald-900/30' : 'bg-white border-stone-200/60';
-  const cardBg = isNight ? 'bg-[#0D2212]/90 border-emerald-800/30 text-stone-200' : 'bg-[#F9FAF7] border-stone-200/80 text-stone-900';
-  const textMuted = isNight ? 'text-stone-400' : 'text-stone-600';
-  const accentText = isNight ? 'text-[#6EE7B7]' : 'text-[#54683C]';
+  const sectionWhite = isNight ? 'bg-[#141F16] border-white/10' : 'bg-white border-stone-200/60';
+  const cardBg = isNight ? 'bg-[#19261B] border-white/10 text-[#ECEFE9]' : 'bg-[#F9FAF7] border-stone-200/80 text-stone-900';
+  const textMuted = isNight ? 'text-[#9CAEA0]' : 'text-stone-600';
+  const accentText = isNight ? 'text-[#86B87A]' : 'text-[#54683C]';
 
   return (
     <div className={`min-h-screen flex flex-col font-sans transition-colors duration-500 relative ${pageBg}`}>
@@ -89,7 +89,7 @@ function AvaniPageShell() {
         <section id="about" className="relative pt-12 sm:pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden text-center">
           {/* Subtle Ambient Radial Glow */}
           <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] blur-3xl pointer-events-none -z-10 rounded-full transition-opacity duration-700 ${
-            isNight ? 'bg-emerald-950/40 opacity-70' : 'bg-[#DCE7D4]/60 opacity-60'
+            isNight ? 'bg-[#1B2E1E]/60 opacity-70' : 'bg-[#DCE7D4]/60 opacity-60'
           }`} />
 
           <div className="max-w-4xl mx-auto flex flex-col items-center space-y-6 sm:space-y-8">
@@ -97,7 +97,7 @@ function AvaniPageShell() {
             <div className="relative inline-flex items-center justify-center group">
               <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-full p-2.5 transition-all duration-300 group-hover:scale-105 flex items-center justify-center shadow-md ${
                 isNight
-                  ? 'bg-[#263419] border-2 border-[#6EE7B7]/40 ring-4 ring-[#6EE7B7]/10 shadow-[0_0_30px_rgba(110,231,183,0.3)]'
+                  ? 'bg-[#263419] border-2 border-[#86B87A]/40 ring-4 ring-[#86B87A]/10 shadow-[0_0_24px_rgba(134,184,122,0.2)]'
                   : 'bg-[#364724] border-2 border-[#4E6334] ring-4 ring-[#364724]/15 shadow-lg shadow-[#364724]/25'
               }`}>
                 <Image
@@ -111,19 +111,19 @@ function AvaniPageShell() {
               </div>
             </div>
 
-            {/* Monospaced Editorial Eyebrow */}
+            {/* Editorial Eyebrow */}
             <div className="flex items-center justify-center gap-2">
-              <span className={`font-sans text-sm font-normal ${
-                isNight ? 'text-[#6EE7B7]' : 'text-[#54683C]'
+              <span className={`font-sans text-sm font-medium ${
+                isNight ? 'text-[#86B87A]' : 'text-[#54683C]'
               }`}>
                 Bangalore Youth Climate Collective
               </span>
             </div>
 
-            {/* Monumental Headline in Fraunces */}
-            <h1 className="font-serif font-black text-4xl sm:text-6xl lg:text-7xl tracking-[-0.035em] leading-[1.06] text-balance max-w-4xl mx-auto">
+            {/* Editorial Headline */}
+            <h1 className="font-serif font-semibold text-4xl sm:text-6xl lg:text-[4.25rem] tracking-tight leading-[1.08] text-balance max-w-4xl mx-auto">
               Small Actions of Many Add Up to{' '}
-              <span className={`italic font-normal transition-colors duration-300 underline decoration-[#54683C]/35 decoration-wavy underline-offset-8 ${accentText}`}>
+              <span className={`italic font-normal transition-colors duration-300 ${accentText}`}>
                 Change the World
               </span>
             </h1>
@@ -141,7 +141,7 @@ function AvaniPageShell() {
                 rel="noopener noreferrer"
                 className={`px-8 py-4 rounded-full font-semibold text-sm shadow-md hover:shadow-lg active:scale-95 transition-all flex items-center gap-2 ${
                   isNight
-                    ? 'bg-[#6EE7B7] hover:bg-[#5cd4a6] text-[#08140B]'
+                    ? 'bg-[#86B87A] hover:bg-[#97C98B] text-[#0E1610]'
                     : 'bg-[#163515] hover:bg-[#254d24] text-white'
                 }`}
               >
@@ -153,7 +153,7 @@ function AvaniPageShell() {
                 href="#objectives"
                 className={`px-7 py-4 rounded-full font-semibold text-sm active:scale-95 transition-all flex items-center gap-2 ${
                   isNight
-                    ? 'bg-[#163515] text-[#6EE7B7] border border-[#6EE7B7]/40 hover:bg-[#1f471e]'
+                    ? 'bg-[#19261B] text-[#ECEFE9] border border-white/15 hover:bg-[#213124]'
                     : 'bg-white text-[#163515] border border-stone-200/90 hover:bg-stone-50 hover:border-stone-300 shadow-sm'
                 }`}
               >
@@ -162,37 +162,99 @@ function AvaniPageShell() {
               </a>
             </div>
 
-            <p className={`text-xs font-mono tracking-wide ${textMuted}`}>
+            <p className={`text-xs font-sans ${textMuted}`}>
               Applications open for Bangalore Student Cohort &middot; 100% Volunteer Driven
             </p>
 
-            {/* Swiss Editorial Metric Ribbon */}
+            {/* Metric Ribbon */}
             <div className={`w-full mt-10 pt-8 border-t grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-left ${
               isNight ? 'border-white/10' : 'border-[#54683C]/20'
             }`}>
               <div className="space-y-1">
-                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">04</p>
+                <p className="font-serif font-semibold text-3xl sm:text-4xl leading-none">04</p>
                 <p className={`text-xs font-medium font-sans ${accentText}`}>Drives Completed</p>
                 <p className={`text-xs ${textMuted}`}>Lakes, Lalbagh, fashion swaps &amp; eco walks</p>
               </div>
 
               <div className="space-y-1">
-                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">05</p>
+                <p className="font-serif font-semibold text-3xl sm:text-4xl leading-none">05</p>
                 <p className={`text-xs font-medium font-sans ${accentText}`}>Student Teams</p>
                 <p className={`text-xs ${textMuted}`}>Research, Design, HR, Social Media &amp; Events</p>
               </div>
 
               <div className="space-y-1">
-                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">11</p>
+                <p className="font-serif font-semibold text-3xl sm:text-4xl leading-none">11</p>
                 <p className={`text-xs font-medium font-sans ${accentText}`}>Everyday Habits</p>
                 <p className={`text-xs ${textMuted}`}>Bangalore youth sustainable living routines</p>
               </div>
 
               <div className="space-y-1">
-                <p className="font-serif font-black text-3xl sm:text-4xl leading-none">100%</p>
+                <p className="font-serif font-semibold text-3xl sm:text-4xl leading-none">100%</p>
                 <p className={`text-xs font-medium font-sans ${accentText}`}>Student-Run</p>
                 <p className={`text-xs ${textMuted}`}>Independent volunteer environmental movement</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 1b. HOW WE WORK & OUR MEMBERS (Inside About Flow)                         */}
+        {/* ========================================================================= */}
+        <section id="how-we-work" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <p className={`text-sm font-medium mb-2 ${accentText}`}>How we work</p>
+            <h2 className="font-serif font-semibold text-3xl sm:text-4xl tracking-tight mb-8">
+              The way we build
+            </h2>
+          </div>
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {AVANI_ORGANIZATION.howWeWorkHighlights.map((item, i) => (
+              <li key={i} className={`flex gap-5 p-6 rounded-2xl border transition-colors ${sectionWhite}`}>
+                <span className={`font-serif font-semibold text-3xl leading-none shrink-0 mt-1 ${accentText} opacity-60`}>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <p className={`text-base leading-relaxed font-sans ${textMuted}`}>{item}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section id="members" className={`py-16 border-t transition-colors duration-500 ${isNight ? 'border-white/10' : 'border-stone-200/60'}`}>
+          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
+              <div>
+                <p className={`text-sm font-medium mb-2 ${accentText}`}>The people behind the work</p>
+                <h2 className="font-serif font-semibold text-3xl sm:text-4xl tracking-tight">
+                  Our Members
+                </h2>
+                <p className={`mt-3 text-base max-w-xl ${textMuted}`}>
+                  Avani is built by students across Bangalore — each team brings a distinct skill set toward one shared goal.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              {AVANI_TEAMS.map((team) => {
+                const TeamIcon = TEAM_ICON_MAP[team.icon || 'Users'] || Users;
+                return (
+                  <div
+                    key={team.id}
+                    className={`p-5 rounded-2xl border flex flex-col items-start gap-3 transition-colors duration-200 ${cardBg}`}
+                  >
+                    <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
+                      isNight ? 'bg-[#223425] text-[#86B87A]' : 'bg-[#DCE7D4] text-[#54683C]'
+                    }`}>
+                      <TeamIcon className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <p className="font-serif font-semibold text-sm leading-snug">{team.name}</p>
+                      <p className={`text-xs mt-1 leading-relaxed ${textMuted}`} style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        {team.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -226,7 +288,7 @@ function AvaniPageShell() {
                   >
                     <div>
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform ${
-                        isNight ? 'bg-[#163515] text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#163515]'
+                        isNight ? 'bg-[#223425] text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'
                       }`}>
                         <IconComponent className="w-6 h-6" />
                       </div>
@@ -242,7 +304,7 @@ function AvaniPageShell() {
                     </div>
 
                     <div className={`pt-6 mt-6 border-t flex items-center justify-between text-xs font-medium ${
-                      isNight ? 'border-white/10 text-[#6EE7B7]' : 'border-stone-200/70 text-[#54683C]'
+                      isNight ? 'border-white/10 text-[#86B87A]' : 'border-stone-200/70 text-[#54683C]'
                     }`}>
                       <span>{obj.category || 'Strategic Initiative'}</span>
                       <ArrowUpRight className="w-4 h-4" />
@@ -293,10 +355,10 @@ function AvaniPageShell() {
                   className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all whitespace-nowrap ${
                     isActive
                       ? isNight
-                        ? 'bg-[#6EE7B7] text-[#08140B] shadow-sm'
+                        ? 'bg-[#86B87A] text-[#0E1610] shadow-sm'
                         : 'bg-[#163515] text-white shadow-sm'
                       : isNight
-                        ? 'bg-[#0D2212] text-stone-300 hover:text-white border border-emerald-900/40'
+                        ? 'bg-[#19261B] text-stone-300 hover:text-white border border-white/10'
                         : 'bg-white text-stone-600 hover:text-stone-900 border border-stone-200'
                   }`}
                 >
@@ -311,7 +373,7 @@ function AvaniPageShell() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-7 space-y-4">
                 <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold ${
-                  isNight ? 'bg-[#163515] text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#163515]'
+                  isNight ? 'bg-[#223425] text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'
                 }`}>
                   <ActiveTeamIcon className="w-3.5 h-3.5" />
                   <span>{activeTeam.tag || activeTeam.name}</span>
@@ -345,7 +407,7 @@ function AvaniPageShell() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <span className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${
-                      isNight ? 'bg-[#163515] text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#163515]'
+                      isNight ? 'bg-[#223425] text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'
                     }`}>
                       <ActiveTeamIcon className="w-5 h-5" />
                     </span>
@@ -378,7 +440,7 @@ function AvaniPageShell() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold transition-all shadow-sm ${
-                      isNight ? 'bg-[#6EE7B7] text-[#08140B] hover:bg-[#5cd4a6]' : 'bg-[#163515] text-white hover:bg-[#254d24]'
+                      isNight ? 'bg-[#86B87A] text-[#0E1610] hover:bg-[#97C98B]' : 'bg-[#163515] text-white hover:bg-[#254d24]'
                     }`}
                   >
                     <span>Apply for {activeTeam.name}</span>
@@ -386,71 +448,6 @@ function AvaniPageShell() {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================================= */}
-        {/* 3b. HOW WE WORK                                                           */}
-        {/* ========================================================================= */}
-        <section id="how-we-work" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <p className={`text-sm font-medium mb-3 ${accentText}`}>How we operate</p>
-            <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight mb-10">
-              The way we build
-            </h2>
-          </div>
-          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {AVANI_ORGANIZATION.howWeWorkHighlights.map((item, i) => (
-              <li key={i} className={`flex gap-5 p-6 rounded-2xl border transition-colors ${sectionWhite}`}>
-                <span className={`font-serif font-bold text-3xl leading-none shrink-0 mt-1 ${accentText} opacity-60`}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <p className={`text-base leading-relaxed font-sans ${textMuted}`}>{item}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        {/* ========================================================================= */}
-        {/* 3c. OUR PEOPLE (Members)                                                  */}
-        {/* ========================================================================= */}
-        <section id="members" className={`py-16 border-t transition-colors duration-500 ${isNight ? 'border-emerald-900/30' : 'border-stone-200/60'}`}>
-          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-              <div>
-                <p className={`text-sm font-medium mb-3 ${accentText}`}>The people behind the work</p>
-                <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight">
-                  Our Members
-                </h2>
-                <p className={`mt-3 text-base max-w-xl ${textMuted}`}>
-                  Avani is built by students across Bangalore — each team brings a distinct skill set toward one shared goal.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {AVANI_TEAMS.map((team) => {
-                const TeamIcon = TEAM_ICON_MAP[team.icon || 'Users'] || Users;
-                return (
-                  <div
-                    key={team.id}
-                    className={`p-5 rounded-2xl border flex flex-col items-start gap-3 transition-colors duration-200 ${cardBg}`}
-                  >
-                    <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
-                      isNight ? 'bg-emerald-900/60 text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#54683C]'
-                    }`}>
-                      <TeamIcon className="w-4.5 h-4.5" />
-                    </div>
-                    <div>
-                      <p className="font-serif font-semibold text-sm leading-snug">{team.name}</p>
-                      <p className={`text-xs mt-1 leading-relaxed ${textMuted}`} style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                        {team.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>
@@ -516,7 +513,7 @@ function AvaniPageShell() {
                 </div>
 
                 <div className={`pt-4 mt-6 border-t flex items-center justify-between text-xs font-medium ${
-                  isNight ? 'border-white/10 text-[#6EE7B7]' : 'border-stone-200 text-[#54683C]'
+                  isNight ? 'border-white/10 text-[#86B87A]' : 'border-stone-200 text-[#54683C]'
                 }`}>
                   <span>Read on Substack</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

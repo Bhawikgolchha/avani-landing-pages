@@ -25,9 +25,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#0F2410] text-stone-200 border-t border-emerald-900/30 relative z-20">
+    <footer className="bg-[#0E1610] text-stone-200 border-t border-white/10 relative z-20">
       {/* Top Banner / Callout Section */}
-      <div className="border-b border-emerald-900/20 bg-emerald-950/40">
+      <div className="border-b border-white/10 bg-[#141F16]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4">
             <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
@@ -99,13 +99,23 @@ export function Footer() {
 
           {/* Column 2: Initiatives & Sections */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
+            <h4 className="text-sm font-sans text-emerald-400 font-semibold mb-1">
               Our Initiatives
             </h4>
             <ul className="flex flex-col gap-2 text-sm text-stone-300">
               <li>
                 <a href="#about" className="hover:text-white transition-colors">
                   About Our Mission
+                </a>
+              </li>
+              <li>
+                <a href="#how-we-work" className="hover:text-white transition-colors">
+                  How We Work
+                </a>
+              </li>
+              <li>
+                <a href="#members" className="hover:text-white transition-colors">
+                  Our Members
                 </a>
               </li>
               <li>
@@ -120,12 +130,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#events" className="hover:text-white transition-colors">
-                  4 Realized Community Events
-                </a>
-              </li>
-              <li>
-                <a href="#climate-tips" className="hover:text-white transition-colors">
-                  11 Climate Action Tips (Interactive)
+                  Community Events
                 </a>
               </li>
               <li>
@@ -143,7 +148,7 @@ export function Footer() {
 
           {/* Column 3: The 5 Student Teams */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
+            <h4 className="text-sm font-sans text-emerald-400 font-semibold mb-1">
               Student Leadership Teams
             </h4>
             <ul className="flex flex-col gap-2.5 text-xs text-stone-300">
@@ -163,7 +168,7 @@ export function Footer() {
 
           {/* Column 4: Contact & Socials */}
           <div className="flex flex-col gap-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-1">
+            <h4 className="text-sm font-sans text-emerald-400 font-semibold mb-1">
               Direct Contact
             </h4>
             <div className="flex flex-col gap-2.5 text-xs text-stone-300">
@@ -183,7 +188,7 @@ export function Footer() {
               </a>
             </div>
 
-            <h4 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mt-4 mb-1">
+            <h4 className="text-sm font-sans text-emerald-400 font-semibold mt-4 mb-1">
               Connect With Us
             </h4>
             <div className="flex flex-col gap-2 text-xs">
@@ -222,13 +227,23 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar: Copyright & Back to Top */}
-      <div className="border-t border-emerald-900/30 bg-[#0A1A0B] py-6">
+      {/* Bottom Bar: Copyright, Privacy Policy, Terms & Back to Top */}
+      <div className="border-t border-white/10 bg-[#0A130B] py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
-          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
             <span>
               &copy; {new Date().getFullYear()} Avani Youth Organization for Climate Care. All rights reserved.
             </span>
+            <span className="hidden sm:inline">&middot;</span>
+            <div className="flex items-center gap-3">
+              <Link href="/privacy" className="hover:text-white transition-colors underline-offset-4 hover:underline">
+                Privacy Policy
+              </Link>
+              <span>&middot;</span>
+              <Link href="/terms" className="hover:text-white transition-colors underline-offset-4 hover:underline">
+                Terms of Use
+              </Link>
+            </div>
             <span className="hidden sm:inline">&middot;</span>
             <span className="text-emerald-400">
               100% Student-Led &middot; Bangalore, India

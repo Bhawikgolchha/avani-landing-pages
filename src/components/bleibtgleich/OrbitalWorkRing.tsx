@@ -32,9 +32,9 @@ function buildCardCanvasTexture(
 
   const paint = (img?: HTMLImageElement) => {
     if (!ctx) return;
-    const bg = isNight ? '#0D200C' : '#F4EFEA';
-    const fg = isNight ? '#DCE7D4' : '#163515';
-    const accent = isNight ? '#6EE7B7' : '#568203';
+    const bg = isNight ? '#19261B' : '#F4EFEA';
+    const fg = isNight ? '#ECEFE9' : '#163515';
+    const accent = isNight ? '#86B87A' : '#568203';
 
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -417,8 +417,8 @@ export function OrbitalWorkRing() {
   }, [isNight, items]);
 
   const activeItem = items[activeIndex] ?? items[0];
-  const hairline = isNight ? 'border-[#6EE7B7]/20' : 'border-[#163515]/20';
-  const mutedText = isNight ? 'text-[#8FA882]' : 'text-[#2D5A27]';
+  const hairline = isNight ? 'border-white/10' : 'border-[#163515]/20';
+  const mutedText = isNight ? 'text-[#9CAEA0]' : 'text-[#2D5A27]';
 
   return (
     <section
@@ -426,11 +426,11 @@ export function OrbitalWorkRing() {
       ref={sectionRef}
       className={`featured relative border-t ${hairline} py-16 sm:py-24 overflow-hidden`}
     >
-      {/* Continuous 37% & 63% subtle Swiss guide lines */}
+      {/* Continuous subtle guide line */}
       <div
         aria-hidden="true"
         className={`hidden lg:block pointer-events-none absolute top-0 bottom-0 left-[37%] w-px ${
-          isNight ? 'bg-[#6EE7B7]/10' : 'bg-[#163515]/10'
+          isNight ? 'bg-white/10' : 'bg-[#163515]/10'
         }`}
       />
 
@@ -438,23 +438,23 @@ export function OrbitalWorkRing() {
         {/* Top Metadata Strip */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
-            <span className={`font-mono text-[11px] uppercase tracking-[0.22em] ${mutedText}`}>
-              02 / Selected Initiatives, Substack & Visuals
+            <span className={`font-sans text-xs font-medium ${mutedText}`}>
+              Selected Initiatives, Substack &amp; Visuals
             </span>
           </div>
-          <p className="font-mono text-[11px] uppercase tracking-wider opacity-70">
+          <p className="font-sans text-xs opacity-70">
             Scroll or drag 3D ring · Click card to inspect
           </p>
         </div>
 
-        {/* Monumental Flanking Typography + Centered 3D WebGL Orbital Canvas */}
+        {/* Flanking Typography + Centered 3D WebGL Orbital Canvas */}
         <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center min-h-[430px] sm:min-h-[520px] gap-4">
           {/* Left Flanking Headline (`Work`) */}
           <div className="lg:col-span-3 z-10 pointer-events-none">
-            <span className="block font-serif font-medium tracking-[-0.04em] leading-none text-[clamp(2.5rem,5vw,4.5rem)]">
+            <span className="block font-serif font-medium tracking-tight leading-none text-[clamp(2.5rem,5vw,4.5rem)]">
               Work
             </span>
-            <span className={`mt-2 block font-mono text-xs uppercase tracking-widest ${mutedText}`}>
+            <span className={`mt-2 block font-sans text-xs font-medium ${mutedText}`}>
               {items.length} Curated Works
             </span>
           </div>
@@ -475,10 +475,10 @@ export function OrbitalWorkRing() {
 
           {/* Right Flanking Headline (`'24–'26`) */}
           <div className="lg:col-span-3 z-10 text-left lg:text-right pointer-events-none">
-            <span className="block font-serif italic font-medium tracking-[-0.04em] leading-none text-[clamp(2.5rem,5vw,4.5rem)]">
+            <span className="block font-serif italic font-medium tracking-tight leading-none text-[clamp(2.5rem,5vw,4.5rem)]">
               &apos;24—&apos;26
             </span>
-            <span className={`mt-2 block font-mono text-xs uppercase tracking-widest ${mutedText}`}>
+            <span className={`mt-2 block font-sans text-xs font-medium ${mutedText}`}>
               Events &middot; Substack &middot; Action
             </span>
           </div>
@@ -488,8 +488,8 @@ export function OrbitalWorkRing() {
         <div className={`mt-8 pt-6 border-t ${hairline}`}>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div>
-              <span className={`font-mono text-[11px] uppercase tracking-widest ${mutedText}`}>
-                Focused in Ring — {activeItem.indexLabel} · {activeItem.categoryLabel}
+              <span className={`font-sans text-xs font-medium ${mutedText}`}>
+                {activeItem.indexLabel} · {activeItem.categoryLabel}
               </span>
               <h2 className="mt-1 font-serif text-2xl sm:text-3xl font-semibold leading-tight">
                 {activeItem.title}
@@ -519,7 +519,7 @@ export function OrbitalWorkRing() {
                 onClick={() => setDrawerItem(activeItem)}
                 className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-mono font-semibold ${
                   isNight
-                    ? 'bg-[#6EE7B7] text-[#08140B] hover:bg-[#10B981]'
+                    ? 'bg-[#86B87A] text-[#0E1610] hover:bg-[#10B981]'
                     : 'bg-[#163515] text-[#F9FAF7] hover:bg-[#2D5A27]'
                 }`}
               >
@@ -553,7 +553,7 @@ export function OrbitalWorkRing() {
                   className={`group text-left p-2 border transition-all ${
                     selected
                       ? isNight
-                        ? 'border-[#6EE7B7] bg-[#0D200C]'
+                        ? 'border-[#86B87A] bg-[#19261B]'
                         : 'border-[#163515] bg-[#DCE7D4]/70'
                       : `${hairline} hover:opacity-90`
                   }`}

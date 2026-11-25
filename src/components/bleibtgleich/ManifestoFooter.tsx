@@ -53,30 +53,30 @@ export function ManifestoFooter() {
     return () => ctx.revert();
   }, []);
 
-  const hairline = isNight ? 'border-[#6EE7B7]/20' : 'border-[#163515]/20';
-  const mutedText = isNight ? 'text-[#8FA882]' : 'text-[#54683C]';
+  const hairline = isNight ? 'border-white/10' : 'border-[#163515]/20';
+  const mutedText = isNight ? 'text-[#9CAEA0]' : 'text-[#54683C]';
   const socialBtnClass = isNight
-    ? 'w-12 h-12 rounded-full border border-[#6EE7B7]/35 flex items-center justify-center font-mono text-xs font-semibold hover:bg-[#6EE7B7] hover:text-[#08140B] transition-colors'
-    : 'w-12 h-12 rounded-full border border-[#54683C]/40 flex items-center justify-center font-mono text-xs font-semibold hover:bg-[#54683C] hover:text-[#F9FAF7] transition-colors';
+    ? 'w-12 h-12 rounded-full border border-[#86B87A]/35 flex items-center justify-center font-sans text-xs font-semibold hover:bg-[#86B87A] hover:text-[#0E1610] transition-colors'
+    : 'w-12 h-12 rounded-full border border-[#54683C]/40 flex items-center justify-center font-sans text-xs font-semibold hover:bg-[#54683C] hover:text-[#F9FAF7] transition-colors';
 
   return (
     <section
       id="apply"
       ref={sectionRef}
-      className={`footer relative border-t ${hairline} pt-16 sm:pt-24 pb-12 overflow-hidden ${isNight ? 'bg-[#08140B]' : 'bg-[#F9FAF7]'}`}
+      className={`footer relative border-t ${hairline} pt-16 sm:pt-24 pb-12 overflow-hidden ${isNight ? 'bg-[#0E1610]' : 'bg-[#F9FAF7]'}`}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* Top Manifesto Eyebrow & SplitText Headline */}
-        <span className={`font-mono text-[11px] uppercase tracking-[0.22em] block mb-4 ${mutedText} font-semibold`}>
+        <span className={`font-sans text-xs font-medium block mb-4 ${mutedText}`}>
           Manifesto &amp; Youth Recruitment
         </span>
 
         <h2
           ref={statementRef}
-          className={`font-serif font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.25rem,5.2vw,4.75rem)] max-w-5xl ${isNight ? 'text-[#DCE7D4]' : 'text-[#163515]'}`}
+          className={`font-serif font-semibold tracking-tight leading-[1.08] text-[clamp(2.25rem,5vw,4.5rem)] max-w-5xl ${isNight ? 'text-[#ECEFE9]' : 'text-[#163515]'}`}
         >
           Everything that exists began with a young voice choosing{' '}
-          <span className="italic text-[#54683C]">
+          <span className={`italic ${isNight ? 'text-[#86B87A]' : 'text-[#54683C]'}`}>
             stewardship
           </span>{' '}
           over indifference.
@@ -183,7 +183,7 @@ export function ManifestoFooter() {
                       <span>{beforeToken}</span>
                       {isSubmissionToken && (
                         <code
-                          className={`inline-block px-2 py-0.5 font-mono text-xs font-semibold border rounded ${isNight ? 'bg-[#1a3520] text-[#6EE7B7] border-[#6EE7B7]/30' : 'bg-[#DCE7D4] text-[#163515] border-[#54683C]/30'}`}
+                          className={`inline-block px-2 py-0.5 font-mono text-xs font-semibold border rounded ${isNight ? 'bg-[#1a3520] text-[#86B87A] border-[#86B87A]/30' : 'bg-[#DCE7D4] text-[#163515] border-[#54683C]/30'}`}
                         >
                           NAME_AVANI_SUBMISSION
                         </code>
@@ -200,14 +200,18 @@ export function ManifestoFooter() {
                 href={EXTERNAL_LINKS.applicationForm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-sans text-xs sm:text-sm font-semibold transition-transform hover:scale-[1.02] bg-[#163515] text-[#F9FAF7] hover:bg-[#254d24] shadow-md"
+                className={`inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-sans text-xs sm:text-sm font-semibold transition-transform hover:scale-[1.02] shadow-md ${
+                  isNight
+                    ? 'bg-[#86B87A] text-[#0E1610] hover:bg-[#97C98B]'
+                    : 'bg-[#163515] text-[#F9FAF7] hover:bg-[#254d24]'
+                }`}
               >
                 <span>Open Google Application Form</span>
-                <ArrowUpRight className="w-4 h-4 text-emerald-300" />
+                <ArrowUpRight className={`w-4 h-4 ${isNight ? 'text-[#0E1610]' : 'text-emerald-300'}`} />
               </a>
               <Link
                 href="/quiz"
-                className={`inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full border font-sans text-xs font-medium transition-colors ${isNight ? 'border-[#6EE7B7]/30 text-[#6EE7B7] hover:bg-[#163515]/60' : 'border-[#54683C]/40 text-[#163515] hover:bg-[#DCE7D4]/40'}`}
+                className={`inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full border font-sans text-xs font-medium transition-colors ${isNight ? 'border-[#86B87A]/30 text-[#86B87A] hover:bg-[#163515]/60' : 'border-[#54683C]/40 text-[#163515] hover:bg-[#DCE7D4]/40'}`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-[#54683C]" />
                 <span>Take Organization Eco Quiz</span>
@@ -220,11 +224,11 @@ export function ManifestoFooter() {
         <div className={`mt-16 sm:mt-24 pt-8 border-t ${hairline} text-center select-none`}>
           <p
             aria-hidden="true"
-            className={`font-serif font-black uppercase tracking-[-0.05em] leading-[0.84] text-[clamp(4.5rem,19vw,17rem)] transition-colors duration-500 ${isNight ? 'text-[#6EE7B7]/20 hover:text-[#6EE7B7]/40' : 'text-[#163515]/90 hover:text-[#54683C]'}`}
+            className={`font-serif font-bold uppercase tracking-tight leading-[0.86] text-[clamp(4.5rem,19vw,17rem)] transition-colors duration-500 ${isNight ? 'text-[#86B87A]/25 hover:text-[#86B87A]/45' : 'text-[#163515]/90 hover:text-[#54683C]'}`}
           >
             AVANI
           </p>
-          <p className="text-xs uppercase tracking-[0.25em] font-mono text-[#54683C] font-semibold mt-4">
+          <p className={`text-xs font-sans font-medium mt-4 ${isNight ? 'text-[#9CAEA0]' : 'text-[#54683C]'}`}>
             Earth In Our Hands &middot; Bangalore Youth Climate Collective
           </p>
         </div>

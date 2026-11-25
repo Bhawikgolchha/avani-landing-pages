@@ -30,6 +30,8 @@ export function AvaniThemeProvider({ children }: { children: React.ReactNode }) 
     setThemeState(next);
     if (typeof document !== 'undefined') {
       document.documentElement.dataset.avaniTheme = next;
+      document.body.style.backgroundColor = next === 'night' ? '#0E1610' : '#F9FAF7';
+      document.body.style.color = next === 'night' ? '#ECEFE9' : '#163515';
     }
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent<AvaniThemeMode>(THEME_EVENT, { detail: next }));
@@ -53,7 +55,7 @@ export function AvaniThemeProvider({ children }: { children: React.ReactNode }) 
       }
 
       setIsTransitioning(true);
-      overlay.style.backgroundColor = next === 'night' ? '#08140B' : '#F9FAF7';
+      overlay.style.backgroundColor = next === 'night' ? '#0E1610' : '#F9FAF7';
 
       const tl = gsap.timeline({
         onComplete: () => {
