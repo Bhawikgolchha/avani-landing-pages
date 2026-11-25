@@ -104,34 +104,39 @@ export function Footer() {
             </h4>
             <ul className="flex flex-col gap-2 text-sm text-stone-300">
               <li>
-                <a href="#about" className="hover:text-white transition-colors">
+                <Link href="/#about" className="hover:text-white transition-colors">
                   About Our Mission
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#how-we-work" className="hover:text-white transition-colors">
+                <Link href="/how-we-work" className="hover:text-white transition-colors">
                   How We Work
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#members" className="hover:text-white transition-colors">
+                <Link href="/members" className="hover:text-white transition-colors">
                   Our Members
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#objectives" className="hover:text-white transition-colors">
+                <Link href="/#objectives" className="hover:text-white transition-colors">
                   5 Core Pillars of Impact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#teams" className="hover:text-white transition-colors">
+                <Link href="/#teams" className="hover:text-white transition-colors">
                   The 5 Student Teams
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#events" className="hover:text-white transition-colors">
+                <Link href="/#events" className="hover:text-white transition-colors">
                   Community Events
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/volunteer" className="hover:text-white transition-colors">
+                  Volunteer at Events
+                </Link>
               </li>
               <li>
                 <a href="#publications" className="hover:text-white transition-colors">

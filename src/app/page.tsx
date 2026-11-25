@@ -24,7 +24,6 @@ import { useLenis } from '@/hooks/useLenis';
 import { 
   AVANI_OBJECTIVES, 
   AVANI_TEAMS, 
-  AVANI_ORGANIZATION,
   EXTERNAL_LINKS 
 } from '@/lib/avaniContent';
 import { ManifestoFooter } from '@/components/bleibtgleich/ManifestoFooter';
@@ -193,68 +192,6 @@ function AvaniPageShell() {
                 <p className={`text-xs font-medium font-sans ${accentText}`}>Student-Run</p>
                 <p className={`text-xs ${textMuted}`}>Independent volunteer environmental movement</p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================================= */}
-        {/* 1b. HOW WE WORK & OUR MEMBERS (Inside About Flow)                         */}
-        {/* ========================================================================= */}
-        <section id="how-we-work" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <p className={`text-sm font-medium mb-2 ${accentText}`}>How we work</p>
-            <h2 className="font-serif font-semibold text-3xl sm:text-4xl tracking-tight mb-8">
-              The way we build
-            </h2>
-          </div>
-          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {AVANI_ORGANIZATION.howWeWorkHighlights.map((item, i) => (
-              <li key={i} className={`flex gap-5 p-6 rounded-2xl border transition-colors ${sectionWhite}`}>
-                <span className={`font-serif font-semibold text-3xl leading-none shrink-0 mt-1 ${accentText} opacity-60`}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <p className={`text-base leading-relaxed font-sans ${textMuted}`}>{item}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        <section id="members" className={`py-16 border-t transition-colors duration-500 ${isNight ? 'border-white/10' : 'border-stone-200/60'}`}>
-          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
-              <div>
-                <p className={`text-sm font-medium mb-2 ${accentText}`}>The people behind the work</p>
-                <h2 className="font-serif font-semibold text-3xl sm:text-4xl tracking-tight">
-                  Our Members
-                </h2>
-                <p className={`mt-3 text-base max-w-xl ${textMuted}`}>
-                  Avani is built by students across Bangalore — each team brings a distinct skill set toward one shared goal.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {AVANI_TEAMS.map((team) => {
-                const TeamIcon = TEAM_ICON_MAP[team.icon || 'Users'] || Users;
-                return (
-                  <div
-                    key={team.id}
-                    className={`p-5 rounded-2xl border flex flex-col items-start gap-3 transition-colors duration-200 ${cardBg}`}
-                  >
-                    <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
-                      isNight ? 'bg-[#223425] text-[#86B87A]' : 'bg-[#DCE7D4] text-[#54683C]'
-                    }`}>
-                      <TeamIcon className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <p className="font-serif font-semibold text-sm leading-snug">{team.name}</p>
-                      <p className={`text-xs mt-1 leading-relaxed ${textMuted}`} style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                        {team.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>

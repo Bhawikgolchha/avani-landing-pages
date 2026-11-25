@@ -25,11 +25,12 @@ export interface NavLink {
   label: string;
   href: string;
   highlight?: boolean;
+  hasAboutMenu?: boolean;
   hasEventsMenu?: boolean;
 }
 
 const NAV_LINKS: NavLink[] = [
-  { label: 'About', href: '/#about' },
+  { label: 'About', href: '/#about', hasAboutMenu: true },
   { label: 'Objectives', href: '/#objectives' },
   { label: 'Teams', href: '/#teams' },
   { label: 'Events', href: '/#events', hasEventsMenu: true },
@@ -94,7 +95,51 @@ export function Navbar() {
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-7">
             {NAV_LINKS.map((link) =>
-              link.hasEventsMenu ? (
+              link.hasAboutMenu ? (
+                <div key={link.label} className="relative group">
+                  <Link
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors relative py-1 flex items-center gap-1 ${
+                      isNight
+                        ? 'text-stone-300 hover:text-white'
+                        : 'text-stone-700 hover:text-[#163515]'
+                    }`}
+                  >
+                    <span>{link.label}</span>
+                    <ChevronDown className="w-3.5 h-3.5 opacity-70 transition-transform group-hover:rotate-180" />
+                  </Link>
+                  <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full pt-2 w-52 z-50">
+                    <div className={`rounded-xl border shadow-lg p-1.5 ${
+                      isNight ? 'bg-[#141F16] border-white/10 text-[#ECEFE9]' : 'bg-white border-stone-200 text-[#163515]'
+                    }`}>
+                      <Link
+                        href="/#about"
+                        className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          isNight ? 'hover:bg-white/5' : 'hover:bg-stone-100'
+                        }`}
+                      >
+                        About Avani
+                      </Link>
+                      <Link
+                        href="/how-we-work"
+                        className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          isNight ? 'hover:bg-white/5 text-[#86B87A]' : 'hover:bg-[#DCE7D4]/50 text-[#364724]'
+                        }`}
+                      >
+                        How We Work
+                      </Link>
+                      <Link
+                        href="/members"
+                        className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          isNight ? 'hover:bg-white/5 text-[#86B87A]' : 'hover:bg-[#DCE7D4]/50 text-[#364724]'
+                        }`}
+                      >
+                        Our Members
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ) : link.hasEventsMenu ? (
                 <div key={link.label} className="relative group">
                   <Link
                     href={link.href}
@@ -119,10 +164,8 @@ export function Navbar() {
                       >
                         Explore All Events
                       </Link>
-                      <a
-                        href={GOOGLE_FORM_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        href="/volunteer"
                         className={`flex items-center justify-between gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                           isNight ? 'hover:bg-white/5 text-[#86B87A]' : 'hover:bg-[#DCE7D4]/50 text-[#364724]'
                         }`}
@@ -136,7 +179,7 @@ export function Navbar() {
                         }`}>
                           Join
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -263,11 +306,31 @@ export function Navbar() {
                     </span>
                   )}
                 </Link>
+                {link.hasAboutMenu && (
+                  <div className="ml-4 flex flex-col gap-1">
+                    <Link
+                      href="/how-we-work"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                        isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                      }`}
+                    >
+                      How We Work
+                    </Link>
+                    <Link
+                      href="/members"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                        isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                      }`}
+                    >
+                      Our Members
+                    </Link>
+                  </div>
+                )}
                 {link.hasEventsMenu && (
-                  <a
-                    href={GOOGLE_FORM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/volunteer"
                     onClick={() => setMobileMenuOpen(false)}
                     className={`ml-4 px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${
                       isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
@@ -280,7 +343,7 @@ export function Navbar() {
                     <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#86B87A]/20 text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'}`}>
                       Join
                     </span>
-                  </a>
+                  </Link>
                 )}
               </React.Fragment>
             ))}
