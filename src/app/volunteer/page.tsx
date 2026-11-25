@@ -2,26 +2,37 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, Calendar, Mail, Phone, User } from 'lucide-react';
+import {
+  ArrowLeft,
+  CheckCircle2,
+  Calendar,
+  Mail,
+  Phone,
+  User,
+  GraduationCap,
+  Hash,
+  Info,
+} from 'lucide-react';
 import { Navbar } from '@/components/common/Navbar';
 import { Footer } from '@/components/common/Footer';
 import { FirefliesBackground } from '@/components/common/FirefliesBackground';
 import { AvaniThemeProvider, useAvaniTheme } from '@/components/bleibtgleich/ThemeTransitionOverlay';
-import { AVANI_EVENTS, EXTERNAL_LINKS } from '@/lib/avaniContent';
+import { EXTERNAL_LINKS } from '@/lib/avaniContent';
 
-const VOLUNTEER_EVENT_OPTIONS = [
-  ...AVANI_EVENTS.map((ev) => `${ev.title} (${ev.location})`),
-  'Upcoming Bangalore Lake & Cleanliness Drive',
-  'General Event Volunteering (Any Upcoming Drive)',
+const UPCOMING_EVENT_OPTIONS = [
+  'No upcoming events available at the moment',
+  'Notify me for the next Bangalore volunteer drive',
 ];
 
 function VolunteerContent() {
   const { isNight } = useAvaniTheme();
 
   const [fullName, setFullName] = useState('');
+  const [age, setAge] = useState('');
+  const [collegeName, setCollegeName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
   const [email, setEmail] = useState('');
-  const [selectedEvent, setSelectedEvent] = useState(VOLUNTEER_EVENT_OPTIONS[0]);
+  const [selectedEvent, setSelectedEvent] = useState(UPCOMING_EVENT_OPTIONS[0]);
   const [submitted, setSubmitted] = useState(false);
 
   const pageBg = isNight ? 'bg-[#0E1610] text-[#ECEFE9]' : 'bg-[#F9FAF7] text-[#163515]';
@@ -34,7 +45,15 @@ function VolunteerContent() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!fullName.trim() || !contactNumber.trim() || !email.trim()) return;
+    if (
+      !fullName.trim() ||
+      !age.trim() ||
+      !collegeName.trim() ||
+      !contactNumber.trim() ||
+      !email.trim()
+    ) {
+      return;
+    }
     setSubmitted(true);
   };
 
@@ -58,7 +77,21 @@ function VolunteerContent() {
             Volunteer at Avani Events
           </h1>
           <p className={`text-base leading-relaxed ${textMuted}`}>
-            Register below to join as a volunteer whenever Avani conducts community clean-ups, campus stalls, or awareness drives in Bangalore.
+            Register below to join as a volunteer when Avani organises upcoming community clean-ups, campus stalls, or awareness drives in Bangalore.
+          </p>
+        </div>
+
+        {/* Notice banner for upcoming events */}
+        <div
+          className={`mb-6 p-4 rounded-xl border flex items-start gap-3 text-sm ${
+            isNight
+              ? 'bg-[#141F16] border-[#86B87A]/25 text-[#ECEFE9]'
+              : 'bg-[#DCE7D4]/50 border-[#54683C]/25 text-[#163515]'
+          }`}
+        >
+          <Info className={`w-4 h-4 shrink-0 mt-0.5 ${accentText}`} />
+          <p className={textMuted}>
+            All listed past events have been completed. <strong className={isNight ? 'text-[#ECEFE9]' : 'text-[#163515]'}>No upcoming events are available at the moment</strong> — you can still submit your details below to be notified first when the next drive opens.
           </p>
         </div>
 
@@ -69,14 +102,15 @@ function VolunteerContent() {
               <h2 className="font-serif font-semibold text-2xl">Registration Recorded</h2>
             </div>
             <p className={`text-sm leading-relaxed ${textMuted}`}>
-              Thank you, <span className="font-semibold">{fullName}</span>! Your interest for{' '}
-              <span className="font-semibold">{selectedEvent}</span> has been noted.
+              Thank you, <span className="font-semibold">{fullName}</span>! Your volunteer details have been saved for upcoming Avani events.
             </p>
-            <div className={`p-4 rounded-xl text-xs space-y-1 border ${isNight ? 'bg-[#0E1610] border-white/10' : 'bg-[#F9FAF7] border-stone-200'}`}>
+            <div className={`p-4 rounded-xl text-xs space-y-1.5 border ${isNight ? 'bg-[#0E1610] border-white/10' : 'bg-[#F9FAF7] border-stone-200'}`}>
               <p><span className={textMuted}>Name:</span> {fullName}</p>
+              <p><span className={textMuted}>Age:</span> {age}</p>
+              <p><span className={textMuted}>College / School:</span> {collegeName}</p>
               <p><span className={textMuted}>Contact:</span> {contactNumber}</p>
               <p><span className={textMuted}>Email:</span> {email}</p>
-              <p><span className={textMuted}>Event:</span> {selectedEvent}</p>
+              <p><span className={textMuted}>Event Status:</span> {selectedEvent}</p>
             </div>
             <p className={`text-xs ${textMuted}`}>
               Need to reach our coordinators directly? Write to{' '}
@@ -89,6 +123,8 @@ function VolunteerContent() {
               onClick={() => {
                 setSubmitted(false);
                 setFullName('');
+                setAge('');
+                setCollegeName('');
                 setContactNumber('');
                 setEmail('');
               }}
@@ -100,7 +136,7 @@ function VolunteerContent() {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className={`p-6 sm:p-8 rounded-2xl border space-y-6 ${cardBg}`}>
+          <form onSubmit={handleSubmit} className={`p-6 sm:p-8 rounded-2xl border space-y-5 ${cardBg}`}>
             <div>
               <label htmlFor="volunteer-name" className="block text-sm font-medium mb-2">
                 Full Name <span className="text-red-500">*</span>
@@ -116,6 +152,46 @@ function VolunteerContent() {
                   placeholder="Your full name"
                   className={`w-full pl-10 pr-4 py-3 rounded-xl border text-sm outline-none transition-colors ${inputBg}`}
                 />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label htmlFor="volunteer-age" className="block text-sm font-medium mb-2">
+                  Age <span className="text-red-500">*</span>
+                </label>
+                <div className="relative">
+                  <Hash className={`w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 ${textMuted}`} />
+                  <input
+                    id="volunteer-age"
+                    type="number"
+                    min={12}
+                    max={99}
+                    required
+                    value={age}
+                    onChange={(e) => setAge(e.target.value)}
+                    placeholder="e.g. 19"
+                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-sm outline-none transition-colors ${inputBg}`}
+                  />
+                </div>
+              </div>
+
+              <div className="sm:col-span-2">
+                <label htmlFor="volunteer-college" className="block text-sm font-medium mb-2">
+                  College / School Name <span className="text-red-500">*</span>
+                </label>
+                <div className="relative">
+                  <GraduationCap className={`w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 ${textMuted}`} />
+                  <input
+                    id="volunteer-college"
+                    type="text"
+                    required
+                    value={collegeName}
+                    onChange={(e) => setCollegeName(e.target.value)}
+                    placeholder="e.g. Christ University, DPS Bangalore"
+                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-sm outline-none transition-colors ${inputBg}`}
+                  />
+                </div>
               </div>
             </div>
 
@@ -157,7 +233,7 @@ function VolunteerContent() {
 
             <div>
               <label htmlFor="volunteer-event" className="block text-sm font-medium mb-2">
-                Which event would you like to volunteer for? <span className="text-red-500">*</span>
+                Upcoming Events <span className="text-red-500">*</span>
               </label>
               <div className="relative">
                 <Calendar className={`w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 ${textMuted}`} />
@@ -167,7 +243,7 @@ function VolunteerContent() {
                   onChange={(e) => setSelectedEvent(e.target.value)}
                   className={`w-full pl-10 pr-4 py-3 rounded-xl border text-sm outline-none transition-colors ${inputBg}`}
                 >
-                  {VOLUNTEER_EVENT_OPTIONS.map((option) => (
+                  {UPCOMING_EVENT_OPTIONS.map((option) => (
                     <option key={option} value={option}>
                       {option}
                     </option>

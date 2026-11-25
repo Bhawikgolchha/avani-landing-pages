@@ -43,6 +43,7 @@ export const GOOGLE_FORM_URL = EXTERNAL_LINKS.applicationForm;
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<'about' | 'events' | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const { isNight, toggleTheme } = useAvaniTheme();
 
@@ -287,66 +288,124 @@ export function Navbar() {
         <div className={`lg:hidden border-b px-4 pt-3 pb-6 shadow-xl animate-in slide-in-from-top-4 duration-200 ${
           isNight ? 'bg-[#0E1610]/98 border-[#86B87A]/20 text-[#DCE7D4]' : 'bg-white/98 border-stone-200 text-stone-900'
         }`}>
-          <nav className="flex flex-col gap-2">
-            {NAV_LINKS.map((link) => (
-              <React.Fragment key={link.label}>
-                <Link
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`px-3 py-2.5 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${
-                    link.highlight
-                      ? isNight ? 'bg-[#223425] text-[#86B87A] font-semibold' : 'bg-[#DCE7D4]/70 text-[#163515] font-semibold'
-                      : isNight ? 'text-stone-200 hover:bg-white/5' : 'text-stone-800 hover:bg-emerald-50'
-                  }`}
-                >
-                  <span>{link.label}</span>
-                  {link.highlight && (
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#86B87A] text-[#0E1610]' : 'bg-[#54683C] text-white'}`}>
-                      Quiz
-                    </span>
-                  )}
-                </Link>
-                {link.hasAboutMenu && (
-                  <div className="ml-4 flex flex-col gap-1">
-                    <Link
-                      href="/how-we-work"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                        isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+          <nav className="flex flex-col divide-y divide-stone-200/20">
+            {NAV_LINKS.map((link) => {
+              if (link.hasAboutMenu) {
+                const isOpen = mobileExpanded === 'about';
+                return (
+                  <div key={link.label} className="py-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobileExpanded(isOpen ? null : 'about')}
+                      className={`w-full px-3 py-3 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${
+                        isNight ? 'text-stone-200 hover:bg-white/5' : 'text-stone-800 hover:bg-stone-100'
                       }`}
                     >
-                      How We Work
-                    </Link>
-                    <Link
-                      href="/members"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                        isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
-                      }`}
-                    >
-                      Our Members
-                    </Link>
+                      <span>{link.label}</span>
+                      <ChevronDown className={`w-4 h-4 opacity-70 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {isOpen && (
+                      <div className="pl-4 pb-2 pt-1 flex flex-col gap-1">
+                        <Link
+                          href="/#about"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                            isNight ? 'text-stone-300 hover:bg-white/5' : 'text-stone-700 hover:bg-stone-100'
+                          }`}
+                        >
+                          About Avani
+                        </Link>
+                        <Link
+                          href="/how-we-work"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                            isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                          }`}
+                        >
+                          How We Work
+                        </Link>
+                        <Link
+                          href="/members"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                            isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                          }`}
+                        >
+                          Our Members
+                        </Link>
+                      </div>
+                    )}
                   </div>
-                )}
-                {link.hasEventsMenu && (
+                );
+              }
+
+              if (link.hasEventsMenu) {
+                const isOpen = mobileExpanded === 'events';
+                return (
+                  <div key={link.label} className="py-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobileExpanded(isOpen ? null : 'events')}
+                      className={`w-full px-3 py-3 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${
+                        isNight ? 'text-stone-200 hover:bg-white/5' : 'text-stone-800 hover:bg-stone-100'
+                      }`}
+                    >
+                      <span>{link.label}</span>
+                      <ChevronDown className={`w-4 h-4 opacity-70 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {isOpen && (
+                      <div className="pl-4 pb-2 pt-1 flex flex-col gap-1">
+                        <Link
+                          href="/#events"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                            isNight ? 'text-stone-300 hover:bg-white/5' : 'text-stone-700 hover:bg-stone-100'
+                          }`}
+                        >
+                          Explore All Events
+                        </Link>
+                        <Link
+                          href="/volunteer"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${
+                            isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                          }`}
+                        >
+                          <span className="flex items-center gap-1.5">
+                            <HandHeart className="w-3.5 h-3.5" />
+                            <span>Volunteer at Events</span>
+                          </span>
+                          <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#86B87A]/20 text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'}`}>
+                            Join
+                          </span>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <div key={link.label} className="py-1">
                   <Link
-                    href="/volunteer"
+                    href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`ml-4 px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${
-                      isNight ? 'text-[#86B87A] hover:bg-white/5' : 'text-[#364724] hover:bg-[#DCE7D4]/40'
+                    className={`px-3 py-3 rounded-lg text-base font-medium transition-colors flex items-center justify-between ${
+                      link.highlight
+                        ? isNight ? 'bg-[#223425] text-[#86B87A] font-semibold' : 'bg-[#DCE7D4]/70 text-[#163515] font-semibold'
+                        : isNight ? 'text-stone-200 hover:bg-white/5' : 'text-stone-800 hover:bg-stone-100'
                     }`}
                   >
-                    <span className="flex items-center gap-1.5">
-                      <HandHeart className="w-3.5 h-3.5" />
-                      <span>Volunteer at Events</span>
-                    </span>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#86B87A]/20 text-[#86B87A]' : 'bg-[#DCE7D4] text-[#163515]'}`}>
-                      Join
-                    </span>
+                    <span>{link.label}</span>
+                    {link.highlight && (
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${isNight ? 'bg-[#86B87A] text-[#0E1610]' : 'bg-[#54683C] text-white'}`}>
+                        Quiz
+                      </span>
+                    )}
                   </Link>
-                )}
-              </React.Fragment>
-            ))}
+                </div>
+              );
+            })}
           </nav>
 
           <div className="mt-4 pt-4 border-t border-stone-100/20 flex flex-col gap-3">
