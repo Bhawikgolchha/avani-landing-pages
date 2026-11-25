@@ -16,7 +16,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://avani-landing-pages.vercel.app'),
+  metadataBase: new URL('https://www.avaniyocc.org'),
   title: 'Avani — Bangalore Youth Environmental Organization | 100% Student-Led',
   description:
     'Avani is Bangalore’s youth-led climate collective uniting students across schools and universities to advocate for environmental restoration, lake revitalization, and circular living.',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'Avani — Earth In Our Hands',
     description:
       'Empowering Bangalore’s youth for environmental restoration and grassroots climate justice.',
-    url: 'https://avani-landing-pages.vercel.app',
+    url: 'https://www.avaniyocc.org',
     siteName: 'Avani Youth Climate Collective',
     images: [
       {
