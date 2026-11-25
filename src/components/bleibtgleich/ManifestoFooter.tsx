@@ -63,7 +63,7 @@ export function ManifestoFooter() {
     <section
       id="apply"
       ref={sectionRef}
-      className={`footer relative border-t ${hairline} pt-16 sm:pt-24 pb-12 overflow-hidden bg-white/50`}
+      className={`footer relative border-t ${hairline} pt-16 sm:pt-24 pb-12 overflow-hidden ${isNight ? 'bg-[#08140B]' : 'bg-[#F9FAF7]'}`}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         {/* Top Manifesto Eyebrow & SplitText Headline */}
@@ -73,7 +73,7 @@ export function ManifestoFooter() {
 
         <h2
           ref={statementRef}
-          className="font-serif font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.25rem,5.2vw,4.75rem)] max-w-5xl text-[#163515]"
+          className={`font-serif font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.25rem,5.2vw,4.75rem)] max-w-5xl ${isNight ? 'text-[#DCE7D4]' : 'text-[#163515]'}`}
         >
           Everything that exists began with a young voice choosing{' '}
           <span className="italic text-[#54683C]">
@@ -94,7 +94,7 @@ export function ManifestoFooter() {
               <div className="flex flex-col gap-3">
                 <a
                   href={EXTERNAL_LINKS.emailMailto}
-                  className="inline-flex items-center gap-2.5 font-serif text-xl sm:text-2xl hover:text-[#54683C] transition-colors w-fit text-[#163515]"
+                  className={`inline-flex items-center gap-2.5 font-serif text-xl sm:text-2xl hover:text-[#54683C] transition-colors w-fit ${isNight ? 'text-[#DCE7D4]' : 'text-[#163515]'}`}
                 >
                   <Mail className="w-5 h-5 shrink-0 opacity-70" />
                   <span>{EXTERNAL_LINKS.email}</span>
@@ -102,7 +102,7 @@ export function ManifestoFooter() {
 
                 <a
                   href={EXTERNAL_LINKS.phoneTel}
-                  className="inline-flex items-center gap-2.5 font-mono text-sm sm:text-base hover:text-[#54683C] transition-colors w-fit text-stone-700"
+                  className={`inline-flex items-center gap-2.5 font-mono text-sm sm:text-base hover:text-[#54683C] transition-colors w-fit ${isNight ? 'text-stone-300' : 'text-stone-700'}`}
                 >
                   <Phone className="w-4 h-4 shrink-0 opacity-70" />
                   <span>{EXTERNAL_LINKS.phoneFormatted}</span>
@@ -179,11 +179,11 @@ export function ManifestoFooter() {
                     <span className={`font-mono text-xs shrink-0 pt-0.5 ${mutedText} font-bold`}>
                       0{inst.step}
                     </span>
-                    <div className="text-sm leading-relaxed text-stone-700">
+                    <div className={`text-sm leading-relaxed ${isNight ? 'text-stone-300' : 'text-stone-700'}`}>
                       <span>{beforeToken}</span>
                       {isSubmissionToken && (
                         <code
-                          className="inline-block px-2 py-0.5 font-mono text-xs font-semibold bg-[#DCE7D4] text-[#163515] border border-[#54683C]/30 rounded"
+                          className={`inline-block px-2 py-0.5 font-mono text-xs font-semibold border rounded ${isNight ? 'bg-[#1a3520] text-[#6EE7B7] border-[#6EE7B7]/30' : 'bg-[#DCE7D4] text-[#163515] border-[#54683C]/30'}`}
                         >
                           NAME_AVANI_SUBMISSION
                         </code>
@@ -207,7 +207,7 @@ export function ManifestoFooter() {
               </a>
               <Link
                 href="/quiz"
-                className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full border border-[#54683C]/40 text-[#163515] font-sans text-xs font-medium hover:bg-[#DCE7D4]/40 transition-colors"
+                className={`inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full border font-sans text-xs font-medium transition-colors ${isNight ? 'border-[#6EE7B7]/30 text-[#6EE7B7] hover:bg-[#163515]/60' : 'border-[#54683C]/40 text-[#163515] hover:bg-[#DCE7D4]/40'}`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-[#54683C]" />
                 <span>Take Organization Eco Quiz</span>
@@ -220,7 +220,7 @@ export function ManifestoFooter() {
         <div className={`mt-16 sm:mt-24 pt-8 border-t ${hairline} text-center select-none`}>
           <p
             aria-hidden="true"
-            className="font-serif font-black uppercase tracking-[-0.05em] leading-[0.84] text-[clamp(4.5rem,19vw,17rem)] text-[#163515]/90 hover:text-[#54683C] transition-colors duration-500"
+            className={`font-serif font-black uppercase tracking-[-0.05em] leading-[0.84] text-[clamp(4.5rem,19vw,17rem)] transition-colors duration-500 ${isNight ? 'text-[#6EE7B7]/20 hover:text-[#6EE7B7]/40' : 'text-[#163515]/90 hover:text-[#54683C]'}`}
           >
             AVANI
           </p>

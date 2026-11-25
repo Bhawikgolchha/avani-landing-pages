@@ -10,15 +10,13 @@ import {
   Wind, 
   Recycle, 
   Share2, 
-  CheckCircle2, 
   ArrowUpRight, 
   BookOpen, 
   Palette, 
   Users, 
   Smartphone, 
   Calendar, 
-  Check, 
-  Sparkles
+  Check
 } from 'lucide-react';
 import { Navbar, GOOGLE_FORM_URL } from '@/components/common/Navbar';
 import { FirefliesBackground } from '@/components/common/FirefliesBackground';
@@ -26,9 +24,11 @@ import { useLenis } from '@/hooks/useLenis';
 import { 
   AVANI_OBJECTIVES, 
   AVANI_TEAMS, 
+  AVANI_ORGANIZATION,
   EXTERNAL_LINKS 
 } from '@/lib/avaniContent';
 import { ManifestoFooter } from '@/components/bleibtgleich/ManifestoFooter';
+import { Footer } from '@/components/common/Footer';
 import { AvaniThemeProvider, useAvaniTheme } from '@/components/bleibtgleich/ThemeTransitionOverlay';
 
 // Dynamically load the 3D Cylindrical Orbital Ring for Events (SSR disabled for Three.js canvas)
@@ -113,7 +113,7 @@ function AvaniPageShell() {
 
             {/* Monospaced Editorial Eyebrow */}
             <div className="flex items-center justify-center gap-2">
-              <span className={`font-mono text-xs uppercase tracking-[0.25em] font-semibold ${
+              <span className={`font-sans text-sm font-normal ${
                 isNight ? 'text-[#6EE7B7]' : 'text-[#54683C]'
               }`}>
                 Bangalore Youth Climate Collective
@@ -172,25 +172,25 @@ function AvaniPageShell() {
             }`}>
               <div className="space-y-1">
                 <p className="font-serif font-black text-3xl sm:text-4xl leading-none">04</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Drives Completed</p>
+                <p className={`text-xs font-medium font-sans ${accentText}`}>Drives Completed</p>
                 <p className={`text-xs ${textMuted}`}>Lakes, Lalbagh, fashion swaps &amp; eco walks</p>
               </div>
 
               <div className="space-y-1">
                 <p className="font-serif font-black text-3xl sm:text-4xl leading-none">05</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Student Teams</p>
+                <p className={`text-xs font-medium font-sans ${accentText}`}>Student Teams</p>
                 <p className={`text-xs ${textMuted}`}>Research, Design, HR, Social Media &amp; Events</p>
               </div>
 
               <div className="space-y-1">
                 <p className="font-serif font-black text-3xl sm:text-4xl leading-none">11</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Everyday Habits</p>
+                <p className={`text-xs font-medium font-sans ${accentText}`}>Everyday Habits</p>
                 <p className={`text-xs ${textMuted}`}>Bangalore youth sustainable living routines</p>
               </div>
 
               <div className="space-y-1">
                 <p className="font-serif font-black text-3xl sm:text-4xl leading-none">100%</p>
-                <p className={`text-xs font-semibold uppercase tracking-wider font-mono ${accentText}`}>Student-Run</p>
+                <p className={`text-xs font-medium font-sans ${accentText}`}>Student-Run</p>
                 <p className={`text-xs ${textMuted}`}>Independent volunteer environmental movement</p>
               </div>
             </div>
@@ -203,13 +203,8 @@ function AvaniPageShell() {
         <section id="objectives" className={`py-20 px-4 sm:px-6 lg:px-8 border-y transition-colors duration-500 ${sectionWhite}`}>
           <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-3 ${
-                isNight ? 'bg-[#163515] text-[#6EE7B7] border border-[#6EE7B7]/30' : 'bg-[#DCE7D4] text-[#163515]'
-              }`}>
-                <Sprout className="w-3.5 h-3.5" />
-                <span>Strategic Framework</span>
-              </div>
-              <h2 className="font-serif font-bold text-3xl sm:text-5xl tracking-tight">
+              <p className={`text-sm font-medium mb-3 ${accentText}`}>What we stand for</p>
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight">
                 Our Pillars of Impact
               </h2>
               <p className={`mt-3 text-base sm:text-lg font-sans ${textMuted}`}>
@@ -235,8 +230,8 @@ function AvaniPageShell() {
                       }`}>
                         <IconComponent className="w-6 h-6" />
                       </div>
-                      <span className={`text-xs font-mono font-bold tracking-wider uppercase ${accentText}`}>
-                        Pillar 0{obj.id}
+                      <span className={`text-xs font-sans font-medium ${accentText} opacity-80`}>
+                        {String(idx + 1).padStart(2, '0')} —
                       </span>
                       <h3 className="font-serif font-bold text-xl mt-1 mb-3">
                         {obj.title}
@@ -265,13 +260,8 @@ function AvaniPageShell() {
         <section id="teams" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-3 ${
-                isNight ? 'bg-[#163515] text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#163515]'
-              }`}>
-                <Users className="w-3.5 h-3.5" />
-                <span>Student Leadership Structure</span>
-              </div>
-              <h2 className="font-serif font-bold text-3xl sm:text-5xl tracking-tight">
+              <p className={`text-sm font-medium mb-3 ${accentText}`}>The people doing the work</p>
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight">
                 The 5 Avani Student Teams
               </h2>
               <p className={`mt-2 text-base max-w-xl ${textMuted}`}>
@@ -336,7 +326,7 @@ function AvaniPageShell() {
                 </p>
 
                 <div className="pt-2">
-                  <h4 className={`text-xs font-mono uppercase tracking-wider font-semibold mb-2 ${accentText}`}>
+                  <h4 className={`text-xs font-sans font-medium mb-2 ${accentText}`}>
                     Key Responsibilities:
                   </h4>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
@@ -401,6 +391,71 @@ function AvaniPageShell() {
         </section>
 
         {/* ========================================================================= */}
+        {/* 3b. HOW WE WORK                                                           */}
+        {/* ========================================================================= */}
+        <section id="how-we-work" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <p className={`text-sm font-medium mb-3 ${accentText}`}>How we operate</p>
+            <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight mb-10">
+              The way we build
+            </h2>
+          </div>
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {AVANI_ORGANIZATION.howWeWorkHighlights.map((item, i) => (
+              <li key={i} className={`flex gap-5 p-6 rounded-2xl border transition-colors ${sectionWhite}`}>
+                <span className={`font-serif font-bold text-3xl leading-none shrink-0 mt-1 ${accentText} opacity-60`}>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <p className={`text-base leading-relaxed font-sans ${textMuted}`}>{item}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 3c. OUR PEOPLE (Members)                                                  */}
+        {/* ========================================================================= */}
+        <section id="members" className={`py-16 border-t transition-colors duration-500 ${isNight ? 'border-emerald-900/30' : 'border-stone-200/60'}`}>
+          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+              <div>
+                <p className={`text-sm font-medium mb-3 ${accentText}`}>The people behind the work</p>
+                <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight">
+                  Our Members
+                </h2>
+                <p className={`mt-3 text-base max-w-xl ${textMuted}`}>
+                  Avani is built by students across Bangalore — each team brings a distinct skill set toward one shared goal.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              {AVANI_TEAMS.map((team) => {
+                const TeamIcon = TEAM_ICON_MAP[team.icon || 'Users'] || Users;
+                return (
+                  <div
+                    key={team.id}
+                    className={`p-5 rounded-2xl border flex flex-col items-start gap-3 transition-colors duration-200 ${cardBg}`}
+                  >
+                    <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
+                      isNight ? 'bg-emerald-900/60 text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#54683C]'
+                    }`}>
+                      <TeamIcon className="w-4.5 h-4.5" />
+                    </div>
+                    <div>
+                      <p className="font-serif font-semibold text-sm leading-snug">{team.name}</p>
+                      <p className={`text-xs mt-1 leading-relaxed ${textMuted}`} style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                        {team.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
         {/* 4. THE 3D CYLINDRICAL EVENTS RING (Interactive Drag & Spin)                */}
         {/* ========================================================================= */}
         <section id="events" className={`relative py-12 border-y transition-colors duration-500 ${sectionWhite}`}>
@@ -413,13 +468,8 @@ function AvaniPageShell() {
         <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
             <div>
-              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-3 ${
-                isNight ? 'bg-[#163515] text-[#6EE7B7]' : 'bg-[#DCE7D4] text-[#163515]'
-              }`}>
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>Knowledge &amp; Voices</span>
-              </div>
-              <h2 className="font-serif font-bold text-3xl sm:text-5xl tracking-tight">
+              <p className={`text-sm font-medium mb-3 ${accentText}`}>Writing & research</p>
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl tracking-tight">
                 Student Thought Leadership
               </h2>
               <p className={`mt-2 text-base max-w-xl font-sans ${textMuted}`}>
@@ -452,7 +502,7 @@ function AvaniPageShell() {
               >
                 <div>
                   <div className={`flex items-center justify-between text-xs mb-3 ${textMuted}`}>
-                    <span className={`font-semibold font-mono ${accentText}`}>Substack Deep Dive</span>
+                    <span className={`font-medium font-sans text-xs ${accentText}`}>Substack</span>
                     <span>{article.publishedDate}</span>
                   </div>
 
@@ -481,6 +531,9 @@ function AvaniPageShell() {
         {/* ========================================================================= */}
         <ManifestoFooter />
       </main>
+
+      {/* Full Dark-Green 4-Column Footer */}
+      <Footer />
     </div>
   );
 }

@@ -30,6 +30,7 @@ const NAV_LINKS: NavLink[] = [
   { label: 'Objectives', href: '/#objectives' },
   { label: 'Teams', href: '/#teams' },
   { label: 'Events', href: '/#events' },
+  { label: 'Volunteer', href: '/#apply' },
   { label: 'Publications', href: '/#publications' },
   { label: 'Climate Quiz', href: '/quiz', highlight: true },
   { label: 'Join Us', href: '/#apply' },
@@ -82,7 +83,7 @@ export function Navbar() {
               <span className="font-serif font-bold text-2xl tracking-tight leading-none">
                 Avani
               </span>
-              <span className={`text-[10px] font-semibold tracking-wider uppercase mt-1 ${isNight ? 'text-[#A7F3D0]' : 'text-[#54683C]'}`}>
+              <span className={`text-[10px] font-normal mt-0.5 ${isNight ? 'text-[#A7F3D0]' : 'text-[#54683C]'}`}>
                 Bangalore Youth Climate Collective
               </span>
             </div>
