@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Hash,
   Info,
+  AlertCircle,
 } from 'lucide-react';
 import { Navbar } from '@/components/common/Navbar';
 import { Footer } from '@/components/common/Footer';
@@ -33,7 +34,9 @@ function VolunteerContent() {
   const [contactNumber, setContactNumber] = useState('');
   const [email, setEmail] = useState('');
   const [selectedEvent, setSelectedEvent] = useState(UPCOMING_EVENT_OPTIONS[0]);
+  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const pageBg = isNight ? 'bg-[#0E1610] text-[#ECEFE9]' : 'bg-[#F9FAF7] text-[#163515]';
   const cardBg = isNight ? 'bg-[#19261B] border-white/10' : 'bg-white border-stone-200/80';
@@ -43,7 +46,15 @@ function VolunteerContent() {
   const textMuted = isNight ? 'text-[#9CAEA0]' : 'text-stone-600';
   const accentText = isNight ? 'text-[#86B87A]' : 'text-[#54683C]';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const buildMailtoFallback = () => {
+    const subject = encodeURIComponent(`Event Volunteer Registration — ${fullName}`);
+    const body = encodeURIComponent(
+      `Name: ${fullName}\nAge: ${age}\nCollege / School: ${collegeName}\nContact: ${contactNumber}\nEmail: ${email}\nEvent: ${selectedEvent}`
+    );
+    return `mailto:${EXTERNAL_LINKS.email}?subject=${subject}&body=${body}`;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (
       !fullName.trim() ||
@@ -54,7 +65,43 @@ function VolunteerContent() {
     ) {
       return;
     }
-    setSubmitted(true);
+
+    setSubmitting(true);
+    setErrorMsg(null);
+
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${EXTERNAL_LINKS.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New Event Volunteer Registration — ${fullName}`,
+          _template: 'table',
+          _replyto: email,
+          Name: fullName,
+          Age: age,
+          'College / School': collegeName,
+          'Contact Information': contactNumber,
+          'Email ID': email,
+          Event: selectedEvent,
+        }),
+      });
+
+      const data = await res.json().catch(() => null);
+      if (!res.ok || data?.success === 'false') {
+        throw new Error(data?.message || 'Unable to send notification right now.');
+      }
+
+      setSubmitted(true);
+    } catch {
+      setErrorMsg(
+        `Could not send automatically right now. Please use the email button below to send directly to ${EXTERNAL_LINKS.email}.`
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -77,7 +124,8 @@ function VolunteerContent() {
             Volunteer at Avani Events
           </h1>
           <p className={`text-base leading-relaxed ${textMuted}`}>
-            Register below to join as a volunteer when Avani organises upcoming community clean-ups, campus stalls, or awareness drives in Bangalore.
+            Register below to join as a volunteer when Avani organises upcoming community clean-ups, campus stalls, or awareness drives in Bangalore. Avani&apos;s team at{' '}
+            <span className="font-medium">{EXTERNAL_LINKS.email}</span> is notified on submission.
           </p>
         </div>
 
@@ -91,7 +139,7 @@ function VolunteerContent() {
         >
           <Info className={`w-4 h-4 shrink-0 mt-0.5 ${accentText}`} />
           <p className={textMuted}>
-            All listed past events have been completed. <strong className={isNight ? 'text-[#ECEFE9]' : 'text-[#163515]'}>No upcoming events are available at the moment</strong> — you can still submit your details below to be notified first when the next drive opens.
+            All listed past events have been completed. <strong className={isNight ? 'text-[#ECEFE9]' : 'text-[#163515]'}>No upcoming events are available at the moment</strong> — you can still submit your details below so Avani&apos;s coordinators get notified and can reach out for the next drive.
           </p>
         </div>
 
@@ -99,10 +147,11 @@ function VolunteerContent() {
           <div className={`p-8 rounded-2xl border space-y-5 ${cardBg}`}>
             <div className="flex items-center gap-3">
               <CheckCircle2 className={`w-7 h-7 shrink-0 ${accentText}`} />
-              <h2 className="font-serif font-semibold text-2xl">Registration Recorded</h2>
+              <h2 className="font-serif font-semibold text-2xl">Registration Sent to Avani</h2>
             </div>
             <p className={`text-sm leading-relaxed ${textMuted}`}>
-              Thank you, <span className="font-semibold">{fullName}</span>! Your volunteer details have been saved for upcoming Avani events.
+              Thank you, <span className="font-semibold">{fullName}</span>! Your volunteer registration has been sent to{' '}
+              <span className="font-medium">{EXTERNAL_LINKS.email}</span>.
             </p>
             <div className={`p-4 rounded-xl text-xs space-y-1.5 border ${isNight ? 'bg-[#0E1610] border-white/10' : 'bg-[#F9FAF7] border-stone-200'}`}>
               <p><span className={textMuted}>Name:</span> {fullName}</p>
@@ -127,6 +176,7 @@ function VolunteerContent() {
                 setCollegeName('');
                 setContactNumber('');
                 setEmail('');
+                setErrorMsg(null);
               }}
               className={`px-5 py-2.5 rounded-full text-xs font-semibold transition-colors ${
                 isNight ? 'bg-[#86B87A] text-[#0E1610]' : 'bg-[#163515] text-white'
@@ -137,6 +187,21 @@ function VolunteerContent() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className={`p-6 sm:p-8 rounded-2xl border space-y-5 ${cardBg}`}>
+            {errorMsg && (
+              <div className="p-4 rounded-xl border border-red-500/30 bg-red-500/10 text-sm space-y-2">
+                <div className="flex items-start gap-2.5">
+                  <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  <p>{errorMsg}</p>
+                </div>
+                <a
+                  href={buildMailtoFallback()}
+                  className={`inline-block text-xs font-semibold underline ${accentText}`}
+                >
+                  Open in Email App to Notify {EXTERNAL_LINKS.email}
+                </a>
+              </div>
+            )}
+
             <div>
               <label htmlFor="volunteer-name" className="block text-sm font-medium mb-2">
                 Full Name <span className="text-red-500">*</span>
@@ -254,13 +319,14 @@ function VolunteerContent() {
 
             <button
               type="submit"
-              className={`w-full py-3.5 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md ${
+              disabled={submitting}
+              className={`w-full py-3.5 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md disabled:opacity-60 disabled:cursor-not-allowed ${
                 isNight
                   ? 'bg-[#86B87A] text-[#0E1610] hover:bg-[#97C98B]'
                   : 'bg-[#163515] text-white hover:bg-[#254d24]'
               }`}
             >
-              Register as Event Volunteer
+              {submitting ? 'Sending Registration...' : 'Register as Event Volunteer'}
             </button>
           </form>
         )}
